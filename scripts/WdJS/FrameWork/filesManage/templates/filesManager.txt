@@ -1,0 +1,74 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 50%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: #efefef;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         "  data-dojo-attach-point="panelName"> 资料浏览 </div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+
+         <!-- lib -->
+         <div style="width: 100%;height: 30px;">
+            <div style="width: 90%;
+            height: 30px;
+            color: #515761;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            font-size: 14px;
+            line-height: 30px;
+            background: white;
+            background: white;background-image: url(image/attrquery/files_path.png);
+            background-repeat: no-repeat;
+            background-position: left 8px center;
+            padding-left: 30px;
+            float: left;
+            overflow: hidden;">> 
+            <span  data-dojo-attach-point="now_lj"></span> </div>
+
+            <div data-dojo-attach-point="back_Btn" style="width: 7%;height: 28px;border: 1px solid #726d6d;background: #dfdede;text-align: center;line-height: 28px;float: left;margin: 0 4px;color: #726d6d;">上一级</div>
+        </div>
+         <!-- list -->
+
+
+         <div data-dojo-attach-point="file_List" style="    width: 100%;
+         height: 90%;
+         overflow: auto;">
+          
+            <!-- <div class="fileManage_files" >files</div>
+            <div class="fileManage_files">files</div>
+            <div class="fileManage_files">files</div>
+            <div class="fileManage_files">files</div> -->
+
+            <!-- <div style="width: 80px;height: 90px;font-size: 15px;float: left;margin: 10px;text-align: center;/* background: #ccc; */"> 
+                <img src="image/attrquery/files.png" alt="" style="width: 94%;height: 73%;">
+                <span style="width: 100%;height: 20%;">filename</span>
+            </div> -->
+
+            <!-- <div style="width: 94%;height: 30px;background-image:  url(image/attrquery/files.png);background-repeat: no-repeat;background-position: left center;font-size: 15px;padding-left: 35px;line-height: 30px;margin: 0 auto;"> filename</div>-->
+         </div>
+ 
+    
+
+     
+     </div>
+</div>

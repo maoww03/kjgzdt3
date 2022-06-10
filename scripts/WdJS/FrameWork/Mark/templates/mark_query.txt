@@ -1,0 +1,57 @@
+<div class="window_box sidebar-tool" dx_lx="mark_query" style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <span  style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">标注展示</span>
+        <div data-dojo-attach-point="cancel" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;" ></div>
+    </div>
+
+    
+    <div class="input-group" style="width: 300px; margin: 5px 10px 0 10px; height: 34px; border: 1px solid #e9edee;border-radius: 5px;float: left;">
+        <input type="text" class="form-control" placeholder="请输入搜索内容"  data-dojo-attach-point="query_input" style="width: 80%;box-shadow:none;border: none;">
+        <div  data-dojo-attach-point="query" style="width:19px;height:19px;background-image:url(image/common/cz.png);background-position:center center;background-repeat:no-repeat;cursor:pointer; float: right; margin-top: 8px; margin-right: 8px;"></div>
+    </div>
+
+    <!-- 导出 -->
+    <div style=" width: auto;  float: right;margin: 8px 18px 0 0;">
+        <div style="
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        background-color: white;
+        border: 1px solid #ccc;
+        text-align: center;
+        background: #276099;
+        color: white;
+        font-weight: bold;
+        background-image: url(image/menu_down.png);
+        background-position: right 8px center;
+        background-repeat: no-repeat;
+        " data-dojo-attach-point="selectBj" class="printlableClk"> 导出 </div>
+
+        <div style="width: 90px;height: 60px;clear: both;position: absolute;background: white;display: block;display: none;" data-dojo-attach-point="show">
+            <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;text-align: center;line-height: 30px;" class="printlable" data-dojo-attach-point="outshp"> SHP
+            </div>
+            <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;text-align: center;line-height: 30px;" class="printlable" data-dojo-attach-point="outimg"> 打印
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mark_table_box" style="border-color: #e9edee ;">
+        <div class="mark_title" style="height: 31px;color:#939394; border-color: #e9edee;">
+            <div class="t1" style="float:left;background-color:#f8f9fb;width:25%;text-align:center;border:none;">名称</div>
+            <div class="t2" style="float:left;background-color:#f8f9fb;width:25%;text-align:center;border:none;">类型</div>
+            <div class="t3" style="float:left;background-color:#f8f9fb;width:25%;text-align:center;border:none;">备注</div>
+            <div class="t4" style="float:left;background-color:#f8f9fb;width:25%;text-align:center;border:none;">操作</div>
+        </div>
+
+        <div class="mark_content" data-dojo-attach-point="content"> 
+            <!-- <div class="click_line">测试</div> -->
+        </div>
+      
+    </div>
+
+
+    <div class="page_div t_10" data-dojo-attach-point="pagination">
+    </div>
+</div>

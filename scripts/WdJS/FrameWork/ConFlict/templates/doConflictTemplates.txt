@@ -1,0 +1,173 @@
+<div class="sidebar-tool repeatHide subSidebox" >  
+
+    <div class = "theme" >
+        <div data-dojo-attach-point="subSidebox_text" class = "theme_text">叠加分析</div>
+        <div data-dojo-attach-point="subSidebox_close" class="theme_close"></div>
+    </div>
+
+    <div class="con">
+        <div data-dojo-attach-point="progress1_text" class="con_text">设置源图形</div>
+        <div data-dojo-attach-point="progress2_text" class="con_text">选择业务类型</div>
+        <div data-dojo-attach-point="progress3_text" class="con_text">生成分析结果</div>
+
+
+        <div class="con_strip">
+            <div data-dojo-attach-point="progress" class="step"></div>
+           
+            <div style="left:64.5px; " class="poit"></div>
+           
+            <div style="left:205.5px;"  class="poit"></div>
+           
+            <div style="left:346.5px;"  class="poit"></div>
+       
+        </div>
+        
+        <div data-dojo-attach-point="select_progress" class="con_poit"></div>
+
+    </div>
+
+    <div class="drawType" data-dojo-attach-point="over">
+        <div style="margin-top:15px;" class="group1 strpCtrl">
+            <div class="drawshp">绘制源图形</div>
+
+            <div data-dojo-attach-point="draw"  style="margin-left:20.5px;" class="drawbtn">
+                <div style="background-image:url(image/doConflict/drawpolygon.png);" class="drawbtnpic"></div>
+                <div class="drawbtntext">图上绘制</div>
+            </div>
+
+            <div data-dojo-attach-point="select" style="margin-left:41px;"  class="drawbtn">
+                <div style="background-image:url(image/doConflict/selectpolygon.png);" class="drawbtnpic"></div>
+                <div class="drawbtntext">图上选择</div>
+            </div>
+
+            <div data-dojo-attach-point="upload" style="margin-left:41px;" class="drawbtn">
+                <div style="background-image:url(image/doConflict/uploadpolygon.png);"class="drawbtnpic"></div>
+                <div class="drawbtntext">图形上传</div>
+            </div>
+
+        </div>
+
+          <!--文件类型  -->
+        <div style="padding-top:15px;clear:both;display:none;" class="group1 strpCtrl" data-dojo-attach-point="upload_selectDom">
+            <div class="uploadshp">图形上传</div>
+            <div class="uploadselect">
+                <div class="filetips">文件类型:
+                    <span style="color:red;"> 仅支持CGCS2000平面坐标系,SHP文件需打包成zip包</span>
+                </div>
+
+                <div data-dojo-attach-point="upload_txtfile" 
+                class="upfile" >
+                    <div class="btnstyle" style="background-image:url(image/doConflict/txt.png);"></div>
+                    <div class="btn-text">TXT</div>
+                    <input type="file" data-dojo-attach-point="txtfile" style="display:none;" accept=".txt">
+                </div>
+
+                <div data-dojo-attach-point="upload_shpfile" 
+                class="upfile" >
+                    <div class="btnstyle"  style="background-image:url(image/doConflict/shp.png);"></div>
+                    <div class="btn-text">SHP</div>
+                    <input type="file" data-dojo-attach-point="shpfile" style="display:none;" accept=".zip,.shp">
+                </div>
+            </div>
+        </div>
+
+        <!-- 图层选择 -->
+        <div style="padding-top: 15px; clear: both; display: none;" class="group1 strpCtrl" data-dojo-attach-point="layer_selectDom">
+            <div class="uploadshp" >图层选择</div> 
+            <div class="uploadselect" style="height: 53px;padding-top: 11px;">
+                <div class="filetips" style="width: 70px;float: left;">图层选择:</div>
+                <select data-dojo-attach-point="layerselect" style="width: 240px;height: 30px;line-height: 30px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;float: left;"></select>
+
+                <div style="width: 26px;height: 26px;display: inline-block;background-image: url(image/common/restore.png);background-repeat: no-repeat;margin-left: 12px;margin-top: 2px;    background-position: center;" title="重新加载图层" data-dojo-attach-point="restore"> </div>
+                <div class="downloadExcleBtn" data-dojo-attach-point="cxxz" style="display: block;width: 47px;font-size: 12px;height: 24px;line-height: 24px;margin: 3px 10px 0 0;user-select: none;">重选</div>
+
+            </div>
+        </div>
+
+          <!-- 图层选择 -->
+          <div style="padding-top: 15px; clear: both; display: none;" class="group1 strpCtrl" data-dojo-attach-point="buffer_selectDom">
+            <div class="uploadshp" >缓冲距离</div> 
+
+            <div class="uploadselect" style="height: 80px;padding-top: 11px;">
+                <div style="float: left;margin-top:10px;" class="option">
+                    <input data-dojo-attach-point="distance" type="text" value="100" style="border: 1px solid #e9edf0;border-radius: 3px; outline: none; width: 200px;height: 36px; margin-left: 20px;padding-left: 14px;">
+                    <select data-dojo-attach-point="unit" style="width: 100px; height: 36px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+                      <option value="kilometers">米</option>
+                    </select>
+                    <input type="button" value="缓冲" style="padding: 0 5px;width: 57px;height: 32px;font-size: 14px;border-radius: 3px;margin-left: 13px;background-color: #ecf5ff;color: #409eff;border: none;outline: none;" data-dojo-attach-point="buffer">
+                </div> 
+            </div>
+        </div>
+
+          <!--源图形列表  -->
+        <div style="padding-top:15px;clear:both;" class="group1 strpCtrl">
+            <div class="shapemsg">源图形列表</div>
+            <div class="shapemsglist">
+                <div style="border-right:none;"class="shapemsglistHead">图形审查目标</div>
+                <div style="border-left:none;"class="shapemsglistHead">图形审结果</div>
+            </div>
+
+            <div data-dojo-attach-point="geometryList" class="shapemsglistCon">
+
+            </div>
+        </div>
+
+        <div style="clear: both;display:none;" class="group2 strpCtrl">
+            <div style="width:100%;max-height: 400px;overflow: scroll;" data-dojo-attach-point="fxlx">
+            </div>
+            <hr>
+
+            <div style=" width: 100%; height: 30px;">
+                <div class="shapemsg" style=" float: left; margin-top: 4px;">更多</div>
+                <div class="btnstyle" data-dojo-attach-point="choseLayer" >选择图层</div>
+            </div>
+            <hr>
+
+            <div style="width: 100%;height: 100px;">
+                <div class="shapemsg">选中图层</div>
+                <div class="selectLayerBox" data-dojo-attach-point="layerbox" >
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both;display:none;margin-top:15px;" class="group3 strpCtrl">
+            <div class="head-tips">设置分析参数</div>
+            <div class="head-text">计算示意图</div>
+            <div class="head-pic" ></div>
+            <div class="head-text" >选择显示内容</div>
+            <div style="width:100%;height:70px;">
+                <div data-dojo-attach-point="difference3" class="differType1">
+                    <div style="background-image:url(image/doConflict/3.png);"  class="differTypetext">3</div>
+                </div>
+                <div data-dojo-attach-point="difference2" class="differType">
+                    <div style="background-image:url(image/doConflict/2.png);"  class="differTypetext">2</div>
+                </div>
+                <div data-dojo-attach-point="difference1" class="differType">
+                    <div style="background-image:url(image/doConflict/1.png);" class="differTypetext">1</div>
+                </div>
+            </div>
+            <div class="result-title" data-dojo-attach-point="fxjg_title">
+                <span>分析结果</span> 
+            <div data-dojo-attach-point="downLoad" class="dowmbtn">导出</div>
+
+        </div>
+
+        <div class="result-table" data-dojo-attach-point="fxjg_table">
+
+        </div>
+
+        <div class="result-table"  data-dojo-attach-point="fxjg_table_content">
+
+        </div>
+        
+        </div> 
+    </div>
+
+    <div class="stepbtn">
+        <div data-dojo-attach-point="clear" class="btnstyle1">清除</div>
+        <div data-dojo-attach-point="pre" class="btnstyle1" style="display:none;">上一步</div>
+        <div data-dojo-attach-point="next" class="btnstyle2">下一步</div>
+        <div data-dojo-attach-point="queryBtn" style="display:none;"class="btnstyle2">分析</div>
+    </div>
+
+</div>

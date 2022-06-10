@@ -1,0 +1,1 @@
+<div  style="width:37px;height:37px;background-position:center center;background-color:white;border-radius:3px;background-repeat:no-repeat;cursor:pointer;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);"></div>

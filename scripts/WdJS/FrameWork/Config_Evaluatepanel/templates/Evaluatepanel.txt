@@ -1,0 +1,40 @@
+<div style="    width: 100%; height: 100%;">
+    
+    <div style="width: 100%;height: 46px;font-size: 16px;">
+        <div data-dojo-attach-point="total" style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;width: 300px;float: left;display: none;">评价总数：20条</div>
+
+        <div data-dojo-attach-point="pjs" style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;width: 200px;float: left;color: black;">评分平均数：4.8分</div>
+
+        
+    </div>
+   <!-- list -->
+   <div style="width: 100%;    height: calc(100% - 80px); " data-dojo-attach-point="list_con">
+        <div style="width:calc(100% - 20px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+            <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+            <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;display: none;">用户名</div>
+            <div  style="float:left;background-color:#f8f9fb;width:50%;text-align:center;">评价</div>
+            <div  style="float:left;background-color:#f8f9fb;width:30%;text-align:center;">评分</div>
+        </div>
+        <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;overflow-y:auto;" data-dojo-attach-point="items"></div>
+
+
+        <!--  -->
+        <div style="width: 400px;
+        height: 44px;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        color: rgb(58, 58, 58);
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -200px;">
+            <div data-dojo-attach-point="sx" style="background-image: url(image/feedback/sx.png);border: none;width: 24px;height: 24px;background-repeat: no-repeat;background-color: white;background-position:center center;display: none;" class="page"></div>
+            <div data-dojo-attach-point="first" class="page">首页</div>
+            <div data-dojo-attach-point="pre" class="page">上一页</div>
+            <div data-dojo-attach-point="now_page" class="page" style="width: 50px;">1</div>
+            <div data-dojo-attach-point="next" class="page">下一页</div>
+            <div data-dojo-attach-point="last" class="page">末页</div>
+            <div data-dojo-attach-point="total_page" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+        </div>
+    </div>
+</div>

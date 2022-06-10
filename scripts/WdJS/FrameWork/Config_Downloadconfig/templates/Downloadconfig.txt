@@ -1,0 +1,26 @@
+<div style=" width: 100%; height: 100%;">
+    <!-- table1 -->
+    <div data-dojo-attach-point="table1">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="create"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+            <div style="font-size: 14px;width: 253px;float: right;margin-top: 9px;" class="option">
+                <span>行政区划：</span>
+                <select data-dojo-attach-point="RegionCodeSelect" style="width: 150px;height: 30px;line-height: 30px;margin-left: 8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+                </select>    
+            </div>
+        </div>
+
+        <div style="width: 100%;    height: 50em;overflow: auto; "  data-dojo-attach-point="list_con">
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">统计报表名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">行政区</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">地址</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">显示</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items"></div>
+        </div>
+    </div>
+</div>

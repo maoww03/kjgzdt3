@@ -1,0 +1,12 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width: 20%;">1</div>
+
+    <div data-dojo-attach-point="username" style="float: left; width: 20%;display: none;">username</div>
+
+    <div data-dojo-attach-point="content"style="float: left; width: 50%;    overflow: hidden;">content</div>
+
+    <div data-dojo-attach-point="score" style="float: left; width: 30%;">score
+    </div>
+
+</div>

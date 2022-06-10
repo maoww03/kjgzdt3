@@ -1,0 +1,22 @@
+<div style="width: 100%;
+height: 40px;
+line-height: 40px;
+border: 1px solid #f1eeee;
+border-top: none;">
+    <div style="float: left;
+    height: 100%;
+        width: 25%;
+        text-align: center;" data-dojo-attach-point="name"  > &nbsp;</div>
+    <div style="float: left;
+           height: 100%;
+        width: 25%;
+        text-align: center;border-left: 1px solid #e4e3e3;" data-dojo-attach-point="remark"  >&nbsp;</div>
+    <div style="float: left;
+            height: 100%;
+        width: 25%;
+        text-align: center;border-left: 1px solid #e4e3e3;" data-dojo-attach-point="type"  > &nbsp;</div>
+    <div style="float: left;
+        height: 100%;
+        width: 25%;
+        text-align: center;border-left: 1px solid #e4e3e3;" data-dojo-attach-point="explain" > &nbsp;</div>
+</div>

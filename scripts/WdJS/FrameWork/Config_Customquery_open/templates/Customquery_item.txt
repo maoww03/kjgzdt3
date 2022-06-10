@@ -1,0 +1,32 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width: 20%;">1</div>
+
+    <div data-dojo-attach-point="customName" style="float: left; width: 20%;">customName</div>
+
+    <div data-dojo-attach-point="tableName"style="float: left; width: 20%;    overflow: hidden;">tableName</div>
+
+    <div data-dojo-attach-point="username" style="float: left; width: 20%;">username
+    </div>
+
+    <div style="float: left; width: 20%;">  
+        <div style="width: 125px;margin: 0 auto;">
+            <div style=" width: 40px;
+            cursor: pointer;
+            color: #79afe6;
+            float: left;"data-dojo-attach-point="check">查看</div>
+
+
+            <div style=" width: 40px;
+            cursor: pointer;
+            color: #79afe6;
+            float: left;"data-dojo-attach-point="change">修改</div>
+    
+            <div style="width: 40px;
+            cursor: pointer;
+            color: red;
+            float: left;" data-dojo-attach-point="delete">删除</div>
+        </div> 
+        
+    </div>
+</div>

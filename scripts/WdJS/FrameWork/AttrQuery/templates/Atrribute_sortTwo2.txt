@@ -1,0 +1,23 @@
+<div style="width: 100%;height:auto;" >
+  <!-- title -->
+  <div class="dirExpand" data-dojo-attach-point="expandName" style="padding: 0 0 0 34px;background-color: #ebf5ff;">附件</div>
+
+  <!-- con -->
+  <div class="ftp_nr">
+    <div  data-dojo-attach-point="ckda" class="list_File" style="margin:8px;">规划编制档案</div>
+    <div  data-dojo-attach-point="cktz" class="list_File" style="margin:8px;">查看图则</div>
+    <div  data-dojo-attach-point="ckwj" class="list_File" style="margin:8px;">查看文本</div>
+    <div  data-dojo-attach-point="cksm" class="list_File" style="margin:8px;">查看说明</div>
+  </div>
+
+  <!-- <div data-dojo-attach-point="ckda" style="width: 87px;height: 25px;border-radius: 5px;color: white;background-color: rgb(161, 167, 171);cursor: pointer;margin: 10px;text-align: center;line-height: 25px;display: block;float: left;">查看档案</div>
+
+  <div data-dojo-attach-point="cktz" style="width: 87px;height: 25px;border-radius: 5px;color: white;background-color: rgb(161, 167, 171);cursor: pointer;margin: 10px;text-align: center;line-height: 25px;display: block;float: left;">查看图则</div>
+
+  
+  <div data-dojo-attach-point="ckwj" style="width: 87px;height: 25px;border-radius: 5px;color: white;background-color: rgb(161, 167, 171);cursor: pointer;margin: 10px;text-align: center;line-height: 25px;display: block;float: left;">查看文本</div>
+
+  
+  <div data-dojo-attach-point="cksm" style="width: 87px;height: 25px;border-radius: 5px;color: white;background-color: rgb(161, 167, 171);cursor: pointer;margin: 10px;text-align: center;line-height: 25px;display: block;float: left;">查看说明</div> -->
+
+</div>

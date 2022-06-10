@@ -1,0 +1,177 @@
+<div class="menu_middle_box2" style="width: 1000px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    margin-left: -500px;
+    box-shadow: rgb(0 0 0 / 21%) 0px 6px 32px;
+    margin-top: -300px;">
+    <!--title  -->
+    <div class="title" style="height: 42px;line-height: 42px;">
+        <div   data-dojo-attach-point="cancel" style="    width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-image: url(image/flow.png);
+        display: inline-block;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+        top: 5px;display:none;"></div>
+        <span>数据情况
+            <span data-dojo-attach-point="layername"></span>
+        </span>
+
+        <div class="cancel" data-dojo-attach-point="close" style="margin-top:8.5px"></div>
+    </div>
+    
+    <!-- contont1 -->
+    <div style="padding: 14px 0 0 0;width: 100%;height: auto;color: #B4B4B4;font-size: 15px;line-height: 30px;">
+        <div style="padding-left: 20px;" data-dojo-attach-point="sjmc">数据名称：</div>
+        <div style="padding-left: 20px; display:none;"  data-dojo-attach-point="ztfl">主题分类：</div>
+        <div style="padding-left: 20px;"  data-dojo-attach-point="newDate">更新时间：</div>
+        <div style="padding-left: 20px;" data-dojo-attach-point="lybm">主管处室：</div>
+        <div style="padding-left: 20px;" data-dojo-attach-point="zy">数据简介：</div>
+        <div style="padding-left: 20px;  display:none; "  data-dojo-attach-point="fwqx">服务权限：</div>
+        <div style="padding-left: 20px;  display:none; "  data-dojo-attach-point="fwdz">服务地址：</div>
+    </div>
+
+   
+    
+    <!-- content2 -->
+    <div style="    width: 100%;
+    height: 41px;
+    line-height: 40px;
+    border-bottom: 1px solid #B4B4B4;
+    text-align: center;
+    margin-top: 24px; 
+    ">
+
+        <div data-dojo-attach-point="msysj" style="    width: 160px;
+        height: 40px;
+        border: 1px solid #B4B4B4;
+        border-radius: 5px;
+        float: left;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+        cursor: pointer;
+        border-bottom: none;">数据描述元数据</div>
+
+        <div data-dojo-attach-point="sjkysj"  style="    width: 160px;
+        height: 40px;
+        border: 1px solid #B4B4B4;
+        border-radius: 5px;
+        float: left;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+        cursor: pointer;
+        border-bottom: none;">数据库元数据</div>
+
+        <div data-dojo-attach-point="sjfw"  style="    width: 160px;
+        height: 40px;
+        border: 1px solid #B4B4B4;
+        border-radius: 5px;
+        float: left;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+        cursor: pointer;
+        border-bottom: none;">数据范围</div>
+
+
+    </div>
+
+    <!-- content3  table-->
+    <div  data-dojo-attach-point="Result" style="width: calc(100% - 20px);display:none;
+    max-height: calc(100% - 300px);
+    overflow-y: auto;
+    margin-left: 10px;">
+        <div style="width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #939394;
+        font-size: 14px;
+        border: 1px solid #e9edee;
+        margin-top: 10px;
+        display: block;
+        ">
+        <div style="float: left;
+        background-color: #f8f9fb;
+        width: 25%;
+        text-align: center;">名称 </div>
+        <div style="float: left;
+        background-color: #f8f9fb;
+        width: 25%;
+        border-left: 1px solid #e4e3e3;
+        text-align: center;"> 别名</div>
+        <div style="float: left;
+        background-color: #f8f9fb;
+        width: 25%;
+        border-left: 1px solid #e4e3e3;
+        text-align: center;">类型 </div>
+        <div style="float: left;
+        background-color: #f8f9fb;
+        width: 25%;
+        border-left: 1px solid #e4e3e3;
+        text-align: center;">示例 </div>
+        </div>
+
+        <div  data-dojo-attach-point="Resultlist"  ></div>
+    </div>
+
+    <!-- content4 -->
+    <div data-dojo-attach-point="content4"  style="    width: 100%;
+    max-height: calc(100% - 300px);
+    color: rgb(148, 145, 145);
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 20px;
+     margin-top: 16px;    overflow: auto;
+    ">
+        <table class="table table-bordered" style="width: 97%;font-size: 12px;"> 
+            <thead>
+                <tr style="background: #1e77bd; color: white;">
+                  <th style="width: 42%;">基本情况</th>
+                  <th>内容</th>
+                </tr>
+            </thead>
+            <tbody style="word-break: break-all;" data-dojo-attach-point="tableContent">
+                <tr>
+                    <td>数源系统</td>
+                    <td data-dojo-attach-point="sjly" ></td>
+                </tr>
+                <tr>
+                    <td>数源坐标系</td>
+                    <td data-dojo-attach-point="zbx"></td>
+                </tr>
+                <tr>
+                    <td>来源层次</td>
+                    <td data-dojo-attach-point="lycj"></td>
+                </tr>
+                <tr>
+                    <td>服务类型</td>
+                    <td data-dojo-attach-point="fwlx">wmts</td>
+                </tr>
+                <tr>
+                    <td>更新频率</td>
+                    <td data-dojo-attach-point="gxzt"> </td>
+                </tr>
+                <tr>
+                    <td>共享情况</td>
+                    <td data-dojo-attach-point="authorize_type"></td>
+                </tr>
+                <tr>
+                    <td>利用方式</td>
+                    <td data-dojo-attach-point="lyfs"></td>
+                </tr>
+                <tr>
+                    <td>数据标准</td>
+                    <td data-dojo-attach-point="sjbz"></td>
+                </tr>
+                 <tr>
+                    <td>提供单位</td>
+                    <td data-dojo-attach-point="gxsj"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="width: calc(100% - 20px);height: calc(100% - 270px);margin-left: 10px;display:none;" data-dojo-attach-point="rangeContent"></div>
+</div>

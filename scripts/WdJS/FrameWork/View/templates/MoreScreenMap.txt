@@ -1,0 +1,1 @@
+<div data-dojo-attach-point="mapDiv2" class="mapDiv2"></div>

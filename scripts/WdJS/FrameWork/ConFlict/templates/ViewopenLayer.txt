@@ -1,0 +1,39 @@
+<div class="openlayerView" >
+    <div class="viewbox">
+        <div class="viewTip"> 叠加分析（图层选择） </div>
+
+        <div data-dojo-attach-point="close" class="closeBtn"></div>
+
+        <!-- con  -->
+        <div data-dojo-attach-point="con" class="tableList"  >
+            
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" data-dojo-attach-point="checkAll" /></th>
+                        <th>图层名</th>
+                    </tr>
+                </thead>
+               <tbody data-dojo-attach-point="setLayers">
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkItem" value="1"/>
+                        </td>
+                        <td>pan_junbiao的博客</td>
+                    </tr>
+               </tbody>
+            </table>
+
+        </div>
+
+
+        <!-- btn -->
+        <div data-dojo-attach-point="btn_group" class="bnt-group" >
+            <div style="background-color: #168be8;
+            color: white;" class="btnstyle" data-dojo-attach-point="btnSubmit" >确定</div>
+        </div>
+      
+       
+
+    </div>
+</div>

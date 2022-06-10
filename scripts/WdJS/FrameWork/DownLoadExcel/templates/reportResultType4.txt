@@ -1,0 +1,28 @@
+<div style="width: 98%;margin: 0 auto;">
+    <table class="table table-bordered" >
+        <thead >
+            <tr>
+                <th rowspan="2" style="text-align: center;">地区</th>
+                <th rowspan="2"  style="text-align: center;">任务面积（亩）</th>
+                <th rowspan="2"  style="text-align: center;">完成面积（亩）</th>
+                <th rowspan="2"  style="text-align: center;background:url(image/catalog/px.png) right bottom no-repeat;" 
+                class='order'  order='order' fieldname='rate' >完成率</th>
+                <th colspan="3"  style="text-align: center;">其中2009-2019年度</th>
+                <th colspan="3"  style="text-align: center;">其中2020-至今</th>
+            </tr>
+            <tr >
+                <th  style="text-align: center;">任务面积</th>
+                <th  style="text-align: center;">完成面积</th>
+                <th  style="text-align: center;background:url(image/catalog/px.png) right bottom no-repeat;"
+                class='order'  order='order' fieldname='rate1' >完成率</th>
+
+                <th  style="text-align: center;">任务面积</th>
+                <th  style="text-align: center;">完成面积</th>
+                <th  style="text-align: center;background:url(image/catalog/px.png) right bottom no-repeat;"
+                 class='order'  order='order' fieldname='rate2'>完成率</th>
+
+            </tr>
+        </thead>
+        <tbody data-dojo-attach-point="ResultListcon4" ></tbody>
+    </table>
+</div>

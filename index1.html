@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- seo -->
+    <title>空间工作底图</title>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 双核浏览器默认内核 webkit/ie-comp/ie-stand -->
+    <meta name="renderer" content="webkit" />
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link href="css/ol.css" type="text/css" rel="stylesheet" />
+    <link href="css/iclient-ol.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/zTreeStyle/zTreeStyle.css" type="text/css" rel="stylesheet" />
+    <link href="css/jquery.nouislider.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="scripts/colorpicker.js"></script>
+
+    <script src="scripts/proj4.js"></script>
+    <script src="scripts/turf.min.js"></script>
+    <script src="scripts/ol.js"></script>
+    <script src="scripts/SuperMap-7.1-11828.js"></script>
+    <script src="scripts/iclient-ol.min.js"></script>
+    <script src="scripts/appConfig.js"></script>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+
+    <script src="scripts/jquery.ztree.all-3.5.min.js"></script>
+    <script src="scripts/jquery.ztree.exhide.min.js"></script>
+    <script src="scripts/jquery.nouislider.min.js"></script>
+    <script src="scripts/RangeSlider.js"></script>
+
+    <script src="scripts/search.js"></script>
+  </head>
+
+  <body id="body">
+      <!-- 头部 -->
+      <div id="top" style="width: 100%; height: 70px; background: #1972b9; border-bottom: 2px solid #0d65ad;background-image:url(image/login/topbg.png);background-repeat:no-repeat;">
+          <div style="
+          width: 41px;
+          height: 41px;
+          top: 14.5px;
+          position: absolute;
+          left: 22px;
+          background-image: url(image/login/logo.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+        "></div>
+          <div style="height: 32px; line-height: 32px; font-size: 30px; position: absolute; top: 19px; left: 68px; color: #0d65ad;font-family:'方正正大黑简体'; background-image:-webkit-linear-gradient(bottom,#d9e8fd,#ffffff,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; ">
+              温州市自然资源空间基础信息平台-空间工作底图
+          </div>
+          <div style="height:35px;line-height:35px; top:19px;position:absolute;right:20px;width:130px">
+              <div style="width:36px;height:35px;background-image:url(image/login/default.png);position:absolute;left:0px;border-radius:50%;border:1px solid #ffffff;"></div>
+              <div style="width:70px;height:35px;font-size:16px;color:#0d65ad;position:absolute;left:41px;text-align:center;background-image:-webkit-linear-gradient(bottom,#d9e8fd,#ffffff,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; " id="remark"></div>
+              <div id="loginout" style="width:14px;height:35px;background-image:url(image/login/loginout.png);position:absolute;background-position:center center;background-repeat:no-repeat; right:0px;cursor:pointer;"></div>
+          </div>
+
+      </div>
+
+
+      <div id="catalog" style="position:absolute;left:0px;top:70px;width:70px;bottom:0px;background:#166eb6;z-index:9999;"></div>
+
+      <!-- 新增组件sidebox -->
+      <div id="sidebox"
+           style="position: absolute; right: 20px; top:84px; border: 1px solid #e9edee; border-radius: 6px; z-index: 10000; background-color: white;"></div>
+
+      <!-- 地图 侧边 底部 -->
+
+      <div id="mapDiv2" style="width:calc(100% - 70px); height: auto; overflow: hidden; position: absolute; top: 70px; bottom: 0px; left: 70px;right:0px;">
+
+      </div>
+
+      <div id="mapDiv" style="width:calc(100% - 70px); height: auto; overflow: hidden; position: absolute; top: 70px; bottom: 0px; left: 70px;right:0px;">
+          <div id="open-siderbar" style="display:none;"></div>
+
+          <div id="maptool" style="width:37px;height:auto;position:absolute;right:20px;z-index:9999;bottom:110px;"></div>
+          <div id="baseMapChange"
+               style="
+          z-index: 999;
+          position: absolute;
+          bottom: 50px;
+          right: 20px;
+          width: 100px;
+          height: 54px;
+          background-color: white;
+          box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+          cursor: pointer;
+        ">
+              <div id="baseMapChangeContent"
+                   style="position: absolute; bottom: 0px; right: 0px; width: 100px; height: 54px; cursor: pointer; transition: 2s right">
+                  <div id="baseMapChange-container" style="width: 100%; height: 100%; position: relative"></div>
+              </div>
+              <div style="width: 100%; height: 100%; position: relative">
+                  <div style="position: absolute;
+    font-size: 12px;
+    color: white;
+    height: 20px;
+    line-height: 20px;width:100%;background-color:rgba(0,0,0,0.5);">
+                      <input type="checkbox" style="position: absolute;left: 15px;" id="isgreyBtn" checked /><div style="position: absolute;width: 100%;
+    left: 33px;">开启灰度</div>
+                  </div>
+                  <img id="baseMapChangeSelect-logo"
+                       style="
+              display: inline-block;
+              width: calc(100% - 2px);
+              max-width: calc(100% - 1px);
+              height: auto;
+              max-height: 54px;
+              margin: 0 auto;
+              margin-top: 1px;
+              margin-left:1px;
+              border: 1px solid white;
+            " />
+                  <div id="baseMapChangeSelect-caption"
+                       style="
+              width: auto;
+              height: 20px;
+              line-height: 20px;
+              color: white;
+              font-size: 12px;
+              font-family: 'Microsoft YaHei';
+              overflow: hidden;
+              position: absolute;
+              right: 5px;
+              bottom: 0px;
+              text-align: right;
+            "></div>
+              </div>
+          </div>
+          <div id="coordinateDom" style="width:340px; height:30px;background:white;right:20px;bottom:10px;z-index:999;position:absolute;padding-left:5px;padding-right:5px;border-radius:3px;line-height:30px">
+              CGCS2000平面坐标系：
+          </div>
+          <div id="legend-siderbar" style="position:absolute;left:10px; bottom:10px;width:260px;height:300px;z-index:9; box-shadow: 2px 2px 10px #bbb;
+          background-color: white;display:none;border-radius:5px;"></div>
+          <div id='showTable' style="width: 100%;
+            height: 248px;
+            z-index: 9999;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            right: 0px;"></div>
+      </div>
+
+      <div id="siderbar-container"
+           style="position: absolute; top: 74px; left: 0px; bottom: 60px; z-index: 10; display: none; transition: 2s all; bottom: 0px;">
+          <div id="siderbar"
+               style="
+          width: 416px;
+          height: 100%;
+          border: 1px solid #bbb;
+          border-radius: 4px;
+          overflow: hidden;
+          box-shadow: 2px 2px 10px #bbb;
+          background-color: white;
+          float: left;
+        ">
+              <!-- title 位置-->
+              <!-- <div id="title" style="width: 372px; height: 40px; margin-top: 10px; margin-left:10px;"></div> -->
+          </div>
+          <div id="siderbar-btn"></div>
+      </div>
+
+      <!-- 20210406添加-->
+      <div class="moreScreenControl" id="moreScreenControl"></div>
+      <!-- 20210406添加end-->
+
+      <div id="popup" class="ol-popup">
+          <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+          <div id="popup-title" class="ol-popup-title">冲突结果</div>
+          <div id="popup-content" class="ol-popup-content">
+              <!-- <p class="ol-popup-content-p">序号:1</p><p class="ol-popup-content-p">基本农田保护区.aa:1</p><p class="ol-popup-content-p">基本农田保护图斑.aa:1</p><p class="ol-popup-content-p">长度:约31.90米</p> -->
+          </div>
+      </div>
+
+      <div id="measure-popup" class="measure-ol-popup" style="display:none;">
+          <div id="measure-popup-content" style="max-height:290px;width:230px;
+            overflow-y:auto;"></div>
+      </div>
+      <div id="marker" title="Marker" style="height:33px;width:22px;background-color:rgba(255,255,255,0);background-size:22px 33px;"></div>
+  </body>
+
+  <script type="text/javascript">
+    var _frame = null;
+    var _dragZoom = null;
+      var projection_4549 = null;
+      var _controls = [];
+      var _catalogs = [];
+      var popup = null;
+      var closer = null;
+      var user = null;
+      var legend = null;
+
+      //var _checkQuery=true; 
+      //var _collectionLayerZtree=null;
+      //var _allLayerZtree=null;
+	  
+	  var _checkQuery=true; 
+      var _collectionLayerZtree=null;
+      var _allLayerZtree=null;
+      var _Attrshrink=null;
+
+	  
+    //  "FrameWork/sidebox/sidebox", "FrameWork/sidebox/sideboxConfig",
+    // sidebox, sideboxConfig ,
+    require([
+      "dojo/ready",
+      "FrameWork/MapUtil/Map",
+      "dojo/on",
+      "FrameWork/Sidebox/sidebox",
+      "FrameWork/Sidebox/sideboxConfig",
+      "FrameWork/Frame",
+        "dojo/_base/array", "FrameWork/ServiceSearch/serviceSearch", "FrameWork/catalog/catalog",
+        "FrameWork/catalog/catalogConfig", "FrameWork/MapTool/mapToolConfig", "FrameWork/MapTool/mapTool", "FrameWork/RegionTool/regionTool", "FrameWork/serviceUtil/gisocnService", "FrameWork/Legend/Legend",'FrameWork/AttrQuery/AttrQueryTool'
+    ], function (ready, Map, on, sidebox, sideboxConfig, Frame, array, serviceSearch, catalog, catalogConfig, mapToolConfig, mapTool, regionTool, gisocnService, Legend,AttrQueryTool) {
+            ready(function () {
+
+                var reg = new RegExp("(^|&)jwt_token=([^&]*)(&|$)");
+                var jwt_token = window.location.search.substr(1).match(reg);
+                if (jwt_token != null) {
+                    appConfig.access_token  = unescape(jwt_token[2]);
+                    
+                }
+
+                if (appConfig.access_token == undefined || appConfig.access_token == null) {
+                    window.location.href = 'http://10.36.128.244:8001/ocn/login.html?userSystemFlag=2&tenantId=2&redirectUrl=http://10.36.128.241:18080/kjgzdt2/index1.html';
+                } else {
+                    gisocnService.getUserByToken().then(function (result) {
+                        
+                        if (result.code == "000000") {
+
+                            user = result.data;
+
+                            dojo.byId('remark').innerHTML = user.remark;
+
+                            _frame = new Frame();
+
+                            // 地图
+                            proj4.defs(appConfig.proj4.name, appConfig.proj4.value);
+                            projection_4549 = new ol.proj.Projection({
+                                code: "EPSG:4549",
+                                extent: [536560.6875, 3077533.75, 594826.5625, 3114104.5],
+                                units: "m",
+                                axisOrientation: 'neu',
+                                global: false,
+                                worldExtent: [347872.25, 2703739.74, 599933.05, 5912395.20],
+                            });
+                            ol.proj.addProjection(projection_4549);
+                            var map = Map.init("mapDiv", projection_4549);
+                           
+
+                            popup = new ol.Overlay({
+                                element: document.getElementById("popup"),
+                            });
+                            appConfig.map.addOverlay(popup);
+                            closer = document.getElementById("popup-closer");
+                            closer.onclick = function () {
+                                popup.setPosition(undefined);
+                                closer.blur();
+                                return false;
+                            };
+
+                            legend = new Legend().placeAt(dojo.byId("legend-siderbar"));
+                            legend.startup();
+
+                            on(dojo.byId("loginout"), "click", function () {
+                                gisocnService.destroyAccessToken().then(function (result) {
+                                   
+                                    if (result.code == "000000") {
+                                        window.location.href = 'http://10.36.128.244:8001/ocn/login.html?userSystemFlag=2&tenantId=2&redirectUrl=http://10.36.128.241:18080/kjgzdt2/index1.html';
+                                    }
+                                })
+                            });
+
+                            // 关闭侧边栏
+                            on(dojo.byId("siderbar-btn"), "click", function () {
+                                dojo.byId("siderbar-container").style.display = "none";
+                                // dojo.byId("allmap").style.display = "none";//20210402
+                            });
+
+                            for (var i = 0; i < sideboxConfig.subMenus.length; i++) {
+                                var _sidebox;
+                                if (i == sideboxConfig.subMenus.length - 1) {
+                                    _sidebox = new sidebox({ data: sideboxConfig.subMenus[i], isLast: true }).placeAt(dojo.byId("sidebox"));
+                                } else {
+                                    _sidebox = new sidebox({ data: sideboxConfig.subMenus[i] }).placeAt(dojo.byId("sidebox"));
+                                }
+                                _sidebox.startup();
+                            }
+                            onCatalogClick = function () {
+                                for (var i = 0; i < _catalogs.length; i++) {
+                                    _catalogs[i].Selected(false);
+                                }
+                            }
+
+                            for (var i = 0; i < catalogConfig.subMenus.length; i++) {
+                                var _catalog = new catalog({ data: catalogConfig.subMenus[i], index: i }).placeAt(dojo.byId("catalog"));
+                                _catalog.onClick = onCatalogClick;
+                                _catalog.startup();
+                                _catalogs.push(_catalog);
+                            }
+
+                            for (var i = 0; i < mapToolConfig.subMenus.length; i++) {
+                                var _mapTool = new mapTool({ data: mapToolConfig.subMenus[i], index: i }).placeAt(dojo.byId("maptool"));
+
+                                _mapTool.startup();
+                            }
+
+
+                            var _serviceSearch = new serviceSearch().placeAt(dojo.byId("mapDiv"));
+                            _serviceSearch.startup();
+
+                            var _regionTool = new regionTool().placeAt(dojo.byId('top'));
+                            _regionTool.startup();
+
+                            _attrQueryTool = new AttrQueryTool(appConfig.map);
+                            _attrQueryTool.activate("point");
+
+                            
+                            // _allztree
+
+                            // _collectZtree
+
+                        } else {
+                            window.location.href = 'http://10.36.128.244:8001/ocn/login.html?userSystemFlag=2&tenantId=2&redirectUrl=http://10.36.128.241:18080/kjgzdt2/index1.html';
+                        }
+                    })
+                }
+
+           
+
+            // 打开侧边栏
+            //on(dojo.byId("open-siderbar"), "click", function () {
+            //  dojo.byId("siderbar-container").style.display = "block";
+            //  // 组件2打开
+            //  // dojo.byId('sidebox').style.left = 450+'px';
+
+            //  if (_controls.length > 0) {
+            //    for (var i = 0; i < _controls.length; i++) {
+            //      if (_controls[i].isactive) {
+            //        _controls[i].control.setWidgetVisible(true);
+            //      } else {
+            //        _controls[i].isactive = true;
+            //      }
+            //    }
+            //  }
+            //  else {
+            //    var flag = false;
+            //    array.forEach(
+            //      appConfig.btns,
+            //      function (btn) {
+            //        if (btn.id === "tckz") {
+            //          flag = !flag;
+            //          if (lang.isFunction(btn.fun.onClick)) {
+            //            btn.fun.onClick();
+            //          }
+            //        }
+            //      }.bind(this)
+            //    );
+            //    if (!flag) {
+            //      try {
+            //        require(["FrameWork/LayerControl/Control"], function (btn) {
+            //          var b = new btn({ enabled: true, frame: _frame, name: "tckz" });
+            //          appConfig.btns.push({ id: "tckz", fun: b });
+            //          b.onClick();
+            //        }.bind(this));
+            //      } catch (e) {
+            //        alert(e);
+            //      }
+            //    }
+            //  }
+            //});
+
+
+
+            // 组件2 sidebox
+           
+
+            //gisocnService.Login().then(function (result) {
+
+            //    if (result.code == "000000") {
+            //        appConfig.access_token = result.data.access_token;
+            //        //var _data = {
+            //        //    authorizeType: null,
+            //        //    depts: "",
+            //        //    endDate: "",
+            //        //    ids: "",
+            //        //    limit: 20,
+            //        //    name: "测试",
+            //        //    page: 0,
+            //        //    source: "",
+            //        //    startDate: ""
+            //        //};
+            //        //gisocnService.queryServiceByPage(_data).then(function (result) {
+
+            //        //    if (result.code == "000000") {
+            //        //        gisocnService.getServiceById(result.data.records[4].id).then(function (result) {
+            //        //            if (result.code == "000000") {
+            //        //                gisocnService.restDataInfo(result.data.id, result.data.source).then(function (result) {
+            //        //                    debugger;
+            //        //                });
+            //        //            }
+            //        //        })
+            //        //    }
+            //        //})
+            //    } else {
+            //        alert(result.msg);
+            //    }
+            //})
+
+        });
+    });
+  </script>
+</html>

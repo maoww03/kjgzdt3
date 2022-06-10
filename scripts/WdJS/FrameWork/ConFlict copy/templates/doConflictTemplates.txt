@@ -1,0 +1,128 @@
+<div class="sidebar-tool repeatHide" data-dojo-attach-point="subSidebox" style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div data-dojo-attach-point="subSidebox_text" style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">叠加分析</div>
+        <div data-dojo-attach-point="subSidebox_close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+    <div style="width:100%;height:80px;background-color:#f8f9fb;border-bottom:1px solid #dee2eb;text-align:center;color: #838080;line-height: 40px;">
+        <div data-dojo-attach-point="progress1_text" style="width:calc(100% / 3);height:40px;float:left;color:#1c74bb;">设置源图形</div>
+        <div data-dojo-attach-point="progress2_text" style="width:calc(100% / 3);height:40px;float:left;">选择业务类型</div>
+        <div data-dojo-attach-point="progress3_text" style="width:calc(100% / 3);height:40px;float:left;">生成分析结果</div>
+        <!--<progress value="33.333333333" max="100" style="width:423px;"></progress>-->
+        <div style="width:423px;height:12px;background-color:#dee2eb;border-radius:20px;clear:both;margin-left:10px;position:relative;">
+            <div data-dojo-attach-point="progress" style="width:calc(423px / 3);height:12px;border-radius:20px;background-color:#1c74bb;"></div>
+            <div style="width:12px;height:12px;float:left;left:64.5px;background-color:white;border-radius:50%;position:absolute;top:0px;"></div>
+            <div style="width:12px;height:12px;float:left;left:205.5px;background-color:white;border-radius:50%;position:absolute;top:0px;"></div>
+            <div style="width:12px;height:12px;float:left;left:346.5px;background-color:white;border-radius:50%;position:absolute;top:0px;"></div>
+        </div>
+        <div data-dojo-attach-point="select_progress" style="width:18px;height:10px;background-image:url(image/doConflict/select.png);position: absolute;top:110px;background-color:#f8f9fb;left:71.5px;"></div>
+    </div>
+    <div style="clear: both; overflow-y: auto;" data-dojo-attach-point="over">
+        <div style="margin-top:15px;" class="group1">
+            <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">绘制源图形</div>
+            <!--<input type="button" value="绘制" style="padding: 0 5px" data-dojo-attach-point="draw" />-->
+            <div data-dojo-attach-point="draw" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:20.5px;margin-top:10px;text-align:center;cursor:pointer;">
+                <div style="float:left;height:100%;background-image:url(image/doConflict/drawpolygon.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                <div style="float:left;height:100%;width:68px;line-height:25px;">图上绘制</div>
+            </div>
+            <div data-dojo-attach-point="select" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:41px;margin-top:10px;text-align:center;cursor:pointer;">
+                <div style="float:left;height:100%;background-image:url(image/doConflict/selectpolygon.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                <div style="float:left;height:100%;width:68px;line-height:25px;">图上选择</div>
+            </div>
+            <div data-dojo-attach-point="upload" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:41px;margin-top:10px;text-align:center;cursor:pointer;">
+                <div style="float:left;height:100%;background-image:url(image/doConflict/uploadpolygon.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                <div style="float:left;height:100%;width:68px;line-height:25px;">图形上传</div>
+            </div>
+        </div>
+        <div style="padding-top:15px;clear:both;display:none;" class="group1" data-dojo-attach-point="upload_selectDom">
+            <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">图形上传</div>
+            <div style="width:423px;height:80px;border:1px solid #ebedf3;background:white;margin-left:10px;margin-top:10px;">
+                <div style="width:100%;height:25px;line-height:25px;text-indent:10px;margin-top:5px;">文件类型:<span style="color:red;"> 仅支持CGCS2000平面坐标系,SHP文件需打包成zip包</span></div>
+                <div data-dojo-attach-point="upload_txtfile" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 3);margin-top:10px;text-align:center;cursor:pointer;">
+                    <div style="float:left;height:100%;background-image:url(image/doConflict/txt.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                    <div style="float:left;height:100%;width:68px;line-height:25px;">TXT</div>
+                    <input type="file" data-dojo-attach-point="txtfile" style="display:none;" accept=".txt">
+                </div>
+                <div data-dojo-attach-point="upload_shpfile" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 3);margin-top:10px;text-align:center;cursor:pointer;">
+                    <div style="float:left;height:100%;background-image:url(image/doConflict/shp.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                    <div style="float:left;height:100%;width:68px;line-height:25px;">SHP</div>
+                    <input type="file" data-dojo-attach-point="shpfile" style="display:none;" accept=".zip,.shp">
+                </div>
+                <!--<div style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:41px;margin-top:10px;text-align:center;cursor:pointer;">
+                    <div style="float:left;height:100%;background-image:url(image/doConflict/uploadpolygon.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                    <div style="float:left;height:100%;width:68px;line-height:25px;">图形上传</div>
+                </div>-->
+            </div>
+        </div>
+        <div style="padding-top:15px;clear:both;" class="group1">
+            <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">源图形列表</div>
+            <div style="width:calc(100% - 20px);height:30px;line-height:30px;font-size:12px;text-align:center;margin-left:10px;margin-top:5px;background:#f8f9fb;">
+                <div style="width:calc(20% - 2px);float:left;border:1px solid  #e9edee;border-right:none;height:30px;">序号</div>
+                <div style="width:40%;float:left;border:1px solid  #e9edee;border-left:none;border-right:none;height:30px;">周长(m)</div>
+                <div style="width:40%;float:left;border:1px solid  #e9edee;border-left:none;height:30px;">面积(㎡)</div>
+            </div>
+            <div data-dojo-attach-point="geometryList" style="width:calc(100% - 20px);max-height:150px;line-height:30px;font-size:12px;text-align:center;margin-left:10px;overflow-y:auto;">
+
+            </div>
+        </div>
+        <div style="clear: both;display:none;" class="group2">
+            <div style="width:100%;" data-dojo-attach-point="fxlx">
+
+            </div>
+        </div>
+        <div style="clear: both;display:none;margin-top:15px;" class="group3">
+            <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">设置分析参数</div>
+            <div style="margin-left:10px;min-width:56px;height:25px; line-height:25px;margin-top:15px;">计算示意图</div>
+            <div style="width:100%;height:70px;background-image:url(image/doConflict/jssyt.png);background-position:center center;background-repeat:no-repeat;"></div>
+            <div style="margin-left:10px;min-width:56px;height:25px; line-height:25px;margin-top:15px;">选择显示内容</div>
+            <div style="width:100%;height:70px;">
+                <div data-dojo-attach-point="difference1" style="width:100px;height:68px;float:left;border:1px solid #1c74bb;margin-left:41px;cursor:pointer;background-position:right bottom;background-repeat:no-repeat;background-image:url(image/doConflict/typeselected.png);">
+                    <div style="width:100%;height:100%;line-height:70px;text-indent:5px;font-size:30px;background-image:url(image/doConflict/1.png);background-position:center center;background-repeat:no-repeat;">1</div>
+                </div>
+                <div data-dojo-attach-point="difference2" style="width:100px;height:68px;float:left;border:1px solid #dee2eb;margin-left:20.5px;cursor:pointer;background-position:right bottom;background-repeat:no-repeat;">
+                    <div style="width:100%;height:100%;line-height:70px;text-indent:5px;font-size:30px;background-image:url(image/doConflict/2.png);background-position:center center;background-repeat:no-repeat;">2</div>
+                </div>
+                <div data-dojo-attach-point="difference3" style="width:100px;height:68px;float:left;border:1px solid #dee2eb;margin-left:20.5px;cursor:pointer;background-position:right bottom;background-repeat:no-repeat;">
+                    <div style="width:100%;height:100%;line-height:70px;text-indent:5px;font-size:30px;background-image:url(image/doConflict/3.png);background-position:center center;background-repeat:no-repeat;">3</div>
+                </div>
+            </div>
+            <div style="margin-left:10px;min-width:56px;height:25px; line-height:25px;margin-top:15px;display:none;" data-dojo-attach-point="fxjg_title">
+                <span>分析结果</span> 
+            <div data-dojo-attach-point="downLoad" style="    width: 40px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid #dee2eb;
+            background-color: #f8f9fb;
+            cursor: pointer;
+            right: 85px;
+            display: inline-block;
+            text-align: center;
+            display: none;
+            margin-left: 310px;">导出</div>
+        </div>
+            <div style="clear:both;display:none;width:calc(100% - 20px);margin-left:10px;" data-dojo-attach-point="fxjg_table">
+
+            </div>
+            <div style="clear:both;display:none;width:calc(100% - 20px);margin-left:10px;" data-dojo-attach-point="fxjg_table_content">
+
+            </div>
+        </div> 
+    </div>
+    <div style="width:100%;height:25px;margin-bottom:20px;text-align:center;line-height:25px;clear:both;margin-top:10px;">
+        <div data-dojo-attach-point="clear" style="width:70px;height:25px;border-radius:5px;border:1px solid #dee2eb; background-color :#f8f9fb;cursor:pointer;position:absolute;right:85px;">清除</div>
+        <div data-dojo-attach-point="pre" style="width:70px;height:25px;border-radius:5px;border:1px solid #dee2eb; background-color :#f8f9fb;cursor:pointer;position:absolute;right:85px;display:none;">上一步</div>
+        <div data-dojo-attach-point="next" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:10px;">下一步</div>
+        <div data-dojo-attach-point="queryBtn" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:10px;display:none;">分析</div>
+    </div>
+    <!--<div style="float: left; margin: 10px 0; clear: both">
+        <input type="button" value="分析" style="padding: 0 5px" data-dojo-attach-point="queryBtn" />
+    </div>
+    <div style="clear:both; height:30px;font-size:16px;font-weight:bolder;line-height:30px;display:none;" data-dojo-attach-point="fxjg_title">
+        分析结果
+    </div>
+    <div style="clear: both;display:none;" data-dojo-attach-point="fxjg_table">
+
+    </div>
+    <div style="clear: both;display:none;" data-dojo-attach-point="fxjg_table_content">
+
+    </div>-->
+</div>

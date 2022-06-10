@@ -1,0 +1,42 @@
+<div  class="sidebar-tool" style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">场景还原</div>
+        <div  data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/scene/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+
+    <div class="input-group" style="width: 423px; margin: 5px 10px; height: 34px; border: 1px solid #e9edee;border-radius: 5px;">
+        <input data-dojo-attach-point="search"  type="text" class="form-control" placeholder="请输入搜索内容" style="width: 80%;box-shadow:none;border: none;">
+        <div  data-dojo-attach-point="fix" style="width:19px;height:19px;background-image:url(image/common/cz.png);background-position:center center;background-repeat:no-repeat;cursor:pointer; float: right; margin-top: 8px; margin-right: 8px;"></div>
+    </div>
+ 
+    <div style="width:calc(100% - 20px);height:32px;line-height:30px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+      <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+      <div  style="float:left;background-color:#f8f9fb;width:60%;text-align:center;">名称</div>
+      <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+    </div>
+
+    <div style="width:calc(100% - 20px);height:155px;line-height:25px;margin-left:10px;overflow-y:auto;" data-dojo-attach-point="items">
+    </div>
+
+    <!-- 分页 -->
+    <div style="    width: auto;
+    margin: 12px 0 46px 52px;">
+        <div data-dojo-attach-point="first" class="page">首页</div>
+
+        <div data-dojo-attach-point="pre" class="page">上一页</div>
+
+        <div style="height: 20px;display: inline-block;float: left;width: auto;"> 
+             <div class="page" style="width: 50px;background-color: white;" data-dojo-attach-point="pageNav"></div>
+        </div>
+        <div data-dojo-attach-point="next" class="page">下一页</div>
+
+        <div data-dojo-attach-point="last" class="page">尾页</div> 
+
+
+        <div data-dojo-attach-point="text" style="display: inline-block;float:left;font-size: 12px;margin-top:4px;margin-left: 10px;"></div>
+
+      
+    
+    </div>
+
+</div>

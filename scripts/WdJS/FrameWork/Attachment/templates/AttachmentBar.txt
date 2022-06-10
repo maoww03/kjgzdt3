@@ -1,0 +1,83 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 60%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: white;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         ">添加附件</div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+
+        <div style=" width: 100%; height: 100%;">
+
+            <!-- table1 -->
+            <div data-dojo-attach-point="table1">
+                <div style="width: 100%;height: 46px;">
+
+                    <div data-dojo-attach-point="create"
+                    style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >添加附件</div>
+                <div style="color: red;width: 227px;margin: 0;font-size: 15px;float: right;height: 36px;line-height: 46px;">请点击“添加附件”按钮，上传附件</div>
+
+                </div>
+
+                <!-- 无数据 -->
+                <!-- <div style="color: red;width: 227px;margin: 0 auto;font-size: 15px;">请点击“添加附件”按钮，上传附件</div> -->
+
+
+                <!-- 数据列表 -->
+                <div style="width: 100%;height: calc(100% - 140px);overflow: hidden;"  data-dojo-attach-point="list_con">
+                    <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                        <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+                        <div  style="float:left;background-color:#f8f9fb;width:40%;text-align:center;">文件名</div>
+                        <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">时间</div>
+                        <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">行政区</div>
+                        <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;display:none">用户</div>
+                        <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;display:none">操作</div>
+                    </div>
+                    <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;overflow-x: hidden;" data-dojo-attach-point="items"></div>
+                </div>
+                <!--  -->
+                <div style="width: 400px;
+                height: 44px;
+                font-size: 14px;
+                font-family: 'Microsoft YaHei';
+                color: rgb(58, 58, 58);
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -200px;">
+                    <div data-dojo-attach-point="sx" style="background-image: url(image/feedback/sx.png);border: none;width: 24px;height: 24px;background-repeat: no-repeat;background-color: white;background-position:center center;display: none;" class="page"></div>
+                    <div data-dojo-attach-point="first" class="page">首页</div>
+                    <div data-dojo-attach-point="pre" class="page">上一页</div>
+                    <div data-dojo-attach-point="now_page" class="page" style="width: 50px;">1</div>
+                    <div data-dojo-attach-point="next" class="page">下一页</div>
+                    <div data-dojo-attach-point="last" class="page">末页</div>
+                    <div data-dojo-attach-point="total_page" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+                    <div style="width: 26px;height: 26px;display: inline-block;background-image: url(image/common/restore.png);background-repeat: no-repeat;margin-left: 12px;margin-top: 2px;" data-dojo-attach-point="restore"> </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+

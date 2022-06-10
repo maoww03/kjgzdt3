@@ -1,0 +1,9 @@
+<div>
+    <div style=" background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">专题</div>
+
+    <div style="height: 40px;width: 97%;padding: 10px;" data-dojo-attach-point="thembox">
+        <!-- <div class="selectLayer-cancle">1111</div> -->
+        <!-- <div class="selectLayer-cancle">1111</div> -->
+        <!-- <div class="selectLayer-cancle">1111</div> -->
+    </div>
+</div>

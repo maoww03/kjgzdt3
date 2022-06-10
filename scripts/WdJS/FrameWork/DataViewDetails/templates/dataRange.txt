@@ -1,0 +1,4 @@
+<div style="width:100%;height:100%;margin-top:10px;">   
+    <div style="width:80px;height:100%;writing-mode:tb-rl;float:left;text-align:center;line-height:80px;font-size:28px;overflow:auto;" data-dojo-attach-point="contentName"></div>
+    <div style="width:calc(100% - 80px);height:100%;float:left;position:relative;border:1px solid #C0C0C0;" id="mapContent"></div>
+</div>

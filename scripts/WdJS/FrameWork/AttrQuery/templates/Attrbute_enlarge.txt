@@ -1,0 +1,49 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 60%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: #efefef;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         "> 属性信息查看 </div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+ 
+         <!-- table -->
+         <div data-dojo-attach-point="content" style="
+          width: 80%;
+          height:90%;
+          overflow: scroll;
+          margin: 10px auto;
+         ">
+          
+           <table class="table table-bordered" style="background: white;">
+             <thead>
+               <tr style="color: #515761">
+                 <th style="width: 30%;">属性名</th>
+                 <th>属性值</th>
+               </tr>
+             </thead>
+             <tbody data-dojo-attach-point="content_table" style="word-break: break-all;"><tr> <td>地籍区代码</td><td> 330302008002</td></tr><tr> <td>地籍区宗号</td><td> 2</td></tr><tr> <td>测绘项目编号</td><td>  </td></tr><tr> <td>不动产单元号</td><td> 330302008002GB00002F00030001</td></tr><tr> <td>产权人</td><td> 许菲菲</td></tr></tbody>
+           </table>
+         </div>
+     </div>
+</div>

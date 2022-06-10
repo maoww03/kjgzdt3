@@ -1,0 +1,7 @@
+<div class="layerData">
+  <label class="checkbox">
+    <input class="checkInput" type="checkbox" data-dojo-attach-point="checkInput" />
+    <span></span>
+  </label>
+  <div class="layerName" data-dojo-attach-point="layerName"></div>
+</div>

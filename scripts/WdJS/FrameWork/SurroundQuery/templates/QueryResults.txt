@@ -1,0 +1,46 @@
+<div class="queryResults" style="max-height: 400px;
+overflow-y: auto;
+box-shadow: none;
+width: 100%;
+position: unset;">
+  <div class="header" style="    background: white;
+  border: none;">
+    <div  data-dojo-attach-point="title" style="background-image: url(image/attr/group.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    text-indent: 10px;
+    margin-top: -6px;
+    height: 35px;
+    line-height: 35px;">周边查询结果:</div>
+    <div class="btnDiv">
+      <div class="button pre" data-dojo-attach-point="pre" style="display: none"></div>
+      <div class="page" data-dojo-attach-point="page" style="display: none"></div>
+      <div class="button next" data-dojo-attach-point="next" style="display: none"></div>
+      <div class="button close" data-dojo-attach-point="close" style="display: none;"></div>
+    </div>
+  </div>
+
+  <div class="layerList" data-dojo-attach-point="layerList">
+    <!-- <div class="layerLi">基本农田保护图斑</div>
+    <div class="layerLi">基本农田保护图斑</div>
+    <div class="layerLi">基本农田保护图斑</div>
+    <div class="layerLi">基本农田保护图斑</div> -->
+  </div>
+  
+  <div class="content" style="margin-top: 0" data-dojo-attach-point="content">
+    <div>
+      <div class="fieldDatali" style="    background: #f8f9fb;
+      border: 1px solid #d6d4d4;">
+        <div style="float: left; width: 30%; text-align: center">序号</div>
+        <div style="float: left; width: 70%; text-align: center" data-dojo-attach-point="chineseDisplayField">显示字段</div>
+      </div>
+    </div>
+    <div data-dojo-attach-point="contentColumn">
+      <!-- <div class="datali">
+        <div style="float: left; width: 30%; text-align: center">序号</div>
+        <div style="float: left; width: 70%; text-align: center">显示字段</div>
+      </div> -->
+    </div>
+  </div>
+</div>

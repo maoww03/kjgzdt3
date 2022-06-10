@@ -1,0 +1,71 @@
+<div style="    width: 100%; height: 100%;">
+    <!-- table1 -->
+    <!-- <div style="width: 100%;height: 80px;border-bottom: 15px solid rgb(236,236,236);margin-bottom: 10px;"data-dojo-attach-point="filter"></div> -->
+
+    <div data-dojo-attach-point="table1">
+        <div style="width: 100%;height: 46px;">
+            <input type="text" style="width: 250px;height: 30px;background: none;border: 1px solid #ccc;border-radius: 8px;padding: 0 0 0 9px;/* float: left; */margin: 8px 10px 0 10px;position: absolute;right: 184px;outline-color: #78afd6;" data-dojo-attach-point="search" placeholder="搜索图层名称">
+
+            <div data-dojo-attach-point="create"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+       
+        <!-- list -->
+        <div style="width: 100%;height: 50em; " data-dojo-attach-point="list_con">
+            <div style="width:calc(100% - 20px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">图层名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">图层ID</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">图层类型</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">行政区编号</div>
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">添加字段</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;overflow-y:auto;" data-dojo-attach-point="items"></div>
+            <!-- page -->
+            <div style="width: 400px;
+            height: 44px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            color: rgb(58, 58, 58);
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -200px;">
+                <div data-dojo-attach-point="sx" style="background-image: url(image/feedback/sx.png);border: none;width: 24px;height: 24px;background-repeat: no-repeat;background-color: white;background-position:center center;display: none;" class="page"></div>
+                <div data-dojo-attach-point="first" class="page">首页</div>
+                <div data-dojo-attach-point="pre" class="page">上一页</div>
+                <div data-dojo-attach-point="now_page" class="page" style="width: 50px;">1</div>
+                <div data-dojo-attach-point="next" class="page">下一页</div>
+                <div data-dojo-attach-point="last" class="page">末页</div>
+                <div data-dojo-attach-point="total_page" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+            </div>
+        </div>
+    </div>
+
+     <!-- table2 -->
+     <div data-dojo-attach-point="table2" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back2" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create2" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">field</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">alias</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">图层名称</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items2"></div>
+        </div>
+    </div>
+    <!--  {
+      "id": 5,
+      "statisticalAnalysisLayerId": "29",
+      "field": "objectid",
+      "alias": "12333"
+    }, -->
+</div>

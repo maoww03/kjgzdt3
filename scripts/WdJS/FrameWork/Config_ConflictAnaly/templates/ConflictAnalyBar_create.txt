@@ -1,0 +1,121 @@
+
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1000000;background: rgb(29 29 29 / 50%); ">
+    <div style="
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -350px;
+    z-index: 100000;
+    margin-left: -450px;
+    border: 1px solid #c5c0c0;
+    border-radius: 10px;
+    " data-dojo-attach-point="set_h">
+        <div data-dojo-attach-point="type_name" style="
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #fcfdff;
+        color: #57647c;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #eef1f2;
+        z-index:9999999;  ">新建</div>
+        <div data-dojo-attach-point="close" style="  position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 12px;
+        height: 12px;
+        background: url(image/close.png) center center no-repeat;
+        cursor: pointer;
+        "></div>
+    
+        <!-- msg -->
+        <div data-dojo-attach-point="part1">
+            <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: auto;font-size: 14px;">图层配置信息</div>
+            <div class="cancel_btn" data-dojo-attach-point="add1" style="text-align: center;width: 60px;position: absolute;right: 48px;top: 52px;height: 25px;line-height: 25px;">添加</div>
+
+            <div style="width: auto;height: auto;display: inline-block;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 100px;font-size: 14px;display: inline-block;">分析图层ID:</div>
+                <input type="text" name="" data-dojo-attach-point="conflictLayer" style="outline-color: #78afd6;height: 30px;border: 1px solid #ccc;border-radius: 5px;width: 305px;padding-left: 10px;">
+            </div>
+            <div style="width: auto;height: auto;display: inline-block;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 100px;font-size: 14px;display: inline-block;">被分析图层ID:</div>
+                <input type="text" name="" data-dojo-attach-point="conflictedLayer" style="outline-color: #78afd6;height: 30px;border: 1px solid #ccc;border-radius: 5px;width: 305px;padding-left: 10px;">
+            </div>
+        </div>
+        <div style="display: none;position: relative;"data-dojo-attach-point="part2">
+            <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: auto;font-size: 14px;">字段配置信息</div>
+
+            <div class="cancel_btn" data-dojo-attach-point="add2" style="text-align: center;width: 96px;position: absolute;right: 48px;top: -10px;height: 25px;line-height: 25px;">属性配置</div>
+
+            <div style="width: auto;height: auto;display: inline-block;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 115px;font-size: 14px;display: inline-block;">分析图层字段:</div>
+
+                <select data-dojo-attach-point="layer1zd" style="width: 280px; height: 36px; line-height: 21px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px; padding-left: 14px">
+                    <option value="批而未供分析">批而未供分析</option> 
+                </select>
+
+            </div>
+            <div style="width: auto;height: auto;display: inline-block;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 115px;font-size: 14px;display: inline-block;">被分析图层字段:</div>
+
+                <select data-dojo-attach-point="layer2zd" style="width: 280px; height: 36px; line-height: 21px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px; padding-left: 14px">
+                    <option value="批而未供分析">批而未供分析</option> 
+                </select>
+            </div>
+        </div>
+        
+        <div data-dojo-attach-point="part3" class="table-responsive" style="
+        width: 93%; margin: 20px 0 0 17px;display: none;height: 300px;overflow: auto;">
+
+            <div style="width: 100%;">
+                <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                    <div style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">字段</div>
+                    <div  style="float:left;background-color:#f8f9fb;width:75%;text-align:center;">属性选择</div>
+                    <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">操作</div>
+                </div>
+                <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items"></div>
+            </div>
+
+            <!-- <table class="table table-bordered" style="background: #fbfbfb;">
+                <thead>
+                    <tr>
+                        <th style="TEXT-ALIGN: center;width: 10%;">字段</th>
+                        <th style="TEXT-ALIGN: center;width: 80%;">属性选择</th>
+                        <th style="TEXT-ALIGN: center;width: 10%;">操作</th>
+                    </tr>
+                </thead>
+                <tbody data-dojo-attach-point="list_con">
+                   
+                </tbody>
+            </table> -->
+        </div>
+        <!--  -->
+        <div style="height: 40px; margin-top: 10px; margin-bottom: 20px; width: 95%; display: none;" data-dojo-attach-point="btn">
+            <div class="save_btn" data-dojo-attach-point="save" style="width: 82px;text-align: center;">确认</div>
+            <div class="cancel_btn" data-dojo-attach-point="qx" style="text-align: center;width: 82px;">取消</div>
+        </div>
+        <div
+        data-dojo-attach-point="loading"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          background-image: url(image/ajax-loader.gif);
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: none;
+          background-color: rgba(0, 0, 0, 0.6);
+        "
+      ></div>
+
+    </div>
+    </div>

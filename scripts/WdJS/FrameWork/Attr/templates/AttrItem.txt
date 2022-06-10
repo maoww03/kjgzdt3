@@ -1,0 +1,10 @@
+<div  style="width:90%; margin:0 auto; min-height:40px;border-bottom:1px solid #d5d5d5;position:relative; height:auto;">
+    <div data-dojo-attach-point="title"  style=" width:30%; min-height:40px;height:auto; font-size: 16px;font-family: 'Microsoft YaHei';color: #383838;line-height:40px;
+    left:0;
+    position:absolute;word-wrap:break-word;
+word-break:break-all;"></div>
+    <div data-dojo-attach-point="content"  style=" position:absolute;
+    width:70%;
+    left:30%;min-height:40px;height:auto; font-size: 16px;font-family: 'Microsoft YaHei';line-height:40px;color:#808080;word-wrap:break-word;
+word-break:break-all;"></div>
+</div>

@@ -1,0 +1,83 @@
+<div class="attrDiv" data-dojo-attach-point="attrDiv" style="  height: 60%;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    background-color: white;
+    position: absolute;
+    top: 57px;
+    border-radius: 6px;
+    right: 20px;
+    width: 50%;
+    z-index: 9999;">
+    <div style="width: 100%; height: 30px; border-bottom: 1px solid #e9edee; background-color: white">
+        <div data-dojo-attach-point="title"
+             style="width: auto; height: 20px; line-height: 20px; color: #838080; position: absolute; left: 10px; top: 10px">
+        </div>
+        <div class="btnDiv">
+            <div data-dojo-attach-point="pre" 
+                 style="
+         display:none;
+          width: 14px;
+          height: 14px;
+          background-image: url(image/sidebar/gjzcx.png);
+          position: absolute;
+          right: 120px;
+          top: 13px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          cursor: pointer;display: none;
+        "></div>
+            <div data-dojo-attach-point="query" btnstatus="unselect"
+            style="
+            width: 27px;
+            height: 20px;
+            background-image: url(image/sidebar/gjzcx.png);
+            position: absolute;
+            right: 40px;
+            top: 6px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;display: none;
+          " title="查看过程数据"></div>
+          <div data-dojo-attach-point="close"
+                 style="
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        background-image: url(image/sidebar/close.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      "></div>
+        </div>
+    </div>
+
+
+    <div style="width: 100%; height: 40px; border-bottom: 1px solid #e9edee; background-color: white;overflow-x: auto;" data-dojo-attach-point="nav" >
+      
+    </div>
+
+  <div data-dojo-attach-point="content1"  class="property" style="width: 100%; height: calc(100% - 70px);">
+    <div class="layerList" data-dojo-attach-point="layerList" style="width: 25%;height: 100%;overflow: auto;"></div>
+
+    <div class="content" data-dojo-attach-point="content" style="width: 75%;float: left;border-left: 1px solid #ccc;height: 100%;overflow: auto;">
+      <table class="table table-bordered">
+        <thead>
+          <tr style="background: #286099; color: white;">
+            <th style="width: 50%;">属性名</th>
+            <th>属性值</th>
+          </tr>
+        </thead>
+        <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+        </tbody>
+      </table>
+    
+    
+    
+    </div>
+  </div>
+
+  <div data-dojo-attach-point="content2"   class="property" style="width: 100%; height: calc(100% - 30px);display: none;">
+    
+  </div>
+</div>

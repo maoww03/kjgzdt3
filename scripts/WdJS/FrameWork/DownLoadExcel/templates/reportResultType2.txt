@@ -1,0 +1,19 @@
+<div  style="width: 98%;margin: 0 auto;">
+    <table class="table table-bordered">
+        <thead >
+            <tr >
+                <th>区域</th>
+                <th colspan="2">达成出让条件</th>
+                <th colspan="2">未列入出让条件</th>
+            </tr>
+            <tr >
+                <th>行政区</th>
+                <th>总数</th>
+                <th>面积</th>
+                <th>总数</th>
+                <th>面积</th>
+            </tr>
+        </thead>
+        <tbody data-dojo-attach-point="ResultListcon2" ></tbody>
+    </table>
+</div>

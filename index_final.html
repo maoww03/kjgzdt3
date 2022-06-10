@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- seo -->
+    <title>空间工作底图</title>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 双核浏览器默认内核 webkit/ie-comp/ie-stand -->
+    <meta name="renderer" content="webkit" />
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link href="css/ol.css" type="text/css" rel="stylesheet" />
+    <link href="css/iclient-ol.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/zTreeStyle/zTreeStyle.css" type="text/css" rel="stylesheet" />
+    <link href="css/jquery.nouislider.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="scripts/colorpicker.js"></script>
+    <link href="css/Conflict.css" type="text/css" rel="stylesheet" />
+    
+    <!-- <script src="scripts/jspdf.umd.js"></script> -->
+    <!-- <script src="scripts/jsPdf.debug.js"></script> -->
+    <script src="scripts/html2canvas.js"></script>
+    <script src="scripts/proj4.js"></script>
+    <script src="scripts/turf.min.js"></script>
+    <script src="scripts/ol.js"></script>
+    <script src="scripts/SuperMap-7.1-11828.js"></script>
+    <script src="scripts/iclient-ol.min.js"></script>
+    <script src="scripts/appConfig.js"></script>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+
+    <script src="scripts/jquery.ztree.all-3.5.min.js"></script>
+    <script src="scripts/jquery.ztree.exhide.min.js"></script>
+    <script src="scripts/jquery.nouislider.min.js"></script>
+    <script src="scripts/RangeSlider.js"></script>
+
+    <script src="scripts/search.js"></script>
+	
+
+    <link rel="stylesheet" href="css/starStyle/application.css">
+    <script src="scripts/jquery.raty.js"></script>
+    
+	
+  </head>
+
+  <body id="body">
+      <!-- 头部 -->
+      <div id="top" style="width: 100%; 
+      height: 60px;
+       background-color: rgb(39, 96, 153); 
+       /* border-bottom: 2px solid #0d65ad;   */
+       background-repeat:no-repeat;">
+          <div style="
+          width: 31px;
+          height: 31px;
+          top: 15px;
+          position: absolute;
+          left: 22px;
+          background-image: url(image/login/logo.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+        "></div>
+        <!-- 00000000 -->
+        <div style="float:left;margin-top:15px;margin-left:68px;" id="titleLeft">
+          <div class="indexTitle">
+              温州市自然资源空间基础信息平台-空间工作底图
+          </div>
+        </div>
+
+          <div id="sidebox" style="    width: auto;
+          height: auto;
+          position: absolute;
+          right: 164px; "> </div>
+           
+
+          <div id="userCtrl" style="height:35px;line-height:35px; top:13px;position:absolute;right:20px;width:130px">
+            <div style="    width: 30px;
+            height: 30px;
+            background-image: url(image/login/default.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0px;
+            bottom: 3px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            background-position: center;
+        "></div>
+              <div style="width:70px;height:35px;font-size:14px;color:#0d65ad;position:absolute;left:41px;text-align:center;background-image:-webkit-linear-gradient(bottom,#d9e8fd,#ffffff,#ffffff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; " id="remark"></div>
+              <div id="loginout" style="width:14px;height:35px;background-image:url(image/login/loginout.png);position:absolute;background-position:center center;background-repeat:no-repeat; right:12px;cursor:pointer;"></div>
+          </div>
+
+      </div>
+
+
+      <div id="catalog" style="position:absolute;left:0px;top:60px;width:70px;bottom:0px; background-color: rgb(39, 96, 153);z-index:9999;"></div>
+
+      
+      <div style="position: absolute; right: 20px; top:65px; 
+      border: 1px solid #e9edee; 
+      border-radius: 6px; 
+      z-index: 10000; 
+      /* background-color: #f0f2f5; */
+      background-color: white;
+      /* box-shadow: rgb(0 0 0 / 18%) 13px 10px 15px; */
+      box-shadow: rgb(0 0 0 / 8%) 0px 3px 9px;
+      ">
+          <div id="groupbar" style="float: left; "></div>
+          <div style="width: 20px;
+          height: 46px;
+          float: right;
+          background-image: url(image/gruopbar/jiantou.png);
+        background-repeat: no-repeat;
+        background-position: center center;" id="openGroup"></div>
+          
+      </div>
+
+      <div id="filterBox"></div>
+          <!-- 00000001 -->
+
+      <!-- 地图 侧边 底部 -->
+
+      <div id="mapDiv2" style="width:calc(100% - 70px); 
+      height: auto; 
+      overflow: hidden; 
+      position: absolute; 
+      /* top: 70px;  */
+      top: 60px;
+      bottom: 0px; 
+      left: 70px;
+      right:0px;">
+
+      </div>
+
+      <div id="mapDiv" style="width:calc(100% - 70px); height: auto; overflow: hidden; position: absolute; top: 60px; bottom: 0px; left: 70px;right:0px;">
+          <div id="open-siderbar" style="display:none;"></div>
+
+          <div id="maptool" style="width:37px;height:auto;position:absolute;right:20px;z-index:9999;bottom:10px;"></div>
+          <div id="baseMapChange"
+               style="
+          z-index: 999;
+          position: absolute;
+          bottom: 10px;
+          right: 70px;
+          width: 100px;
+          height: 54px;
+          background-color: white;
+          box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+          cursor: pointer;
+        ">
+              <div id="baseMapChangeContent"
+                   style="position: absolute; bottom: 0px; right: 0px; width: 100px; height: 54px; cursor: pointer; transition: 2s right">
+                  <div id="baseMapChange-container" style="width: 100%; height: 100%; position: relative"></div>
+              </div>
+              <div style="width: 100%; height: 100%; position: relative">
+                  <div style="position: absolute;
+    font-size: 12px;
+    color: white;
+    height: 20px;
+    line-height: 20px;width:100%;background-color:rgba(0,0,0,0.5);">
+                      <input type="checkbox" style="position: absolute;left: 15px;" id="isgreyBtn" /><div style="position: absolute;width: 100%;
+    left: 33px;">开启灰度</div>
+                  </div>
+                  <img id="baseMapChangeSelect-logo"
+                       style="
+              display: inline-block;
+              width: calc(100% - 2px);
+              max-width: calc(100% - 1px);
+              height: auto;
+              max-height: 54px;
+              margin: 0 auto;
+              margin-top: 1px;
+              margin-left:1px;
+              border: 1px solid white;
+            " />
+                  <div id="baseMapChangeSelect-caption"
+                       style="
+              width: auto;
+              height: 20px;
+              line-height: 20px;
+              color: white;
+              font-size: 12px;
+              font-family: 'Microsoft YaHei';
+              overflow: hidden;
+              position: absolute;
+              right: 5px;
+              bottom: 0px;
+              text-align: right;
+            "></div>
+              </div>
+          </div>
+          <!-- zbx -->
+          <div id="zbx" style="    width: 250px;
+          height: 90px;
+          background: #e9eff5;
+          left: 10px;
+          bottom: 10px;
+          z-index: 999;
+          position: absolute;
+          padding-left: 5px;
+          border-radius: 3px;
+          line-height: 30px;
+          box-shadow: 0 12px 19px rgb(0 0 0 / 23%);
+          font-size: 13px;">
+              <div style="width:100%;height:30px;line-height:30px;">坐标系：CGCS2000平面坐标系</div>
+              <div id="coordinateDom" style="width:100%;height:30px;line-height:30px;"></div>
+              <div id="scaleDom" style="width:100%;height:30px;line-height:30px;"></div>
+          </div>
+          <!-- zbx  end-->
+
+          <div id="legend-siderbar" style="position:absolute;right:60px; bottom:70px;width:360px;height:257px;z-index:9; box-shadow: 2px 2px 10px #bbb;
+          background-color: white;display:none;border-radius:5px;transition: 1s all;transform-origin:360px 90px;transform:none;">
+              <div style="width:calc(100% - 10px);height:30px;margin:0 auto;border-bottom:1px solid #cbcccd;position:relative;">
+                  <div style="width:auto;height:30px;line-height:30px;">图例</div>
+
+                  <div id="legend_btn" style="width:30px;height:30px;background-image:url(image/legend/expand.png);background-position:center;background-repeat:no-repeat;cursor:pointer;position:absolute;right:30px;top:0px;"></div>
+                  <div id="legend_fixed" style="width:30px;height:30px;background-image:url(image/legend/fixed.png);background-position:center;background-repeat:no-repeat;cursor:pointer;position:absolute;right:0px;top:0px;"></div>
+              </div>
+              <div id="legend_container" style="width:100%;height:calc(100% - 30px);"></div>
+          </div>
+        
+
+
+          <div id='showTable' style="width: 100%;
+            height: 248px;
+            z-index: 9999;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            right: 0px;"></div>
+      </div>
+
+      <div id="siderbar-container"
+           style="position: absolute; top: 74px; left: 0px; bottom: 60px; z-index: 10; display: none; transition: 2s all; bottom: 0px;">
+          <div id="siderbar" style="
+          width: 416px;
+          height: 100%;
+          border: 1px solid #bbb;
+          border-radius: 4px;
+          overflow: hidden;
+          box-shadow: 2px 2px 10px #bbb;
+          background-color: white;
+          float: left;
+        ">
+              <!-- title 位置-->
+              <!-- <div id="title" style="width: 372px; height: 40px; margin-top: 10px; margin-left:10px;"></div> -->
+          </div>
+          <div id="siderbar-btn"></div>
+      </div>
+
+      <div class="moreScreenControl" id="moreScreenControl"></div>
+      <div id="popup" class="ol-popup">
+          <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+          <div id="popup-title" class="ol-popup-title">冲突结果</div>
+          <div id="popup-content" class="ol-popup-content">
+              <!-- <p class="ol-popup-content-p">序号:1</p><p class="ol-popup-content-p">基本农田保护区.aa:1</p><p class="ol-popup-content-p">基本农田保护图斑.aa:1</p><p class="ol-popup-content-p">长度:约31.90米</p> -->
+          </div>
+      </div>
+
+      <div id="measure-popup" class="measure-ol-popup" style="display:none;">
+          <div id="measure-popup-content" style="max-height:290px;width:230px;
+            overflow-y:auto;"></div>
+      </div>
+      <div id="marker" title="Marker" style="height:33px;width:22px;background-color:rgba(255,255,255,0);background-size:22px 33px;"></div>
+      <div id="index_loading"
+        style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        background-image: url(image/ajax-loader.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        "
+  ></div>
+  </body>
+
+   <script type="text/javascript">
+      var _frame = null;
+      var _dragZoom = null;
+      var projection_4549 = null;
+      var _controls = [];
+      var _catalogs = [];
+      var popup = null;
+      var closer = null;
+      var user = null;
+      var legend = null;
+      var layerlist=null;
+	  
+      var regionCode=null;
+      var ztreeName=null;
+      var region_Name=null;
+      var _otherRegion=function(){
+        var mapconfig=null;
+        require(["FrameWork/SetMapConfig/SetMapConfig"], function (SetMapConfig) {
+            mapconfig=SetMapConfig.setMapConfig();
+        })
+        return mapconfig
+      }
+	  var _checkQuery=true; 
+      var _collectionLayerZtree=null;
+      var _allLayerZtree=null;
+      var _Attrshrink=null;
+      var _printMap=null;
+      var Resumequery=null; 
+     
+    var showLoading = null; 
+     var show=false;  
+
+      require([
+          "dojo/ready",
+          "FrameWork/MapUtil/Map",
+          "dojo/on",
+          "FrameWork/Sidebox/sidebox",
+          "FrameWork/Sidebox/sideboxConfig",
+          "FrameWork/Frame",
+          "dojo/_base/array", 
+          "FrameWork/ServiceSearch/serviceSearch", 
+          "FrameWork/catalog/catalog",
+          "FrameWork/catalog/catalogConfig", 
+          "FrameWork/MapTool/mapToolConfig", 
+          "FrameWork/MapTool/mapTool", 
+          "FrameWork/RegionTool/regionTool", 
+          "FrameWork/serviceUtil/gisocnService", 
+          "FrameWork/Legend/Legend", 
+          'FrameWork/AttrQuery/AttrQueryTool',
+          "FrameWork/loginout/loginoutBox",
+          "FrameWork/Sidebox_group/groupBar",
+          "FrameWork/Sidebox_group/groupConfig",
+          "dojo/_base/lang",
+          "FrameWork/serviceUtil/ConfigurationService",
+          'FrameWork/Loading/Loading', 
+          'FrameWork/Visitmsg/Visitmsg', "FrameWork/MapUtil/MapConfig2_DealUrl"
+      ], function (ready, Map, on, sidebox, sideboxConfig, Frame, array, serviceSearch, catalog, catalogConfig, mapToolConfig, mapTool, regionTool, gisocnService, Legend, AttrQueryTool,loginoutBox,groupBar,groupConfig,lang,ConfigurationService,Loading,Visitmsg,MapConfig2_DealUrl) {
+        
+          ready(function () {
+
+            debugger
+            var arr,reg=new RegExp("(^| )Authorization=([^;]*)(;|$)");
+			if(arr=document.cookie.match(reg)){
+			appConfig.access_token = unescape(arr[2]);
+			}
+              var reg = new RegExp("(^|&)jwt_token=([^&]*)(&|$)");
+              var jwt_token = window.location.search.substr(1).match(reg);
+              function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+              }
+              function getCookie(name){
+                var arr1,reg1=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+                if(arr1=document.cookie.match(reg1))
+                return unescape(arr1[2]);
+                else
+                return null;
+              }
+              var jwt_token2 =getCookie("jwt_token");
+              if(jwt_token2!=null  && jwt_token2!=undefined){
+                appConfig.access_token =jwt_token2;
+              }
+              if (jwt_token != null) {
+                  appConfig.access_token = unescape(jwt_token[2]);
+                  // var url="http://localhost:18090/kjgzdt3/index.html?userlogin=ture";  
+                  var url="index.html?userlogin=ture";  // 20211124
+                  history.pushState({url: url, title: document.title}, document.title, url);  
+                  setCookie("jwt_token",appConfig.access_token,1);
+                  console.log(getCookie("jwt_token"));
+              }
+              
+              if (appConfig.access_token == undefined || appConfig.access_token == null) {
+                 window.location.href = "https://gtkj.wzgt.gov.cn:1021/ocn/login.html?userSystemFlag=2&tenantId=2&redirectUrl=http://10.36.128.241:18080/kjgzdt2/index.html";
+              } else {
+                //debugger
+                  gisocnService.getUserByToken().then(function (result) {
+                  
+                      if ( result.code == "000000") {
+                        MapConfig2_DealUrl.MapBase();
+                           user = result.data;
+                          //user = {id:1,remark:"管理员",username:"name",depts:[{name:"11111",regionCode:"330300"}]};
+                          // 
+						              if(user.depts != undefined && user.depts[0] != null && user.depts[0].regionCode != null){
+                            regionCode=user.depts[0].regionCode;
+                            regionCode=regionCode.substring(0,6);
+                            require(["FrameWork/RegionTool/selectDataconfig"], function (selectDataconfig) {
+                                var obj = selectDataconfig.subMenus.find(function (obj) {
+                                    return obj.regionCode == regionCode;
+                                });
+                                if(obj == undefined || obj == null){
+                                  regionCode="330300";
+                                }
+                            });
+                          }else{
+                            regionCode="330300";
+                          }
+                          _otherRegion();
+
+                          dojo.byId('remark').innerHTML = user.remark||user.username||"无用户名";
+
+                          _frame = new Frame();
+                            showLoading=function(pd){
+                              if(pd == true && show == false){
+                                show=true;
+                                Loading.show(dojo.body());
+                              }else if(pd ==false && show == true){
+                                show=false;
+                                Loading.hide();
+                              }
+                            }
+                          proj4.defs(appConfig.proj4.name, appConfig.proj4.value);
+                          projection_4549 = new ol.proj.Projection({
+                              code: "EPSG:4549",
+                              extent: [536560.6875, 3077533.75, 594826.5625, 3114104.5],
+                              units: "m",
+                              axisOrientation: 'neu',
+                              global: false,
+                              worldExtent: [347872.25, 2703739.74, 599933.05, 5912395.20],
+                          });
+                          ol.proj.addProjection(projection_4549);
+                          var map = Map.init("mapDiv", projection_4549);
+
+
+                          popup = new ol.Overlay({
+                              element: document.getElementById("popup"),
+                          });
+                          appConfig.map.addOverlay(popup);
+                          closer = document.getElementById("popup-closer");
+                          closer.onclick = function () {
+                              popup.setPosition(undefined);
+                              closer.blur();
+                              return false;
+                          };
+
+                          legend = new Legend().placeAt(dojo.byId("legend_container"));
+                          legend.startup();
+
+                            _login=new loginoutBox().placeAt(dojo.body());
+                            _login.startup();
+                            _login.showBox(false);
+                          
+                            on(dojo.byId("userCtrl"), "mouseover", function () {
+                                    _login.showBox(true);
+                            });
+
+                          on(dojo.byId("siderbar-btn"), "click", function () {
+                              dojo.byId("siderbar-container").style.display = "none";
+                          });
+
+                          for (var i = 0; i < sideboxConfig.subMenus.length; i++) {
+                              var _sidebox;
+                              if (i == sideboxConfig.subMenus.length - 1) {
+                                  _sidebox = new sidebox({ data: sideboxConfig.subMenus[i], isLast: true }).placeAt(dojo.byId("sidebox"));
+                              } else {
+                                  _sidebox = new sidebox({ data: sideboxConfig.subMenus[i] }).placeAt(dojo.byId("sidebox"));
+                              }
+                              _sidebox.startup();
+                          }
+
+                          var query_side=Number(regionCode);
+                          ConfigurationService.getSideboxgroup(query_side).then(function(re){
+                            if(re.code == '200'){
+                              var _groupConfig=re.data;
+                              for (var i = 0; i < _groupConfig.length; i++) {
+                                var _sideboxGroup;
+                                if (i == _groupConfig.length - 1) {
+                                  _sideboxGroup = new groupBar({ data: _groupConfig[i], isLast: true }).placeAt(dojo.byId("groupbar"));
+                                } else {
+                                  _sideboxGroup = new groupBar({ data: _groupConfig[i] }).placeAt(dojo.byId("groupbar"));
+                                }
+                                _sideboxGroup.startup();
+                              }
+                            }else{
+                              console.log("获取导航栏失败！"+re.msg);
+                            }
+                          })
+                   
+                          var aa=true;
+                          on(dojo.byId("openGroup"), "click", function () {
+                            if(aa){
+                              aa=false;
+                              dojo.byId("groupbar").style.display = "none";
+                            }else{
+                              aa=true;
+                              dojo.byId("groupbar").style.display = "block";
+                            }
+
+                             
+                          });
+                          onCatalogClick = function () {
+                              for (var i = 0; i < _catalogs.length; i++) {
+                                  _catalogs[i].Selected(false);
+                              }
+                          }
+
+                          for (var i = 0; i < catalogConfig.subMenus.length; i++) {
+                              var _catalog = new catalog({ data: catalogConfig.subMenus[i], index: i }).placeAt(dojo.byId("catalog"));
+                              _catalog.onClick = onCatalogClick;
+                              _catalog.startup();
+                              _catalogs.push(_catalog);
+                          }
+
+                          for (var i = 0; i < mapToolConfig.subMenus.length; i++) {
+                              var _mapTool = new mapTool({ data: mapToolConfig.subMenus[i], index: i }).placeAt(dojo.byId("maptool"));
+
+                              _mapTool.startup();
+                          }
+
+                          var _regionTool = new regionTool().placeAt(dojo.byId('titleLeft'));
+                          _regionTool.startup();
+
+                          var _serviceSearch = new serviceSearch().placeAt(dojo.byId("titleLeft"));
+                          _serviceSearch.startup();
+
+                          var _Visitmsg = new Visitmsg().placeAt(dojo.byId("titleLeft"));
+                            _Visitmsg.startup();
+
+                          _attrQueryTool = new AttrQueryTool(appConfig.map);
+                          _attrQueryTool.activate("point");
+
+                          Resumequery=function(){
+                              debugger
+                              var flag = false;
+                              array.forEach(appConfig.btns, function (btn) {
+                                  if (btn.id === "djcx") {
+                                      flag = !flag;
+                                      if (lang.isFunction(btn.fun.onClick)) {
+                                          btn.fun.onClick("点击查询");
+                                      }
+                                  }
+                              }.bind(this));
+                              if (!flag) {
+                                  try {
+                                      require([ "FrameWork/AttrQuery/AttrQueryByPoint"], function (btn) {
+                                          var b = new btn({ enabled: true, frame: _frame, name: "djcx" });
+                                          appConfig.btns.push({ id: "djcx", fun: b });
+                                          b.onClick("点击查询");
+                                      }.bind(this));
+                                  }
+                                  catch (e) {
+                                      alert(e);
+                                  }
+                              }
+                          }
+
+                          ClearClickQuery=function(){
+                              debugger
+                              var flag = false;
+                              array.forEach(appConfig.btns, function (btn) {
+                                  if (btn.id === "djcx") {
+                                      flag = !flag;
+                                      if (lang.isFunction(btn.fun.clearClick)) {
+                                          btn.fun.clearClick();
+                                      }
+                                  }
+                              }.bind(this));
+                          }
+                          // 去40
+                          txtAndShpRemove40=function(data){
+                            for(var i=0;i<data.length;i++){
+                                var pd=typeof(data[i]); 
+                                if(pd == "number"){
+                                    var stateX = data[0].toString().substr(0, 2);
+                                    var stateY = data[1].toString().substr(0, 2);
+                                    if(stateX == 40){
+                                        data[0] = parseFloat(data[0].toString().substr(2, (data[0].toString().length - 1)));
+                                    }
+                                    if(stateY == 40){
+                                        data[1] = parseFloat(data[1].toString().substr(2, (data[1].toString().length - 1)));
+                                    }
+                                }else {
+                                    if(data[i].length>0){
+                                        this.txtAndShpRemove40(data[i]);
+                                    }
+                                }
+                            }
+                          }
+
+
+                      } 
+                      else {
+                           window.location.href = "https://gtkj.wzgt.gov.cn:1021/ocn/login.html?userSystemFlag=2&tenantId=2&redirectUrl=http://10.36.128.241:18080/kjgzdt2/index.html"
+                      }
+                   })
+              }
+
+
+
+            
+
+          });
+      });
+  </script>
+</html>

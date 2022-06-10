@@ -1,0 +1,83 @@
+<div
+  class="sidebar-tool"
+  style="
+    width: 443px;
+    height: auto;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    background-color: white;
+    position: absolute;
+    top: 127px;
+    border-radius: 6px;
+    right: 20px;
+    z-index: 9999;
+  "
+>
+  <div style="width: 100%; height: 40px; border-bottom: 1px solid #e9edee">
+    <div style="width: auto; height: 20px; line-height: 20px; color: #838080; position: absolute; left: 10px; top: 10px">定位</div>
+    <div
+      style="
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-image: url(image/sidebar/close.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      "
+      data-dojo-attach-point="close"
+    ></div>
+  </div>
+  <div>
+      <div style="
+        background-image: url(image/attr/group.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        text-indent: 10px;
+        margin-top: 12px;
+      ">
+          坐标定位
+      </div>
+
+    <div style="margin: 12px 25px; font-size: 14px" class="option">
+      <div style="width: 75px; float: left; line-height: 36px; text-align: right">经度：</div>
+      <input
+        type="text"
+        data-dojo-attach-point="x"
+        placeholder="示例：566817.879"
+        style="width: 304px; height: 36px; line-height: 21px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px; padding-left: 14px;outline:none;"
+      />
+    </div>
+    <div style="margin: 12px 25px; font-size: 14px" class="option">
+      <div style="width: 75px; float: left; line-height: 36px; text-align: right">纬度：</div>
+      <input
+        type="text"
+        data-dojo-attach-point="y"
+        placeholder="示例：3098619.258"
+        style="width: 304px; height: 36px; line-height: 21px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px; padding-left: 14px;outline:none;"
+      />
+    </div>
+    
+  </div>
+  <div style="float: right; margin: 15px 28px; clear: both; cursor: pointer">
+    <div
+      style="
+        padding: 0 5px;
+        width: 57px;
+        height: 24px;
+        background-color: #1c74bb;
+        color: white;
+        font-size: 14px;
+        border: 1px solid #1c74bb;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 22px;
+      "
+      data-dojo-attach-point="location"
+    >
+      定位
+    </div>
+  </div>
+</div>

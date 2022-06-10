@@ -1,0 +1,63 @@
+<div class="sidebar-tool"  style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">叠加分析</div>
+        <div data-dojo-attach-point="subSidebox_close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+
+    <div style="margin-top:15px;" class="group1">
+        <div style="background-image: url(image/doConflict/group.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        text-indent: 10px;
+        margin-top: 10px;">数据图形</div>
+
+        <div style="width:423px;height:80px;border:1px solid #ebedf3;background:white;margin-left:10px;margin-top:10px;">
+
+            <div style="width:100%;height:25px;line-height:25px;text-indent:10px;margin-top:5px;">文件类型:<span style="color:red;"> 仅支持CGCS2000平面坐标系,SHP文件需打包成zip包</span></div>
+
+            <div data-dojo-attach-point="upload_txtfile" style="width:110px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 4);margin-top:10px;text-align:center;cursor:pointer;">
+                <div style="float:left;height:100%;background-image:url(image/doConflict/txt.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                <div style="float:left;height:100%;width:68px;line-height:25px;">TXT</div>
+                <input type="file" data-dojo-attach-point="txtfile" style="display:none;" accept=".txt">
+            </div>
+
+            <div data-dojo-attach-point="upload_shpfile" style="width:110px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 4);margin-top:10px;text-align:center;cursor:pointer;">
+                <div style="float:left;height:100%;background-image:url(image/doConflict/shp.png);background-position:left center;background-repeat:no-repeat;width:22px;margin-left:5px;"></div>
+                <div style="float:left;height:100%;width:68px;line-height:25px;">SHP</div>
+                <input type="file" data-dojo-attach-point="shpfile" style="display:none;" accept=".zip">
+            </div>
+
+        </div>
+    </div>
+
+    <div style="float: left; clear: both">
+        <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:10px;">缓冲距离:</div>
+        <div style="float: left;margin-top:10px;" class="option">
+          <input data-dojo-attach-point="distance" type="text" value="10" style="border: 1px solid #e9edf0;border-radius: 3px; outline: none; width: 218px;height: 36px; margin-left: 20px;padding-left: 14px;">
+          <select data-dojo-attach-point="unit" style="width: 110px; height: 36px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+            <option value="kilometers">米</option>
+            <option value="miles" style="width: 154px; height: 36px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">英里</option>
+            <option value="kilometers">公里</option>
+          </select>
+          <input type="button" value="缓冲" style="padding: 0 5px;
+          width: 52px;
+          height: 32px;
+          background-color: #c1c9d0;
+          color: white;
+          font-size: 14px;
+          line-height: 32px;
+          border: 1px solid #c1c9d0;
+          border-radius: 16px;
+          margin-left: 10px;" data-dojo-attach-point="buffer">
+        </div> 
+    </div>
+
+    <div style="float: right;margin: 30px 22px 20px 20px; clear: both">
+        <div style="width: 70px; height: 24px; background-color: #1c74bb;color: white; font-size: 14px;border-radius: 7px; margin-right: 24px;float: left; text-align: center;line-height: 24px;" data-dojo-attach-point="download"> 下载 </div>
+        <div style="width: 70px; height: 24px; background-color: #1c74bb;color: white; font-size: 14px;border-radius: 7px;float: left; text-align: center;line-height: 24px;"data-dojo-attach-point="queryBtn"> 分析</div>
+    </div>
+    <!--conflictBtn  -->
+    <div data-dojo-attach-point="conflictBtn" style="float: right;    margin: 30px 22px 20px 20px; clear: both;display: none;" ></div>
+
+</div>

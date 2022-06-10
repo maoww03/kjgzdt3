@@ -1,0 +1,4 @@
+<div class="menuItemBar" style="position:absolute;width:107px; height:33px;z-index:999;background-position:center center; background-repeat:no-repeat;line-height:33px;font-size:12px;font-family: 'Microsoft YaHei';border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;">
+    <div style="width:92px;height:33px;background-image:url(image/addLayer.png);background-position:left center; background-repeat:no-repeat; margin-left:15px;text-indent:17px;cursor:pointer;color:black;" data-value="1" data-isadd="false" data-isclick="false">添加地图</div>
+</div>

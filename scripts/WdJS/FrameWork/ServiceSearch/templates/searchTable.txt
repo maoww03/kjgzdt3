@@ -1,0 +1,115 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 80%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         "> 查询结果</div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+ 
+        <!-- tab -->
+        <div data-dojo-attach-point="nzy_Tab" style="
+        width: 15%;
+        height: 95%;
+        float: left;
+        border-right: 1px solid #cccc;
+        background: white;">
+            <div class="nzyResultTab"> </div>
+            <div class="nzyResultTab"> layer1REsult</div>
+        </div>
+
+
+        <!-- table -->
+        <!-- <div style="width: 80%;height: 90%;float: left;">
+            <div data-dojo-attach-point="content" style="width: 90%;height:94%;overflow: scroll;margin: 10px auto;overflow: auto;">
+           
+                <div style="width:1600px;height:35px;" data-dojo-attach-point="tableFrame">
+                    <table class="table table-bordered" border-collapse="collapse" style="background: white;overflow:auto;max-width:unset;">
+                        <thead data-dojo-attach-point="head_table">
+
+
+
+                        </thead>
+                    </table>
+                </div>
+                <div style="width:1600px;height:auto;" data-dojo-attach-point="tableFrame1">
+                    <table class="table table-bordered" border-collapse="collapse" style="background: white;width:auto;max-width:unset;" data-dojo-attach-point="content_table">
+                        <tbody data-dojo-attach-point="content_table" style="word-break: break-all;border:none;"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+
+         <!-- table -->
+         <div style=" width:  85%;height: 88%;float: left;    overflow: auto;"data-dojo-attach-point="show">
+            <div style="min-width: 100%;" data-dojo-attach-point="content">
+                <table class="table table-bordered">
+                    <thead data-dojo-attach-point="head_table"></thead>
+                    <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+      
+
+
+        <!-- 分页 -->
+        <div style="width: 450px;
+        height: 44px;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        color: rgb(58, 58, 58);
+        position: absolute;
+        bottom: 10px;
+        left: 54%;
+        margin-left: -200px;" data-dojo-attach-point="pageset" >
+            <div data-dojo-attach-point="sx" style="background-image: url(image/feedback/sx.png);border: none;width: 24px;height: 24px;background-repeat: no-repeat;background-color: white;background-position:center center;display: none;" class="page"></div>
+            <div data-dojo-attach-point="first" class="page">首页</div>
+            <div data-dojo-attach-point="pre" class="page">上一页</div>
+            <div data-dojo-attach-point="now_page" class="page" style="width: 50px;">1</div>
+            <div data-dojo-attach-point="next" class="page">下一页</div>
+            <div data-dojo-attach-point="last" class="page">末页</div>
+            <div data-dojo-attach-point="total_page" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+            <div data-dojo-attach-point="total_sum" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+
+        </div>
+
+
+        <!-- dombtn -->
+       
+        <div data-dojo-attach-point="download" style="    width: 70px;
+        height: 25px;
+        color: white;
+        background-color: #1c74bb;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        text-align: center;
+        line-height: 25px;" title="导出所有数据">下载</div>
+     
+     </div>
+</div>

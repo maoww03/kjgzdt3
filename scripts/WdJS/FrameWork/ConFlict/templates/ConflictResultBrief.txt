@@ -1,0 +1,29 @@
+<div class="openlayerView" >
+    <div class="viewbox" style="width: 56%; margin-left: -28%;">
+        <div class="viewTip">图形审查结果展示</div>
+
+        <div data-dojo-attach-point="close" class="closeBtn"></div>
+
+        <!-- content  -->
+        <div class="tableList"  >
+            <table class="table table-bordered">
+                <thead>
+                    <tr style="    background-color: #f2f0f0;">
+                        <th>图形审查目标</th>
+                        <th>图形审查结果</th>
+                        <th>压盖面积㎡</th>
+                    </tr>
+                </thead>
+
+               <tbody data-dojo-attach-point="setLayers">
+                    <tr>
+                        <td>2222</td>
+                        <td>22222</td>
+                    </tr>
+               </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

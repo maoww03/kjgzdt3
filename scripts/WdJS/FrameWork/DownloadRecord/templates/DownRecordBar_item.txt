@@ -1,0 +1,10 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width: 10%;">1</div>
+    <div data-dojo-attach-point="filename" style="float: left; width: 40%;">filename</div>
+    <div data-dojo-attach-point="time"style="float: left; width: 10%; overflow: hidden;">time</div>
+    <div data-dojo-attach-point="xsq" style="float: left; width: 10%;">xsq</div>
+    <div data-dojo-attach-point="userid" style="float: left; width: 10%;">userid</div>
+    <div data-dojo-attach-point="username" style="float: left; width:10%;">username</div>
+    <div  data-dojo-attach-point="bz" style="float: left; width: 10%;">路径</div>
+</div>

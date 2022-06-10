@@ -1,0 +1,23 @@
+<div style="width: 97%;height: auto;border: 1px solid #ccc;margin: 0 auto;" >
+    <div data-dojo-attach-point="nzy_Tab" style="width: 100%;height: 30px;border-bottom: 1px solid #ccc;">
+        <div class="nzyResultTab2"> table1</div>
+    </div>
+
+    <div style="width: 100%;height: 200px;overflow-x: hidden;overflow: hidden;" data-dojo-attach-point="list_con">
+        <div style="width: 100%;height: 25px;line-height: 27px;color: #939394;font-size: 14px;margin: 0 auto;">
+            <div style="float:left;background-color: #3768ca;width: 15%;text-align:center;color: white;border-right: 1px solid white;padding: 0px 10px;">序号</div>
+            <div style="float:left;background-color: #3768ca;width: 35%;text-align:center;color: white;border-right: 1px solid white;padding: 0px 10px;">项目名称</div>
+            <div style="float:left;background-color: #3768ca;width: 35%;text-align:center;color: white;border-right: 1px solid white;padding: 0px 10px;">批准文号</div>
+            <div style="float:left;background-color: #3768ca;width: 15%;text-align:center;border-right: 1px solid white;color: white;">面积</div>
+        </div>
+
+        <div style="width: 100%;line-height:25px;overflow: scroll;height: 100%;" data-dojo-attach-point="result_items">
+            <!-- <div style="width: 100%;height: 25px;text-align: center;border: 1px solid #e9edee;border-top: none;color: #666666;line-height: 25px;">
+                <div data-dojo-attach-point="num" style="float: left;width: 20%;border-right: 1px solid #ccc;">1</div>
+                <div data-dojo-attach-point="name" style="float: left;width: 40%;border-right: 1px solid #ccc;">name</div>
+                <div data-dojo-attach-point="code" style="float: left;width: 40%;overflow: hidden;">code</div>
+            </div> -->
+        </div>
+
+    </div>
+</div>

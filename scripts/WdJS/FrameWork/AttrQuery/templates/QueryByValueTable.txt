@@ -1,0 +1,32 @@
+<div class="conflictResutl sidebar-tool repeatHide">
+  <div class = "head" style="height: 40px;" >
+      <div style="width: auto;height: 100%;float: left;overflow-x: auto;" >
+        <div class="resulttab-choice ">查询结果</div>
+        <span style="line-height: 39px;color: red;margin: 0 10px;" data-dojo-attach-point="datanum"></span>
+      </div>
+
+      <div style="width: 100px;background-image:url(image/attr/up.png); background-repeat: no-repeat;height: 40px;position: absolute;left: 50%;"data-dojo-attach-point="showup"></div>
+
+      <div  class="btnGroup" style="width: auto; margin-right: 50px;">
+          <div class="btns" data-dojo-attach-point="downLoad" >表格下载</div>
+      </div >
+
+      <div data-dojo-attach-point="close" class="close-btn"></div>
+  </div>
+
+  <div class="content" style="height: 85%;">
+      <div  data-dojo-attach-point="content" style="min-width: 100%;">
+          <table class="table table-bordered">
+              <thead data-dojo-attach-point="head_table"></thead>
+              <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+              
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+ 
+
+  
+
+</div>

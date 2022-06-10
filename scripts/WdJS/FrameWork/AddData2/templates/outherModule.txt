@@ -1,0 +1,56 @@
+<div class="sidebar-tool"  style="    width: 443px;
+height: auto;
+box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+background-color: white;
+position: absolute;
+top: 71px;
+border-radius: 6px;
+left: 50px;
+z-index: 99999;">
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div  style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">修改</div>
+        <div data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+    
+    <div style="margin-top:15px; display: none;" class="group1">
+        <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">源数据库</div>
+    </div>
+
+    <div style="margin-top:15px;" class="group1">
+        <div   style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">选择功能</div>
+        <div data-dojo-attach-point="change"style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 8);margin-top:10px;text-align:center;cursor:pointer;">修改</div>
+        <div data-dojo-attach-point="delete"  style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 8);margin-top:10px;text-align:center;cursor:pointer;z-index:9999;">删除</div>
+
+        <div  style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;clear: both;">详情</div>
+        <div data-dojo-attach-point="downloadExcel"style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 8);margin-top:10px;text-align:center;cursor:pointer;">下载模板</div>
+
+        <div data-dojo-attach-point="uploadExcel_file" style="width:100px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 8);margin-top:10px;text-align:center;cursor:pointer;">
+            <div style="float:left;height:100%;width:68px;line-height:25px;">上传excel</div>
+            <input type="file" data-dojo-attach-point="uploadExcel" style="display:none;" accept="">
+        </div>
+
+        <div style="width:100%;height:400px;overflow:auto; " data-dojo-attach-point="domList2" ></div>
+        <!-- pointer-events: none; -->
+    </div>
+       
+    <div style="margin-top:15px;" class="group1">
+        <div data-dojo-attach-point="submit" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float:right;margin-right:10px;margin-bottom:20px;text-align:center;line-height:25px;display: none;">确定</div>
+
+    </div>
+    <div
+    data-dojo-attach-point="loading"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background-image: url(image/ajax-loader.gif);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.6);
+    "
+  ></div>
+
+</div>

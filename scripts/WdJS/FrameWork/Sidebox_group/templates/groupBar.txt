@@ -1,0 +1,16 @@
+<div style="float: left;
+font-size: 14px;
+font-family: 'Microsoft YaHei';
+cursor: pointer;
+height: auto;
+width: auto;
+z-index: 999;
+/* margin: 4px 0; */
+user-select: none;
+padding: 0px 18px;
+border-right: 1px solid #d8d5d5;" >
+    <div data-dojo-attach-point="group_icon" >
+        <!-- <div class="groupList"></div> -->
+    </div>
+    <div data-dojo-attach-point="group_name" style="text-align: center;" >分组</div>
+</div>

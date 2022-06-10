@@ -1,0 +1,5 @@
+<div  class="resultList">
+    <div  class="searchLayer" data-dojo-attach-point="title"> 打开的页面</div>
+    <div class="visibleLayrtFilter" data-dojo-attach-point="feature1">字段1:</div>
+    <div class="visibleLayrtFilter" data-dojo-attach-point="feature2" style="display: none;">字段1:</div>
+</div>

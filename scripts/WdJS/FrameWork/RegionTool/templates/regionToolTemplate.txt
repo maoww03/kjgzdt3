@@ -1,0 +1,18 @@
+<div style="height:70px;font-size: 16px;cursor: pointer;font-weight: bold;float:left;margin:5px 0 0 10px;position:relative;width:70px;">
+    <div data-dojo-attach-point="text" style="width:auto;height:20px;float: left;line-height:20px;color: #0d65ad;margin-left:5px;font-size: 16px; background-image:-webkit-linear-gradient(bottom,#d9e8fd,#ffffff,#ffffff); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; ">温州市</div>
+    <div data-dojo-attach-point="more" style="width:8px;height:20px;float: left;margin-left:5px; background-position:center center;background-repeat:no-repeat;background-image:url(image/regionTool/expand.png);"></div>
+    <div class="subSidebox" data-dojo-attach-point="subItem" style="font-size:16px; width:630px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:40px;border-radius: 6px;left:0px;display:none;z-index:99999;padding-bottom:20px;">
+        <div style="width:100%;height:70px;border-bottom:1px solid #e9edee;">
+            <div style="width:40px;height:70px;line-height:70px;color:#0d65ad;float:left;text-align:right;">市</div>
+            <div style="width:70px;height:70px;line-height:70px;color:#333;float:left;margin-left:10px;text-align:center;" data-dojo-attach-point="city">温州市</div>
+        </div>
+        <div style="width:100%;height:auto;margin-top:20px;">
+            <div style="width:40px;height:40px;line-height:40px;color:#0d65ad;float:left;text-align:right;">区</div>
+            <div data-dojo-attach-point="regionItem" style="width:calc(100% - 50px);height:auto;color:#333;float:left;margin-left:10px;">
+
+            </div>
+        </div>
+    </div>
+</div>

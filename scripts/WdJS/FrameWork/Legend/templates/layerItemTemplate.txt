@@ -1,0 +1,5 @@
+<div style="width:100%;height:30px;line-height:30px;">
+    <div data-dojo-attach-point="check_btn" style="width:30px;height:30px;float:left;background-position:center;background-repeat:no-repeat;cursor:pointer;background-image:url(image/legend/uncheck.png);"></div>
+    <div data-dojo-attach-point="layername" style="width:88px;height:30px;float:left;background-position:center;background-repeat:no-repeat;cursor:pointer;overflow:hidden;color:#cbcccd;"></div>
+    <div data-dojo-attach-point="close_btn" style="width:20px;height:30px;float:left;background-position:center;background-repeat:no-repeat;cursor:pointer;background-image:url(image/legend/close.png);"></div>
+</div>

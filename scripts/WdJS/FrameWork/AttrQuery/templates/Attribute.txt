@@ -1,0 +1,114 @@
+<div class="attrDiv sidebar-tool repeatHide setqueryRe" style="width:450px;overflow:hidden;" data-dojo-attach-point="attrDiv">
+  <div style="float:left;width:100%;" id="attrDiv">
+    <!-- top -->
+    <div style="width: 100%; height: 40px; border-bottom: 1px solid #e9edee; background-color: white">
+      <div  style="width: auto; height: 20px; line-height: 20px; color: #838080; position: absolute; left: 10px; top: 10px"> 属性</div>
+      <div data-dojo-attach-point="Btns" style="display: block;">
+        <div data-dojo-attach-point="shrink"
+          title="缩小"  class="litlleBtn"
+          style="right: 40px;
+          margin: 8px 31px 0 0;
+          float: right; background-image: url('image/attrquery/shrink.png');" ></div>
+      </div>
+      <div data-dojo-attach-point="close"
+        style="
+          width: 10px;
+          height: 20px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          background-image: url(image/sidebar/close.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        " ></div>
+    </div>
+
+    <!-- 图层选择nav -->
+    <div class="dirExpand" data-dojo-attach-point="layerBtn" style="background-color: #ebf5ff;background-image: url(image/attr/open.png);">
+      <span style="display: inline-block;width: auto; height: 100%;">图层选择</span>
+      <span data-dojo-attach-point="layerSelect" style="color: #1c74bb;
+      display: inline-block;
+      width: auto;
+      overflow: hidden;
+      height: 68%;">(aaaa)</span></div>
+    <div style="width: 100%;max-height: 90px;line-height: 32px;margin: 0px 2px;display: block;overflow: auto;" data-dojo-attach-point="nav">
+          <!-- <div class="layerNav"> 规划选址红线</div> -->
+    </div>
+
+    <!-- 详情 -->
+    <div class="dirExpand" data-dojo-attach-point="xqBtn" style="padding: 0 0 0 34px;background-color: #ebf5ff;background-image: url(image/attr/open.png);">详情 (共计: <span style="color: red;text-decoration: underline;" data-dojo-attach-point="dkCount">200</span>  条)
+
+      <div data-dojo-attach-point="exportBtn"
+          title="导出为shp" class="litlleBtn"
+          style="display: none;
+          position: inherit;
+          float: right;
+          right: 100px;
+          margin: 8px 33px 0 0;
+          background-image: url('image/attrquery/export.png');" ></div>
+
+      <div data-dojo-attach-point="detail"
+      title="显示详情" class="litlleBtn"
+      style="position: inherit;
+      display: none;
+      float: right;
+      right: 100px;
+      margin: 8px;background-image: url(image/attrquery/detail.png); " ></div>
+
+    
+
+      <div data-dojo-attach-point="allfiled"
+      title="全字段显示" class="litlleBtn"
+      style="position: inherit;
+      float: right;
+      right: 100px;
+      margin: 8px;background-image: url(image/attrquery/all.png); " ></div>
+      
+      <div data-dojo-attach-point="quanp"
+      title="放大" class="litlleBtn"
+      style="position: inherit;
+      float: right;
+      right: 100px;
+      margin: 8px;background-image: url(image/attrquery/fangda.png); " ></div>
+
+
+    </div>
+
+    <div style="width: 100%;clear: both;float:left; position: relative;"data-dojo-attach-point="con">
+      <!-- 地块选择 -->
+      <div  class="left_max"  data-dojo-attach-point="plotsBox2" id="plotsBox2" style="width: 23%;
+      height: calc(100% - 41px);
+      overflow: scroll;
+      position: absolute;
+      border-right: 1px solid #e9edee;"> 
+        <!-- <div class="plot2">地块1</div> -->
+      </div>
+
+      <!-- 列表1 -->
+      <div data-dojo-attach-point="content_sort1" class="windowC">
+        <table class="table table-bordered">
+          <thead>
+            <tr style="background: #286099; color: white;">
+              <th style="width: 50%;">属性名</th>
+              <th>属性值</th>
+            </tr>
+          </thead>
+          <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+            <!-- <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <!-- 列表2 -->
+      <div data-dojo-attach-point="content_sort2" style=" width: 100%; float: left;"></div>
+
+    </div>
+    
+    <!-- 拓展部分 ftp -->
+    <div data-dojo-attach-point="ftp_contain" style="width: 100%;clear:both;display: none;" > </div>
+  </div>
+
+</div>

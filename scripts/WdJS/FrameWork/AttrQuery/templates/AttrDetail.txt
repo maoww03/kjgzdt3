@@ -1,0 +1,10 @@
+<div class="menu_middle_box2" style="width: 500px;height: auto;">
+    <div class="title">
+        <span>详情 </span>
+        <div class="cancel" data-dojo-attach-point="cancel"></div>
+    </div>
+    <div  >
+        <div data-dojo-attach-point="content" style="max-height: 450px;overflow-y: auto;"></div>
+    </div>
+
+</div>

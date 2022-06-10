@@ -1,0 +1,5 @@
+<div style="width:100%;height:auto;padding-top:15px;clear:both;">
+    <div data-dojo-attach-point="groupName" style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;"></div>
+    <div data-dojo-attach-point="items" style="width:100%;height:auto;">
+    </div>
+</div>

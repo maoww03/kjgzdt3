@@ -1,0 +1,13 @@
+<div style="width: 98%;margin: 0 auto;">
+    <table class="table table-bordered">
+        <thead >
+            <tr >
+                <th>序号</th>
+                <th>乡镇（平台）</th>
+                <th class='order'  order='order' fieldname='mjzb' style='background:url(image/catalog/px.png) right bottom no-repeat;' >完成率（面积占比）</th>
+                <th class='order'  order='order' fieldname='xmszb' style='background:url(image/catalog/px.png) right bottom no-repeat;' >完成率（项目数占比）</th>
+            </tr>
+        </thead>
+        <tbody data-dojo-attach-point="ResultListcon3" ></tbody>
+    </table>
+</div>

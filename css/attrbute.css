@@ -1,0 +1,344 @@
+  .attrDiv {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  width: 350px;
+  max-height: calc(100% - 130px);
+  background-color: #ffff;
+  box-shadow: 0 0 0.75em #777777;
+  border-radius: 5px;
+  z-index: 2;
+}
+.attrDiv .header {
+  height: 40px;
+  line-height: 40px;
+  background-color: #0051bc;
+  border-radius: 5px 5px 0 0;
+}
+.attrDiv .header .title {
+  width: 185px;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  padding: 0 10px;
+  color: #fff;
+}
+.attrDiv .header .btnDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.attrDiv .header .btnDiv .button {
+  float: left;
+  margin: 11px 0;
+  padding: 9px 12px;
+  background-image: url(../image/popup.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.attrDiv .header .btnDiv .page {
+  float: left;
+  color: #fff;
+}
+.attrDiv .header .btnDiv .button.pre {
+  background-position: 7px -197px;
+}
+.attrDiv .header .btnDiv .button.next {
+  background-position: 7px -416px;
+}
+.attrDiv .header .btnDiv .button.close {
+  background-position: 7px -170px;
+}
+.attrDiv .content {
+  padding: 5px 10px;
+  line-height: 25px;
+  overflow-y: auto;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.attrDiv .content div {
+  line-height: 25px;
+}
+.attrDiv .content .field {
+  line-height: 25px;
+  float: left;
+  width: 47%;
+  text-align: right;
+  clear: both;
+  margin-right: 5%;
+  color: #757171;
+}
+.attrDiv .content .value {
+  line-height: 25px;
+  float: left;
+  width: 45%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/*****************20210402******************/
+
+.attrDiv .layerList {
+  padding: 5px 10px;
+  float: left;
+  width: 250px;
+  min-height: 100px;
+}
+
+.attrDiv .layerList .layerName {
+  border: 1px solid rgb(243 233 233);
+  width: 100%;
+  height: 26px;
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.attrDiv .layerList .layerName.select {
+  color: #0051bc;
+}
+.attrDiv .layerList .layerName:hover {
+  color: #0051bc;
+  text-decoration: underline;
+}
+.field {
+  line-height: 25px;
+  float: left;
+  width: 40%;
+  text-align: right;
+  clear: both;
+  margin-right: 5%;
+}
+
+.value {
+  line-height: 25px;
+  float: left;
+  width: 55%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.litlleBtn{
+  width: 24px;
+  height: 24px;
+  line-height: 25px;
+  cursor: pointer;
+  background: no-repeat;
+  background-position: center;
+}
+.litlleBtn:hover{
+  background-color: #ccc;
+}
+.litlleBtn_Active{
+  width: 24px;
+  height: 24px;
+  line-height: 25px;
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  background: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+/* new attr */
+.setqueryRe{
+  width: 642px;
+  height: auto;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  background-color: white;
+  position: absolute;
+  top: 57px;
+  border-radius: 6px;
+  right: 20px;
+  z-index: 9999;
+  overflow: auto;
+}
+.setqueryRe::-webkit-scrollbar{
+  display: none;
+}
+.dirExpand{
+  background-image: url(../image/attr/group.png);
+  background-position: left 20px center;
+  background-repeat: no-repeat;
+  text-indent: 10px;
+  padding: 0px 0px 0px 25px;
+  width: 100%;
+  border: 1px solid #e9edee;
+  height: 41px;
+  line-height: 40px;
+  clear: both;
+  user-select: none;
+  cursor: pointer;
+}
+.layerNav{
+  width: 100px;
+  height: 25px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  padding: 0 18px;
+  line-height: 25px;
+  color: #a0a0a0;
+  margin: 10px 0 6px 10px;
+  user-select: none;
+  cursor: pointer;
+
+}
+.plot2{
+  width: 162px;
+  height: 30px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  padding: 0 8px;
+  line-height: 28px;
+  color: #a0a0a0;
+  margin:4px 0 6px 4px;
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.plot{
+  color: rgb(216 216 216);
+  border: 1px solid rgb(243 233 233);
+  width: 80px;
+  height: 26px;
+  overflow: hidden;
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+  margin: 4px 0 0px 10px;
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.sort2_layer{
+  width: 16%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  cursor: pointer;
+  user-select: none;
+}
+.sort3_layer{
+  width: 16%;
+  height: 29px;
+  text-align: center;
+  line-height: 34px;
+  float: left;
+  cursor: pointer;
+  user-select: none;
+}
+.sort2_layer_none{
+  width: 16%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  user-select: none;
+  color: #ccc;
+}
+.sort2_layer_fake{
+  width: 16%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  cursor: pointer;
+  user-select: none;
+}
+.annexList{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  cursor: pointer;
+  user-select: none;
+}
+.downloadBtn{
+  overflow: hidden;
+  width: 125px;
+  float: left;
+  height: 26px;
+  font-size: 12px;
+  line-height: 26px;
+  border-radius: 3px;
+  color: black;
+  border: 1px solid #1c74bb;
+  cursor: pointer;
+  margin-left: 16px;
+  margin-top: 10px;
+  padding: 0 40px 0 8px;
+  background-image: url(../image/attrquery/dl2.png);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  user-select: none;
+
+}
+.fileManage_files{
+  width: 280px;
+  height: 66px;
+  /* background-image: url(../image/attrquery/files.png); */
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 14px;
+  padding-left: 80px;
+  overflow: hidden;
+  float: left;
+  margin: 14px;
+  padding-top: 3px;
+  user-select: none;
+
+}
+.fileManage_files:hover{
+  background-color: #daecfb;
+  user-select: none;
+
+}
+.fileManage_files_Clk{
+  width: 280px;
+  height: 66px;
+  /* background-image: url(../image/attrquery/files.png); */
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 14px;
+  padding-left: 80px;
+  overflow: hidden;
+  float: left;
+  margin: 14px;
+  padding-top: 3px;
+  background-color: #daecfb;
+  border: 1px solid #b8e1ff;
+  user-select: none;
+}
+.list_File{
+  width: 94px;
+  height: 32px;
+  background-position: left 20px center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background: #fffc;
+  border: 1px solid #486888;
+  float: left;
+  line-height: 28px;
+  margin: 11px;
+  cursor: pointer;
+  }
+  .list_File:hover{
+    color: #486888;
+  }

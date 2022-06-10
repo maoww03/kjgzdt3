@@ -1,0 +1,64 @@
+<div style=" width: 100%; height: 100%;">
+
+    <!-- table1 -->
+    <div data-dojo-attach-point="table1">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="create"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+        <div style="width: 100%;    height: calc(100% - 80px); " >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">模块</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">图标</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">进入下级目录</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items"></div>
+        </div>
+    </div>
+    <!-- table2 -->
+    <div data-dojo-attach-point="table2" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back2" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create2" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">上级目录</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">模块</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items2"></div>
+        </div>
+    </div>
+    <!-- table3 -->
+    <div data-dojo-attach-point="table3" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back3" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create3" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">模块</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">图标1</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">图标2</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">导航栏名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">目录名称</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 95%;overflow: auto;overflow: scroll;" data-dojo-attach-point="items3"></div>
+        </div>
+    </div>
+
+
+</div>

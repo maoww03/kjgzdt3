@@ -1,0 +1,30 @@
+<div class="menu_middle_box2" dx_lx="mark">
+    <div class="title">
+        <span data-dojo-attach-point="name">标记</span>
+        <div class="cancel" data-dojo-attach-point="cancel"></div>
+    </div>
+
+    <div class="line_content">
+        <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">添加</div>
+        
+        <div class="alert_line">
+            <div class="name" style='float: left;width: 35px;'>名称:</div>
+            <input type="text" class="input_box" placeholder="请输入名称" data-dojo-attach-point="labelname" style="width: calc(100% - 60px);">
+        </div>
+
+        <div class="alert_line" style="display:none;" data-dojo-attach-point="bz_box">
+            <div class="name"  style="width: 35px;">标注:</div>
+            <input type="text" class="input_box" placeholder="请输入标注" data-dojo-attach-point="bz" style="width: calc(100% - 60px);">
+        </div>
+
+        <div class="alert_line">
+            <div class="name" style="width: 35px;">备注:</div>
+            <textarea class="textarea_box" cols="30" rows="10" data-dojo-attach-point="labelnote" style="width: calc(100% - 55px);margin-left: 10px;resize: none;" ></textarea>
+        </div>
+    </div>
+
+    <div class="save_btn"  data-dojo-attach-point="save">确认</div>
+    <div class="cancel_btn" data-dojo-attach-point="qx">取消</div>
+    <div class="cancel_btn" style="display:none;" data-dojo-attach-point="delete">删除</div>
+
+</div>

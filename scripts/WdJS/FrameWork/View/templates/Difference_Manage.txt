@@ -1,0 +1,20 @@
+<div class="sidebar-tool" data-dojo-attach-point="subSidebox" style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;    user-select: none;">
+    <!--<div class="line_title">
+        <span>单屏差异</span>
+        <div data-dojo-attach-point="cancel">x</div>
+    </div>-->
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">单屏差异</div>
+        <div data-dojo-attach-point="cancel" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+    <div style="margin-top:15px;">
+        <div class="cy_btn" data-dojo-attach-point="closeLayer">关闭卷帘</div>
+        <div class="cy_btn" data-dojo-attach-point="confirmLayer">确认图层</div>
+    </div>
+    <div style="padding-top:15px;clear:both;margin-bottom:15px;" data-dojo-attach-point="layer_content">
+        <div style="width:400px;margin-left:21.5px;height:40px;background:#f8f9fb;border: 1px solid #ebedf3;">
+            <div style="width:46px;float:left;height:40px;line-height:40px;"></div>
+            <div style="width:352px;float:left;height:40px;line-height:40px;text-align:center;">图层名称</div>
+        </div>
+    </div>
+</div>

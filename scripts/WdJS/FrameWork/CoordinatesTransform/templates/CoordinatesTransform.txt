@@ -1,0 +1,232 @@
+<div
+  class="sidebar-tool"
+  style="
+    width: 443px;
+    height: auto;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    background-color: white;
+    position: absolute;
+    top: 127px;
+    border-radius: 6px;
+    right: 20px;
+    z-index: 9999;
+  "
+>
+  <!-- top -->
+  <div style="width: 100%; height: 40px; border-bottom: 1px solid #e9edee">
+    <div style="width: auto; height: 20px; line-height: 20px; color: #838080; position: absolute; left: 10px; top: 10px">坐标转换</div>
+    <div
+      style="
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-image: url(image/sidebar/close.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      "
+      data-dojo-attach-point="close"
+    ></div>
+  </div>
+
+  <!-- 坐标转换 -->
+  <div>
+    <div
+      style="
+        background-image: url(image/attr/group.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        text-indent: 10px;
+        margin-top: 12px;
+      "
+    >
+      坐标转换
+    </div>
+
+    <div style="margin: 5px 0 0 25px; font-size: 14px; float: left" class="option">
+      <div style="width: 75px; float: left; line-height: 36px; text-align: right">转换方式：</div>
+
+      <div data-dojo-attach-point="xy"  style="width:110px; height: 30px; line-height: 30px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px;text-align: center;display: inline-block;background-color: #f8f9fb;
+      " >平面坐标</div>
+      <div  data-dojo-attach-point="change" style="width: 20px; height: 20px; background: no-repeat; background-image: url(image/Transfor/jiaohuan1.png);display: inline-block;margin-bottom: -7px;margin-left: 8px;    cursor: pointer;"></div>
+      <div data-dojo-attach-point="bl" style="width:110px; height: 30px; line-height: 30px; margin-left: 8px; border: 1px solid #e9edf0; border-radius: 3px;text-align: center;display: inline-block;background-color: #f8f9fb;
+      " >球面坐标</div>
+    </div>
+
+    <div style="margin-top: 5px; font-size: 14px; float: left;display: none;" class="option">
+      <label class="checkbox2" style="font-weight: normal; margin-top: 0px;margin-left: 108px;">
+        <!-- checkInput -->
+        <input class="checks" style="width: 18px;height: 18px;" type="checkbox" data-dojo-attach-point="remove40check" />
+        <div style="width: 85px; font-size: 15px; float: right; margin-left: 5px; margin-top: 2px;">去除Y40</div>
+      </label>
+    </div>
+  </div>
+
+  <!-- 坐标输入 -->
+  <div style="clear: both;">
+    <div style="
+        background-image: url(image/attr/group.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        text-indent: 10px;
+        margin-top: 12px;
+      "
+    >
+      坐标输入
+    </div>
+
+    <div style="width:423px;height:50px;border:1px solid #ebedf3;background:white;margin-left:10px;margin-top:10px;">
+      <!-- upload_txtfile -->
+      <div data-dojo-attach-point="upload_txtfile" style="width:82px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 16);margin-top:10px;text-align:center;cursor:pointer;">
+        <div style="float:left;height:100%;background-image:url(image/doConflict/txt.png);background-position:left center;background-repeat:no-repeat;width:25%;margin-left:5px;"></div>
+        <div style="float:left;height:100%;width:65%;line-height:25px;">TXT</div>
+        <input type="file" data-dojo-attach-point="txtfile" style="display:none;" accept=".txt">
+      </div>
+
+      <!--upload_shpfile  -->
+      <div data-dojo-attach-point="upload_shpfile" style="width:82px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 16);margin-top:10px;text-align:center;cursor:pointer;">
+          <div style="float:left;height:100%;background-image:url(image/doConflict/shp.png);background-position:left center;background-repeat:no-repeat;width:25%;margin-left:5px;"></div>
+          <div style="float:left;height:100%;width:65%;line-height:25px;">SHP</div>
+          <input type="file" data-dojo-attach-point="shpfile" style="display:none;" accept=".zip,.shp">
+      </div>
+
+      
+
+      <!-- upload_input -->
+      <div data-dojo-attach-point="upload_input" style="width:82px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 16);margin-top:10px;text-align:center;cursor:pointer;">
+        <div style="float:left;height:100%;background-image:url(image/doConflict/sr.png);background-position:left center;background-repeat:no-repeat;width:25%;margin-left:5px;"></div>
+        <div style="float:left;height:100%;width:65%;line-height:24px;">输入</div>
+      </div>
+
+      <!-- upload_excel -->
+      <div data-dojo-attach-point="upload_excel" style="width:82px;height:25px;border:1px solid #dee2eb;background-color:#f8f9fb;float:left;margin-left:calc(223px / 16);margin-top:10px;text-align:center;cursor:pointer;">
+        <div style="float:left;height:100%;background-image:url(image/doConflict/excel.png);background-position:left center;background-repeat:no-repeat;width:25%;margin-left:5px;"></div>
+        <div style="float:left;height:100%;width:65%;line-height:24px;">excel</div>
+        <input type="file" data-dojo-attach-point="excel" style="display:none;"   multiple="multiple">
+      </div>
+      <!-- mbxz -->
+      <div  data-dojo-attach-point="xzmb"  title="excel模板下载"
+       style="   width: 25px;
+      height: 25px;
+      cursor: pointer;
+      background-image: url(image/doConflict/mb.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      float: left;
+      margin: 10px 0 0 5px;
+      border: 1px solid #ccc;
+      border-radius: 50%;">
+      </div>
+
+    </div>
+
+    <!-- file-box -->
+    <div data-dojo-attach-point="file_box" style="width: 420px;
+    margin: 15px 0px 0px 11px;
+    height: 50px;
+    overflow-y: auto;
+    border: 1px solid #ebedf3;
+    border-radius: 6px;
+    display: none;
+    background-color: #f8f9fb;">
+         <div data-dojo-attach-point="upload_filename"  style="max-width: 360px;
+         height: 25px;
+         float: left;
+         margin-left: 22px;
+         margin-top: 10px;
+         background-image: url(image/doConflict/txt2.png);
+         background-position: left center;
+         background-repeat: no-repeat;
+         line-height: 25px;
+         padding: 0 26px;
+         overflow-x: hidden;
+         ">aaa.txt
+        </div>
+    </div>
+    <!-- input-box -->
+    <textarea  data-dojo-attach-point="labelnote" placeholder="请输入坐标如：x1 y1 , x2 y2" class="textarea_box" cols="30" rows="10" style="width: 421px;
+    margin: 15px 0px 0px 11px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ebedf3;
+    resize: none;
+    outline: none;
+    display: none;
+    border-radius: 6px;"></textarea>
+
+    <div data-dojo-attach-point="result_input" style="width: 421px;
+    margin: 15px 0px 0px 11px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ebedf3;
+    resize: none;
+    outline: none;
+    display: none;
+    border-radius: 6px;">
+    </div>
+  </div>
+
+  <!-- transformBtn -->
+  <div style="float: right; margin: 15px 28px; clear: both; cursor: pointer">
+    <div
+      style="
+        padding: 0 5px;
+        width: 57px;
+        height: 24px;
+        background-color: #1c74bb;
+        color: white;
+        font-size: 14px;
+        border: 1px solid #1c74bb;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 22px;
+        float: right;
+      "
+      data-dojo-attach-point="transformBtn"
+    >
+      转换
+    </div>
+    <div
+    style="
+      padding: 0 5px;
+      width: 57px;
+      height: 24px;
+      background-color: #1c74bb;
+      color: white;
+      font-size: 14px;
+      border: 1px solid #1c74bb;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 22px;
+      float: right;
+      margin-right: 10px;
+      display:none;
+    "
+    data-dojo-attach-point="downloadBtn"
+  >
+    下载
+  </div>
+  </div>
+
+  <!--  loading-->
+  <div
+  data-dojo-attach-point="loading"
+  style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-image: url(image/ajax-loader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+  "></div>
+
+</div>

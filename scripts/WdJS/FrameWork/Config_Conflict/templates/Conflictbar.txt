@@ -1,0 +1,93 @@
+<div style=" width: 100%; height: 100%;">
+
+
+    <!-- navi -->
+    <div style="height: 26px; background: #ececec;">
+        <div style="margin-top: 2px;margin-left: 10px; float: left;color: #a7a7a7;">当前位置：冲突分析</div>
+        <div data-dojo-attach-point="navi"> </div>
+    </div>
+    <!-- table1 -->
+    <div data-dojo-attach-point="table1">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="create"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+            <div style="font-size: 14px;width: 253px;float: right;margin-top: 9px;" class="option">
+                <span>行政区划：</span>
+                <select data-dojo-attach-point="RegionCodeSelect" style="width: 150px;height: 30px;line-height: 30px;margin-left: 8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+                </select>    
+            </div>
+        </div>
+        <div style="width: 100%;    height: calc(100% - 80px); " >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">地区编号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">地名</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">下级目录</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 50em;overflow: auto;overflow: scroll;" data-dojo-attach-point="items"></div>
+        </div>
+    </div>
+    <!-- table2 -->
+    <div data-dojo-attach-point="table2" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back2" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create2" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">上级目录</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">下级目录</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 50em;overflow: auto;overflow: scroll;" data-dojo-attach-point="items2"></div>
+        </div>
+    </div>
+    <!-- table3 -->
+    <div data-dojo-attach-point="table3" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back3" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create3" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">图层名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">分析类别</div>
+                <div  style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">上级目录</div>
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">操作</div>
+                <div style="float:left;background-color:#f8f9fb;width:20%;text-align:center;">URL</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 50em;overflow: auto;overflow: scroll;" data-dojo-attach-point="items3"></div>
+        </div>
+    </div>
+
+    <!--  table4 -->
+    <div data-dojo-attach-point="table4" style=" display: none;">
+        <div style="width: 100%;height: 46px;">
+            <div data-dojo-attach-point="back4" style="width: 100px;height: 30px;border-radius:5px;color:white;background-color:#a9acaf;cursor:pointer;float: left;line-height: 30px;text-align: center;margin: 8px;" >返回</div>
+            <div data-dojo-attach-point="create4" id="create2"
+            style="width: 130px;height: 30px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;float: right;line-height: 30px;text-align: center;margin: 8px;" >新建</div>
+        </div>
+   
+        <div style="width: 100%;    height: calc(100% - 80px);" >
+            <div style="width:calc(100% - 27px);height:38px;line-height:38px;margin-left:10px; color: #939394; font-size: 14px;border:1px solid #e9edee;">
+                <div style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">序号</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">名称</div>
+                <div  style="float:left;background-color:#f8f9fb;width:25%;text-align:center;">Layerid</div>
+                <div  style="float:left;background-color:#f8f9fb;width:30%;text-align:center;">Queryurl</div>
+                <div  style="float:left;background-color:#f8f9fb;width:10%;text-align:center;">Field</div>
+                <div style="float:left;background-color:#f8f9fb;width:15%;text-align:center;">操作</div>
+            </div>
+            <div style="width:calc(100% - 20px);line-height:25px;margin-left:10px;height: 50em;overflow: auto;overflow: scroll;" data-dojo-attach-point="items4"></div>
+        </div>
+    </div>
+
+</div>

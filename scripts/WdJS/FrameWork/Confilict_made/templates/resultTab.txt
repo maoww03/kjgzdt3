@@ -1,0 +1,85 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 60%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: #efefef;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         "> 分析结果 </div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+ 
+        <!-- tab -->
+        <div data-dojo-attach-point="nzy_Tab" style="
+        width: 20%;
+        height: 95%;
+        float: left;
+        background: white;">
+            <div class="nzyResultTab"> layer1REsult</div>
+            <div class="nzyResultTab"> layer1REsult</div>
+        </div>
+
+
+        <!-- table -->
+        <div style="width: 80%;height: 90%;float: left;">
+            <div data-dojo-attach-point="content" style="    width: 80%;
+            height:94%;
+            overflow: scroll;
+            margin: 10px auto;
+            ">
+            
+            <table class="table table-bordered" style="background: white;">
+                <thead>
+                <tr style="color: #515761">
+                    <th style="width: 10%;">序号</th>
+
+                    <th style="width: 30%;">项目名称</th>
+                    <th style="width: 30%;">批准文号</th>
+                    <th >面积</th>
+                </tr>
+                </thead>
+                <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+                    <tr> 
+                        <td>序号</td>
+                        <td>地籍区代码</td>
+                         <td>地籍区代码</td>
+                        <td> 330302008002</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <!-- dombtn -->
+       
+        <div data-dojo-attach-point="download" style="    width: 70px;
+        height: 25px;
+        color: white;
+        background-color: #1c74bb;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        text-align: center;
+        line-height: 25px;" title="导出所有数据">下载</div>
+     
+     </div>
+</div>

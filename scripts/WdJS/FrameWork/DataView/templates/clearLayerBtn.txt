@@ -1,0 +1,5 @@
+
+<div title="清空图层" class="clockbtn" style="
+background-image: url(image/catalog/qc.png);
+"  >
+</div>

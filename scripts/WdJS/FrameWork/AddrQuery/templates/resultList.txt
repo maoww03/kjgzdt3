@@ -1,0 +1,4 @@
+<div  class="resultList" style="border-bottom: 1px solid #efefef; background-image:url(image/addrquery/markers.png);background-position:center left 20px;background-repeat:no-repeat;">
+    <div class="searchLayer" data-dojo-attach-point="NAME" style="padding-left:49px;"> 打开的页面</div>
+    <div class="visibleLayrtFilter" data-dojo-attach-point="ADDRESS">字段1:</div>
+</div>

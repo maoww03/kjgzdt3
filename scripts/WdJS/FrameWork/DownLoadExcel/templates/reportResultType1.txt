@@ -1,0 +1,28 @@
+<div style="width: 98%;margin: 0 auto;">
+    <table class="table table-bordered">
+        <thead >
+            <tr >
+                <th>储备机构</th>
+                <th colspan="2">总数</th>
+                <th colspan="2">经营性用地</th>
+                <th colspan="2">住宅</th>
+                <th colspan="2">商业</th>
+                <th colspan="2">非经营性用地</th>
+            </tr>
+            <tr >
+                <th>机构名称</th>
+                <th>总数</th>
+                <th>面积</th>
+                <th>总数</th>
+                <th>面积</th>
+                <th>总数</th>
+                <th>面积</th>
+                <th>总数</th>
+                <th>面积</th>
+                <th>总数</th>
+                <th>面积</th>
+            </tr>
+        </thead>
+        <tbody data-dojo-attach-point="ResultListcon1" ></tbody>
+    </table>
+</div>

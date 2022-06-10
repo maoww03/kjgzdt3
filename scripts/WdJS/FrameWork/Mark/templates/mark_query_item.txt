@@ -1,0 +1,25 @@
+<div class="click_line" style="border-color: #e9edee;">
+    <div class="m_name" style="width:25%;border: none;    height: 30px;" data-dojo-attach-point="labelname"></div>
+    <div class="m_type" style="width:25%;border: none;    height: 30px;" data-dojo-attach-point="m_type"></div>
+    <div class="m_bz"  style="width:25%;border: none;    height: 30px;" data-dojo-attach-point="labelnote" ></div>
+    <div class="m_cz" style="width:25%; padding-left: 22px;    height: 30px;" data-dojo-attach-point="operation" >
+        <div data-dojo-attach-point="edite" style="    width: 14px;
+        height: 14px;
+        background-image: url(image/common/edit.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: left;
+        margin: 8px;
+        background-size: contain;"></div>
+        <div data-dojo-attach-point="delete" style="    width: 14px;
+        height: 14px;
+        background-image: url(image/common/delete.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: left;
+        margin: 8px;
+        background-size: contain;"></div>
+    </div>
+</div>

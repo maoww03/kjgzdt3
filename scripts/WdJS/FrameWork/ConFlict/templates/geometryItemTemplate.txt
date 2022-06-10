@@ -1,0 +1,4 @@
+<div style="width:100%;min-height:30px;line-height:30px;font-size:12px;text-align:center;">
+    <div data-dojo-attach-point="type" class="geometryitem"></div>
+    <div data-dojo-attach-point="value" class="geometryitem"></div>
+</div>

@@ -1,0 +1,27 @@
+<div style="width:443px;height:auto; position: absolute; left: -22px;top: 120px;  border: 1px solid #e9edee;border-radius: 6px; z-index: 999;background-color: white; display: block; position: absolute;z-index: 100000;    box-shadow: rgb(0 0 0 / 18%) 0px 6px 12px;" class="subSidebox">
+    <div style="width: calc(100% - 20px); height: 40px;border-bottom: 1px solid #e9edee ; font: 14px;line-height: 40px; color:black;margin-left:10px;">
+        <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;top:10px;">行政区列表</div>
+        <div data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/region/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+    <div style="margin-left:10px;height:40px;line-height:40px;cursor:pointer;" data-dojo-attach-point="RegionName">当前区域：<div data-dojo-attach-point="nowCity" style="display:inline-block;font-weight:bolder;text-decoration: underline;">温州市</div></div>
+    <div data-dojo-attach-point="Region_con" style="width:calc(100% - 20px);margin-left:10px;" >
+        
+    </div>
+    
+    <div
+    data-dojo-attach-point="loading"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background-image: url(image/ajax-loader.gif);
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.6);
+    "
+  ></div>
+</div>

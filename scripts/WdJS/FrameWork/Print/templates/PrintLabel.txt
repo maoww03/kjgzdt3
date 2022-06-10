@@ -1,0 +1,31 @@
+<div>
+    <div style="width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    background-image: url(image/sidebar/bzzs.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    text-align: center;" data-dojo-attach-point="selectBj" class="printlable"> 添加标记 </div>
+      
+    <div style="width: 120px;height: 120px;clear: both;position: absolute;background: white;display: none;"data-dojo-attach-point="show">
+        <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;" class="printlable" data-dojo-attach-point="point">
+            <div style="width: 21px;height: 30px;background-position: center center;background-repeat: no-repeat;float: left;margin-right: 5px;margin-left: 10px;background-image: url(image/sidebar/dbz.png);"></div>
+            <div style="width: auto;height: 20px;float: left;line-height: 30px;">点标记</div>
+        </div>
+
+        <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;" class="printlable" data-dojo-attach-point="line">
+            <div style="width: 21px;height: 30px;background-position: center center;background-repeat: no-repeat;float: left;margin-right: 5px;margin-left: 10px;background-image: url(image/sidebar/xbz.png);"></div>
+            <div style="width: auto;height: 20px;float: left;line-height: 30px;">线标记</div>
+        </div>
+        <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;" class="printlable" data-dojo-attach-point="area">
+            <div style="width: 21px;height: 30px;background-position: center center;background-repeat: no-repeat;float: left;margin-right: 5px;margin-left: 10px;background-image: url(image/sidebar/mbz.png)"></div>
+            <div style="width: auto;height: 20px;float: left;line-height: 30px;">面标记</div>
+        </div>
+        <div style="float: left;height: 30px;width: 100%;border: 1px solid #ccc;border-top: none;" class="printlable" data-dojo-attach-point="text">
+            <div style="width: 21px;height: 30px;background-position: center center;background-repeat: no-repeat;float: left;margin-right: 5px;margin-left: 10px;background-image: url(image/sidebar/wbbz.png)"></div>
+            <div style="width: auto;height: 20px;float: left;line-height: 30px;">文本标记</div>
+        </div>
+    </div>
+</div>

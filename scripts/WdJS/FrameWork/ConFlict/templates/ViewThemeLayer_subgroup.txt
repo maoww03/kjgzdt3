@@ -1,0 +1,5 @@
+ <div class="themebar">
+    <div class="themename" data-dojo-attach-point="subgruoname" style=" color: #646262cc;"></div>
+    <div class="themebox" data-dojo-attach-point="thembox">
+    </div>
+</div>

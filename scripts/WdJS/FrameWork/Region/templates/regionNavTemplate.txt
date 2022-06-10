@@ -1,0 +1,7 @@
+<div style="display:inline-block;font-weight:bolder;">
+    <div style="display:inline-block;font-weight:bolder;">
+        >
+    </div>
+    <div data-dojo-attach-point="nowCity" style="display:inline-block;font-weight:bolder;text-decoration: underline;">
+    </div>
+</div>

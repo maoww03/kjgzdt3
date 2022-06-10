@@ -1,0 +1,34 @@
+<div class="menu_middle_box2" dx_lx="mark" style="z-index: 999999999;width: 270px;" >
+    <div class="title">
+        <span data-dojo-attach-point="name">添加标记</span>
+        <div class="cancel" data-dojo-attach-point="cancel"></div>
+    </div>
+
+    <div class="line_content">
+      
+        <div class="alert_line" data-dojo-attach-point="printa">
+            <div class="name" style="float: left;width: 35px;">名称:</div>
+            <input type="text" class="input_box" placeholder="请输入名称" data-dojo-attach-point="labelname" style="width: calc(100% - 70px);background: #ececec;border: 1px solid #ccc;border-radius: 0;height: 20px;">
+        </div>
+
+        <div class="alert_line" style="display:none;" data-dojo-attach-point="bz_box">
+            <div class="name" style="width: 35px;">标注:</div>
+            <input type="text" class="input_box" placeholder="请输入标注" data-dojo-attach-point="bz" style="width: calc(100% - 60px);">
+        </div>
+
+        <div class="alert_line" style="display: none;">
+            <div class="name" style="width: 35px;">备注:</div>
+            <textarea class="textarea_box" cols="30" rows="10" data-dojo-attach-point="labelnote" style="width: calc(100% - 55px);margin-left: 10px;resize: none;"></textarea>
+        </div>
+    </div>
+
+    <div class="save_btn" data-dojo-attach-point="save" style="
+    height: 24px;
+    line-height: 24px;
+    border-radius: 0;
+">确认</div>
+    <div class="cancel_btn" data-dojo-attach-point="qx"style="height: 24px;line-height: 24px;border-radius: 0;" >删除</div>
+    <div class="cancel_btn" style="display:none;" data-dojo-attach-point="delete" style="height: 24px;line-height: 24px;border-radius: 0;">取消</div>
+
+    
+</div>

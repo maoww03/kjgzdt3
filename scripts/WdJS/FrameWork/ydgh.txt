@@ -1,0 +1,1382 @@
+{id:"gh_kg_ydgh_py_latest_3_0",name:"控规_用地规划", legend: [
+    {
+        fill_color: [
+            204,
+            204,
+            102,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "癸"
+    },
+    {
+        fill_color: [
+            0,
+            255,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "壬"
+    },
+    {
+        fill_color: [
+            63,
+            255,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "辛; 辛4"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "庚"
+    },
+    {
+        fill_color: [
+            153,
+            204,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "己; 己5"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "戊; 戊1; 戊4"
+    },
+    {
+        fill_color: [
+            192,
+            192,
+            192,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "丁; 丁1; 丁2; 丁3; 丁4; 丁5"
+    },
+    {
+        fill_color: [
+            204,
+            153,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "丙; 丙2"
+    },
+    {
+        fill_color: [
+            76,
+            133,
+            153,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "乙; 乙1; 乙2"
+    },
+    {
+        fill_color: [
+            159,
+            255,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "甲1; 甲2; 甲3; 甲4; 甲5"
+    },
+    {
+        fill_color: [
+            252,
+            243,
+            207,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "N2"
+    },
+    {
+        fill_color: [
+            249,
+            252,
+            187,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "V1; V22; V21; V32; V43"
+    },
+    {
+        fill_color: [
+            153,
+            38,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H9"
+    },
+    {
+        fill_color: [
+            127,
+            79,
+            63,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "V1"
+    },
+    {
+        fill_color: [
+            153,
+            76,
+            76,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H1; H11; H14"
+    },
+    {
+        fill_color: [
+            255,
+            0,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A1; A"
+    },
+    {
+        fill_color: [
+            255,
+            159,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A2; A21; A22"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A3; A31; A32; A33; A34; A35"
+    },
+    {
+        fill_color: [
+            0,
+            153,
+            144,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A4; A41"
+    },
+    {
+        fill_color: [
+            255,
+            0,
+            63,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A5; A51"
+    },
+    {
+        fill_color: [
+            153,
+            76,
+            114,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A6"
+    },
+    {
+        fill_color: [
+            204,
+            51,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A7"
+    },
+    {
+        fill_color: [
+            153,
+            0,
+            76,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A8"
+    },
+    {
+        fill_color: [
+            76,
+            0,
+            19,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "A9"
+    },
+    {
+        fill_color: [
+            204,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B"
+    },
+    {
+        fill_color: [
+            255,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B1; B11; B12; B14"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B2; B21; B22; B29"
+    },
+    {
+        fill_color: [
+            255,
+            63,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B3; B31"
+    },
+    {
+        fill_color: [
+            153,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B49; B4; B41"
+    },
+    {
+        fill_color: [
+            204,
+            102,
+            102,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "B9"
+    },
+    {
+        fill_color: [
+            255,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            223,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C1; C11; C12"
+    },
+    {
+        fill_color: [
+            255,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C2; C21; C22; C23; C24; C25; C26"
+    },
+    {
+        fill_color: [
+            255,
+            159,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C3; C32; C33; C34; C35; C36"
+    },
+    {
+        fill_color: [
+            159,
+            255,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C4; C41"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            191,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C5; C51; C52; C53"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C6; C61; C62; C63; C65"
+    },
+    {
+        fill_color: [
+            204,
+            0,
+            102,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C7"
+    },
+    {
+        fill_color: [
+            255,
+            127,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "C9"
+    },
+    {
+        fill_color: [
+            205,
+            179,
+            252,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "CX"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            178,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "D"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            178,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "D1"
+    },
+    {
+        fill_color: [
+            0,
+            127,
+            95,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "D2"
+    },
+    {
+        fill_color: [
+            0,
+            76,
+            57,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "D3"
+    },
+    {
+        fill_color: [
+            159,
+            255,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E"
+    },
+    {
+        fill_color: [
+            127,
+            191,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E1"
+    },
+    {
+        fill_color: [
+            191,
+            255,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E2; E22"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E3"
+    },
+    {
+        fill_color: [
+            102,
+            204,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E4"
+    },
+    {
+        fill_color: [
+            95,
+            127,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E7"
+    },
+    {
+        fill_color: [
+            153,
+            204,
+            102,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "E9"
+    },
+    {
+        fill_color: [
+            76,
+            153,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "G"
+    },
+    {
+        fill_color: [
+            0,
+            255,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "G1; G11; G12"
+    },
+    {
+        fill_color: [
+            0,
+            153,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "G2; G21; G22"
+    },
+    {
+        fill_color: [
+            127,
+            255,
+            191,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "G3"
+    },
+    {
+        fill_color: [
+            204,
+            0,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H"
+    },
+    {
+        fill_color: [
+            132,
+            132,
+            132,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H2; H21; H22; H23; H24"
+    },
+    {
+        fill_color: [
+            0,
+            102,
+            204,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H3"
+    },
+    {
+        fill_color: [
+            47,
+            76,
+            38,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "H4; H41"
+    },
+    {
+        fill_color: [
+            127,
+            95,
+            63,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "M"
+    },
+    {
+        fill_color: [
+            220,
+            180,
+            160,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "M0"
+    },
+    {
+        fill_color: [
+            204,
+            153,
+            102,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "M1"
+    },
+    {
+        fill_color: [
+            153,
+            114,
+            76,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "M2"
+    },
+    {
+        fill_color: [
+            76,
+            57,
+            38,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "M3"
+    },
+    {
+        fill_color: [
+            250,
+            191,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "R"
+    },
+    {
+        fill_color: [
+            255,
+            223,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "R14"
+    },
+    {
+        fill_color: [
+            255,
+            223,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "R1; R11; R12"
+    },
+    {
+        fill_color: [
+            255,
+            255,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "R2; R21; R22; R23; R24"
+    },
+    {
+        fill_color: [
+            153,
+            153,
+            0,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "R32; R31; R3"
+    },
+    {
+        fill_color: [
+            214,
+            214,
+            214,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S"
+    },
+    {
+        fill_color: [
+            255,
+            255,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S1; S19"
+    },
+    {
+        fill_color: [
+            255,
+            255,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S2; S21; S22"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S3; S31"
+    },
+    {
+        fill_color: [
+            192,
+            192,
+            192,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S4; S41; S42"
+    },
+    {
+        fill_color: [
+            91,
+            91,
+            91,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "S9"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "T"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "T1"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "T2; T21; T23"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "T4"
+    },
+    {
+        fill_color: [
+            128,
+            128,
+            128,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "T5"
+    },
+    {
+        fill_color: [
+            0,
+            153,
+            204,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U"
+    },
+    {
+        fill_color: [
+            0,
+            114,
+            153,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U1; U11; U12; U13; U14; U15; U16"
+    },
+    {
+        fill_color: [
+            0,
+            38,
+            153,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U2; U21; U22; U29"
+    },
+    {
+        fill_color: [
+            63,
+            95,
+            127,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U3; U31; U32"
+    },
+    {
+        fill_color: [
+            127,
+            191,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U4; U41; U42"
+    },
+    {
+        fill_color: [
+            127,
+            191,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U5"
+    },
+    {
+        fill_color: [
+            127,
+            191,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U6"
+    },
+    {
+        fill_color: [
+            38,
+            57,
+            76,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "U9"
+    },
+    {
+        fill_color: [
+            153,
+            102,
+            204,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "W"
+    },
+    {
+        fill_color: [
+            191,
+            127,
+            255,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "W1"
+    },
+    {
+        fill_color: [
+            114,
+            76,
+            153,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "W2"
+    },
+    {
+        fill_color: [
+            153,
+            76,
+            153,
+            1
+        ],
+        border_color: [
+            110,
+            110,
+            110,
+            1
+        ],
+        value: "W3"
+    }
+]},   

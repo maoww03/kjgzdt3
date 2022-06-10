@@ -1,0 +1,13 @@
+<div style="z-index:99999;width:100%;text-align:center;opacity:0.5;color:rgb(94, 94, 94);position:absolute;font-size:2em;transform:rotate(-30deg); -ms-transform:rotate(-30deg); -o-tranform:rotate(-30deg); -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg);filter:progid:DXImageTransform.Microsoft.Alpha(opacity=10) progid:DXImageTransform.Microsoft.Matrix(sizingMethod=\'auto expand\', M11=0.866025404, M12=0.5, M21=-0.5, M22=0.866025404);    height: 2em; overflow: hidden;line-height: 2em;">
+    <span> 温州市自然资源和规划局</span>
+    <span> &emsp;&emsp;&emsp;&emsp;</span>
+    <span> 温州市自然资源和规划局</span>
+    <span> &emsp;&emsp;&emsp;&emsp;</span>
+    <span> 温州市自然资源和规划局</span>
+    <span> &emsp;&emsp;&emsp;&emsp;</span>
+    <span> 温州市自然资源和规划局</span>
+    <span> &emsp;&emsp;&emsp;&emsp;</span>
+    <span> 温州市自然资源和规划局</span>
+
+
+</div>

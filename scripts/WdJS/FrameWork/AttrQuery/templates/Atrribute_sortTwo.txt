@@ -1,0 +1,32 @@
+<DIV style="width: 100%;height: auto; float: left;" >
+
+  <div style="height: 51px; border-bottom: 1px solid #e9edee;padding-left: 12px;float: right;width: 77%;" data-dojo-attach-point="sort2_layer_list" id="sort2_layer_list"></div>
+  <div data-dojo-attach-point="content" id="content_sort2" class="zdh_content">
+    <table class="table table-bordered">
+      <thead>
+        <tr style="background: #286099; color: white;">
+          <th style="width: 50%;">属性名</th>
+          <th>属性值</th>
+        </tr>
+      </thead>
+      <tbody data-dojo-attach-point="content_table2" style="word-break: break-all;">
+        <!-- <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  <!-- annex -->
+  <div class="dirExpand" data-dojo-attach-point="annex_btn" style="padding: 0 0 0 34px;background-color: #ebf5ff;">附件
+    <div data-dojo-attach-point="open_annex"
+    title="打开附件" class="litlleBtn"
+    style="position: inherit;
+    float: right;
+    right: 100px;
+    margin: 8px 33px 0 0;
+    background-image: url('image/attr/dakai.png');" ></div>
+  </div>
+  <div style="height: 30px; border-bottom: 1px solid #e9edee;padding-left: 34px;display: none;" data-dojo-attach-point="annex_list"></div>
+  <div class="content" data-dojo-attach-point="annexCon" style="margin: 0px 0px 12px;width:100%;height: 100px;overflow: auto;display: none;"></div>
+</DIV>

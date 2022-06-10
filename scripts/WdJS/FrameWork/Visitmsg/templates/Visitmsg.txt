@@ -1,0 +1,11 @@
+<div style="height: 60px;font-size: 16px;float:left;margin:0 0 0 10px;position:relative;width: 400px;color: white;">
+    <div style="float: left;min-width: 150px;height: 30px;font-weight: bold;">
+    <p  data-dojo-attach-point="total" style=" width: auto;   margin: 0 0 0 5px;">总访问量:</p>
+    <p data-dojo-attach-point="from" style="
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: lighter;
+        color: #e8e8e8cc;
+    ">2022/3/25-至今</p></div>
+    <div style=" width: auto; float: left;min-width: 150px;height: 30px;font-weight: bold;" data-dojo-attach-point="today">今日访问量:</div>
+</div>

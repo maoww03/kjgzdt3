@@ -1,0 +1,7 @@
+<div class="printL">
+   
+    <div data-dojo-attach-point="icon" class="printLegend">
+        <img src="" alt="" data-dojo-attach-point="icon_img"  class="printLegendimg" >
+    </div>
+    <div data-dojo-attach-point="text" class="printText"></div>
+</div>

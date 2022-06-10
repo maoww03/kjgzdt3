@@ -1,0 +1,4 @@
+<div style="width:100%;height:auto;padding-top:15px;clear:both;">
+    <div data-dojo-attach-point="groupName" style="margin-left:10px;float:left;min-width:56px;height:25px; line-height:25px;"></div>
+    
+</div>

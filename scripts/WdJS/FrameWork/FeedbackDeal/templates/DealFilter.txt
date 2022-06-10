@@ -1,0 +1,43 @@
+<div style="    width: 100%;
+height: 100%;
+padding: 13px 0 0 10px;">
+        <div style="
+        width: auto;
+        height: 40px;
+        float: left;
+        margin: 0 0 0 10px; ">
+            <div style="
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        float: left; ">反馈内容</div>
+            <input type="text" data-dojo-attach-point="content" name="" id="" style="
+        width: 200px;
+        height: 30px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding-left: 2px;
+    ">
+        </div>
+
+
+    <div style="
+        width: auto;
+        height: 40px;
+        float: left;
+        margin: 0 0 0 10px;
+    ">
+            <div style="width: auto;height: 40px;line-height: 40px;float: left;">回复内容</div>
+            <input type="text" name="" data-dojo-attach-point="replycontent" id="" style="
+        width: 200px;
+        height: 30px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding-left: 2px;
+    ">
+        </div>
+    
+        <div class="save_btn" data-dojo-attach-point="search" style="background: #276099;float: left;margin: 5px;">查询</div>
+</div>

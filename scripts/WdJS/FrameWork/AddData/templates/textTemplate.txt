@@ -1,0 +1,6 @@
+<div style="margin-left: 22px;height: 32px;margin-top:10px" class="option">
+    <div>
+        <span data-dojo-attach-point="filedName" style="display:inline-block;width:100px;">数据库名称：</span>
+        <input type="text" data-dojo-attach-point="fieldValue" style="display:inline-block;width: 287px;outline:none; height: 34px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;" />
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div style="width:100%;height:100%;">
+    <div data-dojo-attach-point="layers" style="width:149px;height:100%;overflow-y:auto;float:left;border-right:1px solid #cbcccd;"></div>
+    <div data-dojo-attach-point="items" style="width:210px;height:100%;overflow-y:auto;float:right"></div>
+</div>

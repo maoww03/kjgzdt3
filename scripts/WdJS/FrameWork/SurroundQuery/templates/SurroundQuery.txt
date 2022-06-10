@@ -1,0 +1,103 @@
+<div class="surroundQuery sidebar-tool repeatHide" style="width:443px;height:auto;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+ 
+  <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+    <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">周边查询</div>
+    <div data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+  </div>
+
+  <div class="drawGro" data-dojo-attach-point="drawGro">‘
+    <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:-6px;">定位坐标：</div>
+    <div class="dataLi">
+      <div class="field" style="width: 50px;
+      height: 30px;
+      margin: 0;
+      line-height: 30px;"
+      >X：</div>
+      <div class="value" >
+        <input class="txtIpt" data-dojo-attach-point="x" type="text" placeholder="示例：566817.879" style="border: 1px solid #e9edf0;border-radius: 3px; outline: none; width: 218px;height: 30px; margin-left: 20px;padding-left: 14px;" />
+      </div>
+    </div>
+    <div class="dataLi">
+      <div class="field" 
+      style="width: 50px;
+      height: 30px;
+      margin: 0;
+      line-height: 30px;">
+      Y：</div>
+      <div class="value" >
+        <input class="txtIpt" data-dojo-attach-point="y" type="text"  placeholder="示例：3098619.258" style="border: 1px solid #e9edf0;border-radius: 3px; outline: none; width: 218px;height: 30px; margin-left: 20px;padding-left: 14px;"/>
+      </div>
+    </div>
+   
+    <div style="float: left; clear: both">
+      <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:5px;">缓冲距离:</div>
+      <div class="field" style="width: 50px;
+      height: 30px;
+      margin: 0;
+      margin-top: 10px;
+      line-height: 30px;"
+      >距离:</div>
+      <div style="float: left;margin:10px;" class="option">
+        <input data-dojo-attach-point="distance" type="text" value="10" style="border: 1px solid #e9edf0;border-radius: 3px; outline: none; width: 218px;height: 30px; margin-left: 10px;padding-left: 14px;    position: absolute;" />
+        <select data-dojo-attach-point="unit" style=" width: 71px;
+        height: 30px;
+        line-height: 21px;
+        margin-left: 8px;
+        border: 1px solid #e9edf0;
+        border-radius: 3px;
+        padding-left: 14px;
+        position: absolute;
+        right: 70px;">
+          <option value="kilometers" >米</option>
+          <option value="miles" style="width: 154px; height: 30px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">英里</option>
+          <option value="kilometers">公里</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="btnDiv" style="height: 40px;
+    clear: both;">
+      <div data-dojo-attach-point="draw" 
+      style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:120px;text-align:center;line-height:25px;    bottom: 20px;">
+      定位</div>
+      <div data-dojo-attach-point="next" style="
+      width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:30px;text-align:center;line-height:25px;    bottom: 20px;">
+      下一步</div>
+    </div>
+
+  </div>
+<!-- .surroundQuery .queryDiv .quyerType .typeData -->
+
+    <div class="queryDiv" data-dojo-attach-point="queryDiv" style="display: none;width: 100%;height: auto;" >
+      <div class="quyerType" data-dojo-attach-point="quyerType" style="padding: 0 100px;">
+        <div class="typeData select" type="land">土地</div>
+        <div class="typeData" type="mine">地矿</div>
+        <div class="typeData" type="synthesize">综合</div>
+      </div>
+      <div  data-dojo-attach-point="title" style="background-image: url(image/attr/group.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    text-indent: 10px;
+    margin-top: -6px;
+    height: 35px;
+    clear: both;
+    line-height: 35px;">图层选择:</div>
+      <div class="layersDataBox" style="    margin: 0 0 0 14px;" data-dojo-attach-point="layersDataBox"></div>
+      <div class="btnDiv">
+          <!--<div class="button" data-dojo-attach-point="pre" style="margin: 0 0 0 85px">上一步</div>
+      <div class="button" data-dojo-attach-point="query" style="margin: 0 0 0 10px">查询</div>-->
+          <div data-dojo-attach-point="pre" style="float:left;margin-left:250px; width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;text-align:center;line-height:25px;">上一步</div>
+          <div data-dojo-attach-point="query" style="float:left;margin-left:10px;width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;text-align:center;line-height:25px;">查询</div>
+      </div>
+    </div>
+
+    <div data-dojo-attach-point="queryResult" style="    width: 100%;
+    height: auto;
+    display: none;
+    margin: 10px 0 20px 0;
+    clear: both;">
+
+    </div>
+    
+</div>

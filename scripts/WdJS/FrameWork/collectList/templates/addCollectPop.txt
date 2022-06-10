@@ -1,0 +1,47 @@
+<div class="menu_middle_box2" style="width: 354px;height: auto;">
+    <div class="title">
+        <span>收藏
+            <span data-dojo-attach-point="layername"></span>
+        </span>
+        <div class="cancel" data-dojo-attach-point="cancel"></div>
+    </div>
+    
+    <div style="width: 100%; height: 40px; ">
+        <div  style="width: 232px; margin: 10px 4px 0 7px; height: 30px; border: 1px solid #e9edee;border-radius: 5px;float: left;">
+            <input type="text" placeholder="请输入搜索内容" style="    width: 80%;
+            box-shadow: none;
+            border: none;
+            height: 28px;
+            outline: none;
+            margin-left: 10px; " data-dojo-attach-point="search"  >
+            <div  data-dojo-attach-point="search_go" style="width:19px;height:19px;background-image:url(image/common/cz.png);background-position:center center;background-repeat:no-repeat;cursor:pointer; float: right; margin-top: 4px; margin-right: 8px;"></div>
+        </div>
+        <div class="save_btn"  data-dojo-attach-point="addcatalog" style="height: 30px;
+        padding: 0px 8px;
+        line-height: 30px;
+        margin: 10px 0px 0 6px;
+        float: left;">新建文件</div>
+    </div>
+
+    <div class="line_content" style="display: none;" data-dojo-attach-point="addcatalog_sub">
+        <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">添加</div>
+        <div class="alert_line">
+            <input type="text" class="input_box" placeholder="请输入目录名称" data-dojo-attach-point="labelname" style="width: 310px; height: 30px; margin-left: 6px;">
+        </div>
+        <div class="save_btn"  data-dojo-attach-point="saveCatalog" style="float: right;">确认</div>
+        <div class="cancel_btn" data-dojo-attach-point="qxCatalog" style="float: right;">取消</div>
+    </div>
+    
+    <div data-dojo-attach-point="catalogTree" id="catalogTree" class="ztree" style="clear: both;width: 97%;height: 300px;margin-bottom: 50px; overflow:auto;overflow-x: hidden; padding-top: 14px;"></div>
+
+
+    <div class="save_btn"  data-dojo-attach-point="save" style="    position: absolute;
+    bottom: 16px;
+    right: 11px;">确认</div>
+
+    <div class="cancel_btn" data-dojo-attach-point="qx" style="    position: absolute;
+    bottom: 16px;
+    right: 82px;">取消</div>
+    
+
+</div>

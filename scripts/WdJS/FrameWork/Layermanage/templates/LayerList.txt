@@ -1,0 +1,9 @@
+<div style="width:100%;height:30px;line-height:30px;border-bottom: 1px solid #f9eeee;">
+
+    <div data-dojo-attach-point="check" style="width: 30px; height: 30px; float: left; background-position: center center; background-repeat: no-repeat; cursor: pointer; background-image:  url(image/layermanage/xs.png);"> </div>
+
+    <div data-dojo-attach-point="layername" style="width: 88px; height: 30px; float: left; background-position: center center; background-repeat: no-repeat; cursor: pointer; overflow: hidden; color: rgb(203, 204, 205);"> </div>
+
+    <div data-dojo-attach-point="close" style="width:20px;height:30px;float:right;background-position:center;background-repeat:no-repeat;cursor:pointer;background-image:url(image/legend/close.png);"></div>
+    
+</div>

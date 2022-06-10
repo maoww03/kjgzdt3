@@ -1,0 +1,23 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width:20%;">1</div>
+
+    <div data-dojo-attach-point="field" style="float: left; width: 20%;">field</div>
+
+    <div data-dojo-attach-point="alias"style="float: left; width: 20%;    overflow: hidden;">alias</div>
+
+    <div data-dojo-attach-point="super" style="float: left; width: 20%;">图层名称
+    </div>
+
+    <div style="float: left; width: 20%;">
+        <div data-dojo-attach-point="change" style="width:70px;height:25px;border-radius:5px;color:white;background-color: #4a81e8;cursor:pointer;text-align:center;line-height: 25px;margin: 7px 0 0 95px;float: left;"> 修改alias</div>
+
+        <div data-dojo-attach-point="delete" style="width:70px;height:25px;border-radius:5px;color:white;background-color: #e8674a;cursor:pointer;text-align:center;line-height: 25px;margin: 7px 0 0 12px;float: left;"> 移除</div>
+    </div>
+ <!-- {
+  "active_icon": "string",
+  "icon": "string",
+  "modular": "string",
+  "text": "string"
+} -->
+</div>

@@ -1,0 +1,479 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10000; background: rgb(0 0 0 / 30%);">
+  
+  <div class="print_mapbox"
+    style="
+      width: auto;
+      height: auto;
+      position: fixed;
+      left: calc((100% - 1089px) / 2);
+      top: calc((100% - 650px) / 2);
+      z-index: 1000;
+      background: #fff;
+      border: 1px solid #b7b7b7;
+      z-index: 100000; "  data-dojo-attach-point="MapBox"
+  >
+    <div  style=" width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #fcfdff;
+        color: #57647c;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #eef1f2;
+        z-index:9999999;
+      "
+      data-dojo-attach-point="BoxTitle"
+    >
+      打印浏览
+    </div>
+    <div
+      data-dojo-attach-point="close"
+      style="
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 12px;
+        height: 12px;
+        background: url(image/close.png) center center no-repeat;
+        cursor: pointer;
+      "
+    ></div>
+
+    <!-- 模板 -->
+    <div style="width: 100%;height: 100%;position: absolute;box-sizing: inherit;display: none;background: white;    padding: 14px;" data-dojo-attach-point="showbox">
+
+      <div style="height: 6%;width: 100%;"data-dojo-attach-point="title"> 
+        <div style="width: 100%;font-size: 18px;height: 30px;text-align: center;font-family: serif;font-weight: bold;"data-dojo-attach-point="showbox_mb">地图模板</div>   
+      </div>
+
+      <div style="width: 100%;height: 90%;border: 4px solid black;position: relative;box-sizing: border-box;box-sizing: content-box; " data-dojo-attach-point="showbox_boxT">
+        <div style="width: 100%;border-top: 1px solid black;position: absolute;top: 0;display:none;" data-dojo-attach-point="top_line"></div>
+        <div style="width: 100%;border-top: 1px solid black;position: absolute;bottom: 0;display:none;"data-dojo-attach-point="bottom_line"></div>
+        <div style="height: 100%;border-left: 1px solid black;position: absolute;left: 0;display:none;"data-dojo-attach-point="left_line"></div>
+        <div style="height: 100%;border-left: 1px solid black;position: absolute;right: 0;display:none;"data-dojo-attach-point="right_line"></div>
+
+
+
+      </div>
+
+    </div>
+    <!-- 框 -->
+    <div data-dojo-attach-point="down" id="down" style='float:Left;'>
+      <div data-dojo-attach-point="mapContainer" id="mapContainer" style="width: 749px; height: 530px; float: left; position: relative; margin: 30px;border: 1px solid black;">
+        <div id="mapDivPrint2"   data-dojo-attach-point="mapDivPrint2"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; float: left"
+        > 
+      </div>
+        <div  id="mapDivPrint"
+          data-dojo-attach-point="mapDivPrint"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; float: left"
+        ></div>
+
+      
+        <!-- 图例 -->
+        <div style="min-width:18%;max-width:85%;height:37%;overflow:hidden; position: absolute; z-index:200;bottom: 1px;right: 1px;"data-dojo-attach-point="tlList">
+          <div style="width: 100%;
+          height: 100%;
+          background-color: white;
+          border-top: 1px solid black;
+          border-left: 1px solid black;
+          display: none;
+          overflow: auto;
+          opacity: 0.5;"data-dojo-attach-point="showtl" >
+          </div>
+        </div>
+        <!-- 指北针 -->
+        <div style="width: 15px;
+        height: 35px;
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        display: none;"data-dojo-attach-point="showzbz" >
+        <img src="image/print/zbz.png" alt="">
+        </div>
+
+      
+
+        <!-- 名称 -->
+        <div style="width: 100%;display: flex; align-items: center; justify-content: center;">
+          <div style="width: auto;
+          height: 30px;
+          position: absolute;
+          font-size: 21px;
+          line-height: 30px;
+          padding: 0px 11px;
+          display: block;
+          font-family: cursive;
+          font-weight: bold;
+          /* top: 1px; */
+          display: block;
+          top: -32px;
+          -webkit-print-color-adjust: exact;
+          " data-dojo-attach-point="showname" >地图标题</div>
+        </div>
+
+        <!-- 比例尺 -->
+
+        <div style="width: 200px;
+          height: 20px;
+          font-size: 14px;
+          line-height: 20px;
+          position: absolute;
+          display: none;
+          padding: 0px 8px;
+          box-sizing: content-box;
+          bottom: -24px;
+          left: 50%;
+          margin-left: -100px;
+          font-weight: bold;
+          text-align: center;
+        " data-dojo-attach-point="showblc" > 比例尺</div>
+
+        <!-- 时间 -->
+        <div style="width: auto;
+        height: 20px;
+        position: absolute;
+        /* bottom: 1px; */
+        /* right: 1px; */
+        font-size: 14px;
+        line-height: 20px;
+        box-sizing: content-box;
+        display: none;
+        font-weight: bold;
+        bottom: -40px;
+        right: 0px;
+        " data-dojo-attach-point="showtime" >
+          <span>制图时间：</span>
+          <input type="date" data-dojo-attach-point="showtime2"  style="width: 126px;outline:none;border:none;height:20px;line-height:20px;padding:0;margin:0;"/>
+        </div>
+
+         <!-- 默认单位 -->
+        <div style="width: auto;
+        height: 20px;
+        position: absolute;
+        /* bottom: 1px; */
+        /* right: 1px; */
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0px 20px;
+        box-sizing: content-box;
+        display: none;
+        font-weight: bold;
+        bottom: -23px;
+        right:28px;
+        " data-dojo-attach-point="showdw" ></div>
+
+         <!-- 坐标 -->
+        <div style="width: auto;
+        height: 20px;
+        position: absolute;
+        /* bottom: 1px; */
+        /* right: 1px; */
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0px 20px;
+        box-sizing: content-box;
+        font-weight: bold;
+        bottom: -23px;
+        left:0">2000国家大地坐标系</div>
+
+      </div>
+    </div>
+    <div data-dojo-attach-point="BtnBox" style="width: 260px; height: 650px; float: left; ">
+      <div style="margin: 15px 0">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">纸张尺寸布局:</div>
+        <!-- 修改了下拉框颜色 -->
+        <select
+          data-dojo-attach-point="paperType"
+          style="
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(image/drop-down.png) 70px center no-repeat rgb(243, 243, 243);
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none;
+          "
+        >
+          <option class="bgc" style="background-color: #fff;">A4</option>
+          <option class="bgc" style="background-color: #fff;">A3</option>
+        </select>
+
+        <select
+          data-dojo-attach-point="paperAngle"
+          style="
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(image/drop-down.png) 70px center no-repeat rgb(243, 243, 243);
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            margin-left:14px;
+            font-size: 15px;
+            outline:none; ">
+          <option style="background-color: #fff;">横向</option>
+          <option style="background-color: #fff;">纵向</option>
+        </select>
+
+      </div>
+
+      <div style="margin: 15px 0">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">模板选择:</div>
+        <select
+          data-dojo-attach-point="mbxz"
+          style="
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(image/drop-down.png) 184px center no-repeat rgb(243, 243, 243);
+            width: 216px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none; ">
+          <option style="background-color: #fff;" value="null">无模板</option>
+          <option style="background-color: #fff;" value="tdlyxz">土地利用现状图</option>
+        </select>
+       
+        
+      </div>
+      <div style="margin: 15px 0;">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">预览纸张宽、高(px):</div>
+        <input
+          type="text"
+          data-dojo-attach-point="width"
+          value="1120"
+          style="
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #9d9e9e;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none;
+          "
+        />
+        <input
+        type="text" data-dojo-attach-point="height"
+        value="792"
+        style=" width: 100px;
+        margin-left: 13px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          border: 1px solid  #9d9e9e;
+          border-radius: 5px;
+          margin-top: 6px;
+          font-size: 15px;
+          outline:none;
+        "
+      />
+      </div>
+
+<!-- ===================================================================== -->
+      <div style="margin: 15px 0; width: auto;height: 45px;">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">添加标注:</div>
+        <div data-dojo-attach-point="addBj"></div>
+      </div>
+
+      <div style="margin: 15px 0">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">输出格式:</div>
+        <select  data-dojo-attach-point="outType"
+          style="
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(image/drop-down.png) 184px center no-repeat rgb(243, 243, 243);
+            width: 216px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none;
+          "
+        >
+          <option style="background-color: #fff;" value="0">打印</option>
+          <!-- <option style="background-color: #fff;" value="1">PDF</option> -->
+          <option style="background-color: #fff;" value="PNG">PNG</option>
+          <option style="background-color: #fff;" value="JPG">JPG</option>
+        </select>
+      </div>
+
+      
+      
+      <div style="margin: 15px 0">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">比例尺:</div>
+        <select
+          data-dojo-attach-point="lodsSelect"
+          style="
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(image/drop-down.png) 184px center no-repeat rgb(243, 243, 243);
+            width: 216px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none;
+          "
+        ></select>
+      </div>
+
+      <div style="margin: 15px 0 5px 0;">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">地图名:</div>
+        <input type="text" autocomplete="on" data-dojo-attach-point="namevalue"
+          value=""
+          style="
+            width: 216px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e9edf0;
+            border-radius: 5px;
+            margin-top: 6px;
+            font-size: 15px;
+            outline:none;
+            
+          "
+        />
+      </div>
+      <span style="    display: none;">字体设置：</span> 
+      <div style="width: auto;height: 30px;">
+        <select data-dojo-attach-point="family"
+        style="width: 143px;
+          height: 23px;
+          line-height: 30px;
+          border: 1px solid #e9edf0;
+          font-size: 12px;
+          outline: none;
+          background-color: rgb(243, 243, 243);
+        "></select>
+
+        <select data-dojo-attach-point="size"
+        style="
+           width: 44px;
+          height: 24px;
+          line-height: 24px;
+          border: 1px solid #e9edf0;
+          font-size: 12px;
+          outline: none;
+          background-color: rgb(243, 243, 243);
+        "></select>
+        
+        <div  data-dojo-attach-point="color" 
+        style="  width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        right: 40px;
+        cursor: pointer;
+        top: 532px;">
+          <span style="width: 20px;
+          height: 10px;
+          padding-left: 2px;
+          font-size: 15px;
+          line-height: 10px;">A</span>
+          <div class="picker" data-dojo-attach-point="color2"  id="color-picker" style=" width: 15px; height: 4px;
+          border-radius: 3px;"></div>
+        </div>
+
+      <div style="margin: 15px 0">
+        <div style="width: auto; height: 20px; line-height: 20px; font-size: 15px">添加要素:</div>
+
+        <div style="margin:5px 0 0 8px">
+          <input type="checkbox" name="ele" id="blc" class="checks" style="width: 12px; height: 12px;" data-dojo-attach-point="blc">
+          <span>比例尺&nbsp;&nbsp;</span>  
+          <input type="checkbox" name="ele" id="zbz" class="checks" style="width: 12px; height: 12px;" data-dojo-attach-point="zbz">
+          <span>指北针&nbsp;&nbsp;</span>
+          <input type="checkbox" name="ele" id="time" class="checks" style="width: 12px; height: 12px;"data-dojo-attach-point="time">
+          <span>时间&nbsp;&nbsp;</span>
+          <input type="checkbox" name="ele" id="tl" class="checks" style="width: 12px; height: 12px;"data-dojo-attach-point="tl">
+          <span>图例&nbsp;&nbsp;</span>
+          <br>
+          <input type="checkbox" name="ele" id="sy" class="checks" style="width: 12px; height: 12px;"data-dojo-attach-point="sy">
+          <span>水印&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <input type="checkbox" name="ele" id="dw" class="checks" style="width: 12px; height: 12px;"data-dojo-attach-point="dw">
+          <span>单位</span>
+        </div>
+        
+      </div>
+
+
+      <div
+        data-dojo-attach-point="printBtn"
+        style="
+          width: 60px;
+          height: 24px;
+          line-height: 24px;
+          float: left;
+          margin: 0px 0 0 85px;
+          background: #2079bf;
+          color: #fff;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 12px;
+          border: 1px solid #2079bf;
+        "
+      >
+        打印
+      </div>
+      <div
+        data-dojo-attach-point="exitBtn"
+        style="
+          width: 60px;
+          height: 24px;
+          line-height: 24px;
+          float: left;
+          margin: 0px 0 0 30px;
+          background: #f8f9fb;
+          color: #000;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 12px;
+          border: 1px solid #dee2eb;
+        "
+      >
+        取消
+      </div>
+      <a id="image-download" download="map.png"></a>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+   </div>
+
+      <div data-dojo-attach-point="water" style="overflow: hidden; position: absolute;display: none;"></div>
+</div>

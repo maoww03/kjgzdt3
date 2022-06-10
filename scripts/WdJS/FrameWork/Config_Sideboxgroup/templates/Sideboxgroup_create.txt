@@ -1,0 +1,61 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1000000;background: rgb(29 29 29 / 50%); " id="dijit__TemplatedMixin_73" widgetid="dijit__TemplatedMixin_73">
+    <div style="    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -80px;
+    z-index: 100000;
+    margin-left: -250px;
+    border: 1px solid #c5c0c0;
+    border-radius: 10px;
+    background: white;">
+        <div data-dojo-attach-point="type_name" style="
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #fcfdff;
+        color: #57647c;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #eef1f2;
+        z-index:9999999;  ">新建</div>
+        <div data-dojo-attach-point="close" style="  position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 12px;
+        height: 12px;
+        background: url(image/close.png) center center no-repeat;
+        cursor: pointer;
+        "></div>
+    
+        <!-- msg -->
+        <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: auto;font-size: 14px;display: inline-block;">基础信息</div>
+        <div>
+            <div style="width: auto;height: auto;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 88px;font-size: 14px;display: inline-block;">目录名称:</div>
+                <input type="text" name="" data-dojo-attach-point="text" style="outline-color: #78afd6;height: 34px;border: 1px solid #ccc;border-radius: 5px;width: 305px;    padding-left: 10px">
+            </div>
+        </div>
+        <div>
+            <div style="width: auto;height: auto;">
+                <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 88px;font-size: 14px;display: inline-block;">用户ID:</div>
+                <input type="text" name="" data-dojo-attach-point="user_id" style="outline-color: #78afd6;height: 34px;border: 1px solid #ccc;border-radius: 5px;width: 305px;    padding-left: 10px">
+            </div>
+        </div>
+      
+    
+        <!--  -->
+        <div style="
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 95%;
+        " data-dojo-attach-point="btn">
+            <div class="save_btn" data-dojo-attach-point="save" style="width: 82px;text-align: center;">确认</div>
+            <div class="cancel_btn" data-dojo-attach-point="qx" style="text-align: center;width: 82px;">取消</div>
+        </div>
+    </div>
+    </div>

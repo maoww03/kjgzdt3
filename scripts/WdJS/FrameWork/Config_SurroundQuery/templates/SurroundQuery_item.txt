@@ -1,0 +1,39 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width: 10%;">1</div>
+
+    <div data-dojo-attach-point="text" style="float: left; width: 15%;">text</div>
+
+    <div data-dojo-attach-point="code"style="float: left; width: 15%;    overflow: hidden;">code</div>
+
+    <div data-dojo-attach-point="type" style="float: left; width: 10%;">type
+    </div>
+
+    <div data-dojo-attach-point="icon" style="float: left; width: 20%;">icon
+    </div>
+
+    <div style="float: left; width: 15%;">  
+        <div style="width: 85px;margin: 0 auto;">
+            <div style=" width: 40px;
+            cursor: pointer;
+            color: #79afe6;
+            float: left;"data-dojo-attach-point="change">修改</div>
+    
+            <div style="width: 40px;
+            cursor: pointer;
+            color: red;
+            float: left;" data-dojo-attach-point="delete">删除</div>
+        </div> 
+        
+    </div>
+    <div  style="float: left; width: 15%;">
+        <div data-dojo-attach-point="navSub" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;text-align:center;line-height: 25px;margin: 5px auto;"> 下级</div>
+    </div>
+
+ <!-- {
+  "active_icon": "string",
+  "icon": "string",
+  "modular": "string",
+  "text": "string"
+} -->
+</div>

@@ -1,0 +1,8 @@
+<div style="width: 20px;
+height: 20px;
+background: no-repeat;
+background-image:url('image/sidebar/fixed_line.png');
+/* background-image:url('image/sidebar/gb.png'); */
+position: absolute;
+top: 17px;
+right: 12px;" class="no_fixed"></div>

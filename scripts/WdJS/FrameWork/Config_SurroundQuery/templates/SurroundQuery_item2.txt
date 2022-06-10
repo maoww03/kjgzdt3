@@ -1,0 +1,29 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+
+    <div data-dojo-attach-point="num" style="float: left; width: 10%;">1</div>
+
+    <div data-dojo-attach-point="caption" style="float: left; width: 10%;">caption</div>
+
+    <div data-dojo-attach-point="layerid" style="float: left; width: 20%;height: 100%;overflow: hidden;">layerid</div>
+
+    <div data-dojo-attach-point="queryurl" style="float: left; width: 20%;height: 100%;overflow: hidden;">queryurl</div>
+
+    <div data-dojo-attach-point="displayfield" style="float: left; width: 10%;">displayfield</div>
+
+    <div data-dojo-attach-point="alias" style="float: left; width: 10%;">alias
+    </div>
+
+    <div style="float: left; width: 20%;">  
+        <div style="width: 84px;margin: 0 auto;">
+            <div style=" width: 40px;
+            cursor: pointer;
+            color: #79afe6;
+            float: left;"data-dojo-attach-point="change">修改</div>
+    
+            <div style="width: 40px;
+            cursor: pointer;
+            color: red;
+            float: left;" data-dojo-attach-point="delete">删除</div>
+        </div> 
+    </div>
+</div>

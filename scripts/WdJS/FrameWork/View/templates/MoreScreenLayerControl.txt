@@ -1,0 +1,7 @@
+<div class="MoreScreenLayerControl">
+  <div class="header">
+    <div class="title">分屏对比</div>
+    <div class="close" data-dojo-attach-point="close"></div>
+  </div>
+  <div class="content" data-dojo-attach-point="content"></div>
+</div>

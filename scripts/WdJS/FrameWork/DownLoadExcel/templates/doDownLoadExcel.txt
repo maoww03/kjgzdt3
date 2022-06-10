@@ -1,0 +1,56 @@
+<div class="sidebar-tool" data-dojo-attach-point="subSidebox" style="width:443px;height:50%;box-shadow: 0 6px 12px rgb(0 0 0 / 18%);background-color:white;position: absolute;top:127px;border-radius: 6px;right:20px;z-index:9999;">
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div data-dojo-attach-point="subSidebox_text" style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">统计报表</div>
+        <div data-dojo-attach-point="subSidebox_close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+   
+    <div style="margin: 15px 0 0 0;height: 80%;" class="group1">
+        <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">选择报表</div>
+
+        
+        <div style="margin-left: 22px;width: 97%;margin: 0 auto;max-height: 90%;overflow: auto;" class="option">
+            <table class="table table-bordered">
+                
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>报表名称</th>
+                        <th>来源处室</th>
+                        <th>来源图层</th>
+                      </tr>
+                </thead>
+                <tbody data-dojo-attach-point="reportSelect">
+                </tbody>
+            </table>
+
+            <div style="display: none;">
+                <select data-dojo-attach-point="layersNameSelect" style="width: 304px; height: 34px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;outline:none;">
+                </select>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div style="width:100%;height:25px;margin-bottom:20px;text-align:center;line-height:25px;clear:both;margin-top:10px;display: block;">
+        <div data-dojo-attach-point="downLoad" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:10px;">分析</div>
+    </div>
+
+    <div
+    data-dojo-attach-point="loading"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background-image: url(image/ajax-loader.gif);
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.6);
+    "
+  ></div>
+  
+</div>

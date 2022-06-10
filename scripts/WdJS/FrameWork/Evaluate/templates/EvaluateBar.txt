@@ -1,0 +1,49 @@
+
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1000000;background: rgb(29 29 29 / 50%); "class="subSidebox">
+  <div style="width:443px;height: 280px;position: absolute;left: 50%;top: 50%;margin-left: -221px;margin-top: -120px;border: 1px solid #e9edee;border-radius: 6px;background-color: white;display: block;" >
+      <div style="width: calc(100% - 20px); height: 40px;border-bottom: 1px solid #e9edee ; font: 14px;line-height: 40px; color:black;margin-left:10px;">
+          <div style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;top:10px;">发表评价</div>
+          <div data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/region/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+      </div>
+
+
+      <div>
+        <div style="width: auto;height: 30px;float: left;font-size: 14px;line-height: 30px;margin: 10px;    font-weight: bold;">系统评分:</div>
+        <div class="demo" style="width: auto;height: auto;float: left;margin: 10px;">
+          <div id="precision-demo" class="target-demo" style="cursor: pointer; width: 170px;"></div>
+          <div id="precision-hint" class="hint" style="background: white;width: 30px;height: 30px;line-height: 32px;font-size: 16px;" data-dojo-attach-point="score"  ></div>
+        </div>
+      </div>
+      <div style="clear: both;">
+        <textarea data-dojo-attach-point="content" class="textarea_box" cols="30" rows="6" data-dojo-attach-point="labelnote" style="width: calc(100% - 20px);margin-left: 10px;resize: none;border: 1px solid #ccc;border-radius: 9px;padding: 5px;font-size: 14px;outline:none; color: #908787;" placeholder="写下你珍贵的评价:"></textarea>
+      </div>
+
+      <div style="width: auto; clear: both;float: right; ">
+       
+        <div data-dojo-attach-point="tj" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;text-align:center;line-height:25px;margin: 13px;float: left;">
+          提交</div>
+        <div data-dojo-attach-point="xg" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;text-align:center;line-height:25px;;margin: 13px;float: left;">
+          更改</div>
+      </div>
+      
+    
+      
+      
+      <div
+      data-dojo-attach-point="loading"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        background-image: url(image/ajax-loader.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+      "
+    ></div>
+  </div>
+</div>

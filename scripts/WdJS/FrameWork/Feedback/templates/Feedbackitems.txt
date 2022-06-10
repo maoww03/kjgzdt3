@@ -1,0 +1,24 @@
+<div style="width: 100%; height: 38px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 38px;">
+    <div data-dojo-attach-point="num" style="float: left; width: 10%;">1</div>
+    <div data-dojo-attach-point="content"style="float: left; width: 40%;    overflow: hidden;">xxxxxxxxxxxxx</div>
+    <div data-dojo-attach-point="time" style="float: left; width: 20%;">2021-8-1</div>
+    <div style="float: left; width: 15%;padding-left: 22px;">   
+        <div style=" width: 40px;
+        cursor: pointer;
+        text-decoration: underline;color: #79afe6;
+        float: left;"data-dojo-attach-point="delete">删除</div>
+        <div style="width: 40px;
+        cursor: pointer;
+        text-decoration: underline;color: #79afe6;
+        float: left;" data-dojo-attach-point="detail">详情</div>
+    </div>
+    <div style="float: left; width: 15%;">
+        <div  data-dojo-attach-point="status"  style="    width: 50px;
+        height: 20px;
+        line-height: 20px;
+        color: white;
+        border-radius: 3px;
+        margin: 9px auto;">未处理</div>
+        
+    </div>
+</div>

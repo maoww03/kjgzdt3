@@ -1,0 +1,23 @@
+<DIV style="width: 100%;height: auto; float: left;" >
+    <!-- 1-tab -->
+    <div style="height: 30px; border-bottom: 1px solid #e9edee;padding-left: 12px;float: right;width: 77%;" data-dojo-attach-point="sort3_layer_list" id="sort3_layer_list"></div>
+    
+    <!-- 2-table -->
+    <div data-dojo-attach-point="content" id="content_sort3"  class="nzy_content">
+     
+      <table class="table table-bordered">
+        <thead>
+          <tr style="background: #286099; color: white;">
+            <th style="width: 50%;">属性名</th>
+            <th>属性值</th>
+          </tr>
+        </thead>
+        <tbody data-dojo-attach-point="content_table2" style="word-break: break-all;">
+          <!-- <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </DIV>

@@ -1,0 +1,64 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 88%;
+    height: 96%;
+    margin: 20px auto;
+    background-color: #efefef;
+    position: relative;
+    ">
+         <div style="
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         font-size: 16px;
+         padding: 0 20px;
+         background: #dedede;
+         color: #515761;
+         border-bottom: 1px solid #eef1f2;
+         z-index:9999999;
+         "> 查询结果</div>
+ 
+         <div data-dojo-attach-point="close" style="  position: absolute;
+         top: 15px;
+         right: 20px;
+         width: 12px;
+         height: 12px;
+         background: url(image/close.png) center center no-repeat;
+         cursor: pointer;
+         "></div>
+ 
+        <!-- table -->
+        <div style=" width:  100%;height: 88%;float: left;    overflow: auto;">
+            <div style="min-width: 100%;" data-dojo-attach-point="content">
+                <table class="table table-bordered">
+                <thead data-dojo-attach-point="head_table">
+                
+                </thead>
+                <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+                
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- 分页 -->
+        <div style="width: 400px;
+        height: 44px;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        color: rgb(58, 58, 58);
+        position: absolute;
+        bottom: -6px;
+        left: 40%;">
+            <div data-dojo-attach-point="sx" style="background-image: url(image/feedback/sx.png);border: none;width: 24px;height: 24px;background-repeat: no-repeat;background-color: white;background-position:center center;display: none;" class="page"></div>
+            <div data-dojo-attach-point="first" class="page">首页</div>
+            <div data-dojo-attach-point="pre" class="page">上一页</div>
+            <div data-dojo-attach-point="now_page" class="page" style="width: 50px;">1</div>
+            <div data-dojo-attach-point="next" class="page">下一页</div>
+            <div data-dojo-attach-point="last" class="page">末页</div>
+            <div data-dojo-attach-point="total_page" style="display: inline-block;float: left; font-size: 13px;margin-top: 3px;margin-left: 6px;">共  1  页</div>
+        </div>
+     
+     </div>
+</div>

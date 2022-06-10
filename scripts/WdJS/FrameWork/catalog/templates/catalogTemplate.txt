@@ -1,0 +1,18 @@
+<div style="width:auto;height:auto;cursor:pointer;">
+    <div style="width:70px;height:70px;" data-dojo-attach-point="catalogBtn">
+        <div data-dojo-attach-point="icon" style="width:50px;height:50px;background-position:center center;background-repeat:no-repeat;margin-left:10px;"></div>
+        <div data-dojo-attach-point="text" style="width:70px;height:20px;line-height:20px;color: white;text-align:center;"></div>
+    </div>
+    
+    <div data-dojo-attach-point="siderbar" id="siderbar" style="box-shadow: rgb(0 0 0 / 18%) 0px 6px 12px;width:350px;height:auto;position:absolute;left:70px;bottom:0px;top:0px;background:white;display:none;border-right: 1px solid #bbb;">
+        <div data-dojo-attach-point="siderbar_subItem" style="width:100%;height:50px;border-bottom:1px solid #eff2f3"></div>
+        <div data-dojo-attach-point="siderbar_subItemContent" style="width:100%;height:calc(100% - 50px);padding:10px;overflow: scroll;"></div>
+    </div>
+    <div data-dojo-attach-point="siderbarBtn" class="siderbar-btn"></div>
+
+    <div data-dojo-attach-point="toolbar" style="width:350px;height:auto;position:absolute;left:70px;background:white;display:none;border-right: 1px solid #bbb;border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;border-radius:0px 2px 2px 0px;">
+        <div data-dojo-attach-point="toolbar_subItem" style="width:100%;height:50px;border-bottom:1px solid #eff2f3"></div>
+        <div data-dojo-attach-point="toolbar_subItemContent" style="width:100%;height:auto;"></div>
+    </div>
+    <div data-dojo-attach-point="toolbarBtn" class="siderbar-btn"></div>
+</div>

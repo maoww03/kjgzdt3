@@ -1,0 +1,24 @@
+<div style="width: 100%; height: 30px;text-align: center;border: 1px solid #e9edee;border-top: none; color: #666666;line-height: 30px;">
+    <div data-dojo-attach-point="num" style="float: left; width: 20%;"></div>
+    <div data-dojo-attach-point="name"style="float: left; width: 60%;"></div>
+    <div style="float: left; width: 20%;">   
+        <div style="    width: 14px;
+        height: 14px;
+        background-image: url(image/common/restore.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: left;
+        margin: 8px;
+        background-size: contain;"data-dojo-attach-point="restore"></div>
+        <div style="    width: 15px;
+        height: 15px;
+        background-image: url(image/common/delete.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: left;
+        margin: 8px;
+        background-size: contain;" data-dojo-attach-point="delete"></div>
+    </div>
+</div>

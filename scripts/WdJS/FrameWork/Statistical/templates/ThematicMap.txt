@@ -1,0 +1,7 @@
+<div class="box" style="left: 600px; width: 800px; height: 600px">
+  <div class="header">
+    <div class="title">统计</div>
+    <div class="close" data-dojo-attach-point="close"></div>
+  </div>
+  <div class="dataBox" style="height: 560px; margin: 0 10px; float: left; width: calc(100% - 20px)" data-dojo-attach-point="dataBox"></div>
+</div>

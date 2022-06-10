@@ -1,0 +1,263 @@
+<div class="box sidebar-tool" style="width: 443px;">
+
+    <!--<div class="header">
+        <div class="title">统计</div>
+        <div class="close" data-dojo-attach-point="close"></div>
+    </div>-->
+
+    <div style="width:100%;height:40px;border-bottom:1px solid #e9edee;">
+        <div data-dojo-attach-point="subSidebox_text" style="width:auto;height:20px;line-height:20px;color: #838080;position:absolute;left:10px;top:10px;">统计</div>
+        <div data-dojo-attach-point="close" style="width:10px;height:20px;position:absolute;right:10px;top:10px;background-image:url(image/sidebar/close.png);background-position:center center;background-repeat:no-repeat;cursor:pointer;"></div>
+    </div>
+
+    <div style="clear: both;overflow-y: auto; overflow-x: hidden;"data-dojo-attach-point="over" >
+        <!-- page 1  -->
+        <div style="width: 100%;float: left;border-right: 1px solid #e9edee;display: block;" data-dojo-attach-point="page1">
+            <div class="dataBox" style="float: none;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">名称选择</div>
+
+                <div style="margin-left: 22px;height: 32px;" class="option">
+                    <div>
+                        <span>图层名称：</span>
+                        <select data-dojo-attach-point="layersNameSelect" style="width: 80%; height: 34px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+                            <!-- <option value="土地利用总体规划">土地利用总体规划</option> -->
+                        </select>
+                    </div>
+        
+                    <div>
+                        <span>字段名称：</span>
+                        <select data-dojo-attach-point="fieldNameSelect" style="width: 80%; height: 34px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;">
+                            <!-- <option>土地利用总体规划</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div style="margin: 12px 0px; font-size: 14px; float: left" class="option">
+                <div style="float: left;
+                margin-top: 3px;
+                width: auto;
+                text-align: right;
+                margin-left: 22px;">选择文件：</div>
+                <div
+                style="
+                    float: left;
+                    margin-left: 9px;
+                    width: 74px;
+                    text-align: center;
+                    height: 26px;
+                    line-height: 26px;
+                    background-color: #1c74bb;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                "
+                data-dojo-attach-point="checkFile"
+                >
+                选择文件
+                </div>
+                <div
+                style="float: left; margin-left: 8px; margin-top: 3px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap"
+                data-dojo-attach-point="path"
+                >
+                未选择任何文件
+                </div>
+                <input
+                data-dojo-attach-point="upload"
+                name="file"
+                type="file"
+                class="upload"
+                id="test-upload" 
+                accept="text/plain,application/zip"
+                style="display: none"
+                />
+            </div> -->
+            
+            <div class="dataBox" style="height: 400px;display: none;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">属性过滤</div>
+        
+                <div style="margin-left: 22px;height: 32px;" class="option3">
+                    <span>属性过滤：</span>
+                    <select data-dojo-attach-point="filterSelect" style="width: 110px; height: 34px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;padding-left: 14px;outline:none;">
+                        <!-- <option style="width: 178px">土地利用总体规划</option> -->
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="dataBox" style="float: none;" >
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">属性过滤</div>
+
+                <div style="width: 100%;height: 42px; margin: 8px 0 0 20px;">
+                    <!-- checkbox -->
+                    <input type="radio" name="ele" id="all" class="checks"    style="width: 23px; height: 23px;"data-dojo-attach-point="all">
+                    <div style="display: inline-block;
+                    max-width: 100%;
+                    margin: 0 15px 15px 5px;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    ">全选</div>
+
+                    <input type="radio" name="ele" id="rever" class="checks"  style="width: 23px; height: 23px;" data-dojo-attach-point="rever">
+                    <div style="display: inline-block;
+                    max-width: 100%;
+                    margin: 0 15px 15px 5px;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    ">反选</div>
+
+                    <input type="radio" name="ele" id="cancel" class="checks" style="width: 23px; height: 23px;" data-dojo-attach-point="cancel">
+                    <div style="display: inline-block;
+                    max-width: 100%;
+                    margin: 0 15px 15px 5px;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    ">取消</div>
+
+                   
+                    <div style="width:188px;height:38px;float:right;" >
+                        <input type="text" style="width: 157px;
+                        height: 30px;
+                        outline: none;
+                        background: none;
+                        border: 1px solid #ccc;
+                        border-radius: 15px;
+                        padding: 0 0 0 9px;" data-dojo-attach-point="searchsx" placeholder="输入属性名称" />
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 370px;overflow: auto;border-top: 1px solid #e9edee;"data-dojo-attach-point="filterSelect2"  >
+                    <div class="filter"> 111111 </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- page 2 -->
+        <div style="width: 100%; float: left; height: auto; display: none;" data-dojo-attach-point="page2">
+
+            
+            <div class="dataBox" ope="draw" style="height:73px;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">绘图工具：</div>
+                <div class="opeBtn" draw-type="rectangle" style="background-image:url(image/statistical/lk.png);">拉框</div>
+                <div class="opeBtn" draw-type="polygon" style="background-image:url(image/statistical/hm.png);">画面</div>
+                <!-- <div class="opeBtn" style="background-image:url(image/doConflict/uploadpolygon.png);"data-dojo-attach-point="checkFile">上传</div>
+                <input  data-dojo-attach-point="upload"  name="file"  type="file"  class="upload"  id="test-upload"  accept="text/plain,application/zip"style="display: none"/> -->
+            </div>
+
+            <div class="dataBox" ope="sc" style="width:100%;height:auto;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">图形上传:</div>
+
+                <div class="opeBtn" style="background-image:url(image/doConflict/uploadpolygon.png);"data-dojo-attach-point="checkFile">上传</div>
+                <input  data-dojo-attach-point="upload"  name="file"  type="file"  class="upload"  id="test-upload"  accept="text/plain,application/zip"style="display: none"/>
+                <div style="display:none">
+                    <span style="margin: 20px 0px 0px 23px;">属性选择：</span>
+                    <select name="sxxz" data-dojo-attach-point="sxxz" style="    width: 109px;
+                    height: 26px;
+                    line-height: 26px;
+                    border: 1px solid #e9edf0;
+                    border-radius: 3px;
+                    padding-left: 14px;
+                    outline: none;
+                    margin: 15px 10px 0 4px;" >
+                        <!-- <option value="null">name</option> -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="dataBox" data-dojo-attach-point="shps_box" style="display: none;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">地块选择:</div>
+                <div data-dojo-attach-point="shps" style="width: 366px;
+                    height: 75px;
+                    border: 1px solid rgb(235, 237, 243);
+                    background: white;
+                    margin-left: 41px;
+                    clear: both;
+                    display: block;
+                    overflow: auto;
+                    padding-left: 8px;
+                    padding-bottom: 8px;
+                    direction: rtl;">
+                    <div class="shpList">图形1</div>
+                    <div class="shpList">图形2</div>
+                </div>
+            </div>
+
+            <div class="dataBox" ope="xzq" style="height:73px;">
+                <div style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;margin-top:12px;">选择行政区:</div>
+
+                <select data-dojo-attach-point="regionSelect" style="width: 110px; height: 30px; line-height: 21px;margin-left:22px;border: 1px solid #e9edf0;border-radius: 3px;">
+                    <option disabled selected>请选择行政区</option>
+                </select>
+        
+                <select data-dojo-attach-point="streetSelect" style="width: 110px; height: 30px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;">
+                    <option style="display: none" disabled selected>请选择街道</option>
+                </select>
+        
+                <select data-dojo-attach-point="villageSelect" style="width: 110px; height: 30px; line-height: 21px;margin-left:8px;border: 1px solid #e9edf0;border-radius: 3px;">
+                    <option style="display: none" disabled selected>请选择社区</option>
+                </select>
+            </div>  
+            <div class="dataBox" style="width:100%;height:24px;display: none;">
+                <div class="statisticalBtn" >统计</div>
+            </div>
+            <!--  -->
+            <div class="dataBox" style="height: 364px;position: relative;width:94%;">
+                <span style="background-image:url(image/attr/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;">统计结果：</span>
+                <span style="color: red;"  data-dojo-attach-point="selectType"></span>
+
+                <div data-dojo-attach-point="clips"  style="    width: 57px;
+                height: 24px;
+                border: 1px solid #ccc;
+                position: absolute;
+                left: 276px;
+                top: 13px;
+                border-radius: 3px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                line-height: 21px;display:none">截取</div>
+                
+                
+                <div data-dojo-attach-point="statisticalBtn"  class="statisticalBtn" style="top:12px;">统计</div>
+
+                <div class="result" data-dojo-attach-point="result" style="display: none;margin-left: 10px;">
+                    <div class="resultShowType">
+                        <!-- <div class="showType select" show-type="table">表格</div> -->
+                        <div class="showType" show-type="pieChart">饼图</div>
+                        <div class="showType" show-type="lineChart" >折线图</div>
+                        <div class="showType" show-type="barChart">柱状图</div> 
+                    </div>
+                    
+                    <div  data-dojo-attach-point="shps_box">
+                        <div data-dojo-attach-point="shps"  style="
+                        overflow: auto;
+                        margin-top: 10px;
+                        width: 89px;
+                        float: left;
+                        height: 300px;
+                        border-right: 1px solid #ccc;
+                        "> 
+                            <div class="dklist" > 全部</div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="dataBox_table" data-dojo-attach-point="dataBox_table" style="margin-top: 10px;width: 320px;
+                    float: right;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width:100%;height:40px;;margin-bottom:12px;text-align:center;line-height:25px;clear:both;margin-top:10px;">
+
+        <div data-dojo-attach-point="create" style="width: 74px;height:25px;border-radius:5px;border:1px solid #dee2eb;background-color: #f5f5f5;cursor:pointer;position:absolute;    left: 21px;margin-top: 10px;">新增</div> 
+        <div data-dojo-attach-point="pre" style="width:70px;height:25px;border-radius:5px;border:1px solid #dee2eb; background-color :#f8f9fb;cursor:pointer;position:absolute;right:10px;display:none;margin-top: 10px;">上一步</div>
+        <div data-dojo-attach-point="next" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:10px;margin-top: 10px;">下一步</div>
+        <div data-dojo-attach-point="outputBtn" style="width:70px;height:25px;border-radius:5px;color:white;background-color:#1c74bb;cursor:pointer;position:absolute;right:90px;display:none;margin-top: 10px;">导出</div>
+    </div>
+
+</div>

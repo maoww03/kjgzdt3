@@ -1,0 +1,128 @@
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10000; background: rgba(0, 0, 0, 0.5)" >
+    <div style="
+    width: 500px;
+    height: 530px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -250px;
+    border: 1px solid #c5c0c0;
+    border-radius: 10px;
+    
+    ">
+        <div style="
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #fcfdff;
+        color: #57647c;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #eef1f2;
+        z-index:9999999;  "> 控规入库 </div>
+
+        <div data-dojo-attach-point="close" style="  position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 12px;
+        height: 12px;
+        background: url(image/close.png) center center no-repeat;
+        cursor: pointer;
+        "></div>
+
+        <!-- con  -->
+        <div style=" height: 281px;    padding: 14px 0 0 23px;">
+            <div style="
+            background-image:url(image/doConflict/group.png);
+            background-position:left center;
+            background-repeat:no-repeat;
+            margin-left:10px;
+            text-indent:10px;
+            clear: both;
+            font-size: 14px;
+            ">配置文件标识</div>
+     
+           <div style="width: auto;height: auto;">
+             <div style="background-position:left center;background-repeat:no-repeat;margin-left:19px;text-indent:10px;margin-top:23px;width: 76px;font-size: 14px;display: inline-block;">文件标识:</div>
+             <select data-dojo-attach-point="conf" style="    width: 199px;
+             height: 32px;
+             line-height: 30px;
+             outline: none;
+             background-color: white;
+             border: 1px solid #ccc;
+             text-align: center;
+             padding-left: 35px;
+             font-size: 14px;
+             "> </select>
+
+            
+             
+          </div>
+     
+            <div style="margin-top:15px;" class="group1">
+                 <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;font-size: 14px;">现势库 GDB 文件 <span style="color: red;">(压缩为 zip 包)</span></div>
+                 <div class="alert_line" style="height: 50px;">
+                     <div class="name" style=" width: 76px; font-size: 14px;">文件名称:</div>
+                     <div class="text_file_name" data-dojo-attach-point="file_name1" style="
+                         border: 1px solid #ccc;
+                         height: 31px;
+                         border-radius: 0;
+                         background: #f3f2f2;
+                         width: 200px;
+                     "></div>
+                     <div class="up_file_btn" style="margin-right: 90px;">上传
+                         <input type="file" class="input_file" placeholder="请输入名称" data-dojo-attach-point="upload1">
+                     </div>
+                 </div>
+             </div>
+     
+            <div style="margin-top:15px;" class="group1">
+                 <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;clear: both;font-size: 14px;">历史库 GDB 文件<span style="color: red;">(压缩为 zip 包)</span></div>
+                 <div class="alert_line">
+                     <div class="name" style="
+                         font-size: 14px;
+                         width: 74px;
+                     ">文件名称:</div>
+                     <div class="text_file_name" data-dojo-attach-point="file_name2" style="
+                         border: 1px solid #ccc;
+                         height: 31px;
+                         border-radius: 0;
+                         background: #f3f2f2;
+                         width: 200px;
+                     "></div>
+                     <div class="up_file_btn" style="margin-right: 90px;">上传
+                         <input type="file" class="input_file" placeholder="请输入名称" data-dojo-attach-point="upload2">
+                     </div>
+                 </div>
+             </div>
+
+             <div style="margin-top:15px;" class="group1">
+                <div style="background-image:url(image/doConflict/group.png);background-position:left center;background-repeat:no-repeat;margin-left:10px;text-indent:10px;clear: both;font-size: 14px;">入库信息</div>
+                <textarea class="textarea_box" cols="20" rows="8" data-dojo-attach-point="err_data" style="width: 434px;margin-left: 10px;resize: none;border: 1px solid #ccc;background: #fdfdfd;    padding: 5px;
+                outline: none;"></textarea>
+            </div>
+
+
+        </div>
+
+
+       <!-- btn -->
+       <div style="
+       height: 44px;
+       margin-bottom: 20px;
+       width: 93%;
+       bottom: 0px;
+       position: absolute;
+       ">
+           <div class="save_btn" data-dojo-attach-point="save" style="width: 200px;text-align: center;height: 41px;line-height: 40px;font-size: 15px;">确认</div>
+           <div class="cancel_btn" data-dojo-attach-point="qx" style="width: 200px;text-align: center;height: 41px;line-height: 40px;font-size: 15px;">取消</div>
+       </div>
+
+       
+
+    </div>
+</div>

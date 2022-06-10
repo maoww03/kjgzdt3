@@ -1,0 +1,30 @@
+<div class="conflictResutl sidebar-tool repeatHide">
+    <div class = "head" >
+        <div style="width: 80%;height: 100%;float: left;overflow-x: auto;" data-dojo-attach-point="retab"></div>
+
+        <div  class="btnGroup" style="width:20%">
+            <div class="btns" data-dojo-attach-point="intro" >审查结果</div>
+            <div class="btns" data-dojo-attach-point="down" >表格下载</div>
+            <div class="btns" data-dojo-attach-point="downshp" >图形下载</div>
+        </div >
+
+        <div data-dojo-attach-point="subSidebox_close" class="close-btn"></div>
+    </div>
+
+    <div class="content">
+        <div  data-dojo-attach-point="content" style="min-width: 100%;">
+            <table class="table table-bordered">
+                <thead data-dojo-attach-point="head_table"></thead>
+                <tbody data-dojo-attach-point="content_table" style="word-break: break-all;">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   
+
+    
+  
+  </div>
+  

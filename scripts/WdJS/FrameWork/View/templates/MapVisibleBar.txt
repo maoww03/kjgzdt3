@@ -1,0 +1,23 @@
+<div
+  style="
+    width: 40px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    left: 420px;
+    top: 100px;
+    z-index: 999;
+    border: 1px solid #e5e9ec;
+    border-radius: 20px;
+    padding: 2px;
+  "
+>
+  <ul>
+    <li class="map" states="disable" style="display: none">1</li>
+    <li class="map" states="off">2</li>
+    <li class="map" states="off">3</li>
+    <li class="map" states="off">4</li>
+    <li class="map" states="off">5</li>
+    <li class="map" states="off">6</li>
+  </ul>
+</div>

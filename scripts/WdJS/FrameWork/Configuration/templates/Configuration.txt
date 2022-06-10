@@ -1,0 +1,5 @@
+<div style="width: 135px;height: 50px;padding: 14px;cursor: pointer;">
+    <div data-dojo-attach-point="icon" style="width: 24px; height: 24px; background-position: center center; background-repeat: no-repeat; background-image: url(image/configuration/dhl.png); float: left;"></div>
+
+    <div data-dojo-attach-point="text" style="width:70px;height: 24px;line-height: 24px;color: white;text-align:center;float: left;margin-left: 10px;"></div>
+  </div>

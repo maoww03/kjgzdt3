@@ -1,0 +1,7 @@
+<div class="line_content">
+    <div class="alert_line">
+        <input type="text" class="input_box" placeholder="请输入目录名称" data-dojo-attach-point="plusname" style="width: 270px; height: 30px; margin-left: 6px;">
+    </div>
+    <div class="save_btn"  data-dojo-attach-point="saveplus" style="float: right;">确认</div>
+    <div class="cancel_btn" data-dojo-attach-point="qxplus" style="float: right;">取消</div>
+</div>

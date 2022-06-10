@@ -1,0 +1,35 @@
+<div style="width:100%;height:100%; ">
+    <div class="col-lg-6"  style=" margin-left:5px;height: 36px;padding: 0;width: 320px;">
+        <div class="input-group" style="width: 242px;  float: left;margin-right:5px; height: 35px;">
+            <input type="text" class="form-control" placeholder="输入内容" data-dojo-attach-point="search" style="width: 100%;">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" data-dojo-attach-point="go" style="height: 34px;outline:none;">
+                    <img src="./image/sousuo1.png" alt="" >
+                </button>
+            </span>
+        </div>
+
+        <!-- BTN -->
+        <div data-dojo-attach-point="clearLayerBtn" ></div>
+        <div data-dojo-attach-point="hideDirBtn"  ></div>
+        <div data-dojo-attach-point="filterLayer"  >
+            <div title="目录过滤" class="layerbtn" style="background-image: url(./image/catalog/gl.png);margin-left: 5px;" ></div>
+        </div>
+
+        
+        <!-- <div data-dojo-attach-point="allClock" title="清空图层" class="clockbtn" style="
+        background-image: url(image/catalog/qc.png);
+        "  >
+        </div>
+
+        <div data-dojo-attach-point="allList" title="隐藏空图层" class="layerbtn" style="
+        background-image: url(image/catalog/ml1.png); 
+        " >
+        </div> -->
+    </div>
+    
+    
+    <div style="width:100%;height:calc(100% - 50px);overflow-x:hidden;margin-top:10px; " >
+    <div data-dojo-attach-point="tree" class="ztree" id="tree" ></div>
+    </div>
+</div> 

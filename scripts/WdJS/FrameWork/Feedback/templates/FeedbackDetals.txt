@@ -1,0 +1,80 @@
+<div style="width: 900px;
+height: 700px;
+background-color: white;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-top: -350px;
+z-index: 100000;
+margin-left: -450px;
+border: 1px solid #c5c0c0;
+border-radius: 10px;">
+    <!-- content: "111"
+feedtime: 1630339200000
+pic: "string"
+
+replycontent: null
+replydate: null
+ -->
+    <div  style="
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #fcfdff;
+    color: #57647c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #eef1f2;
+    z-index:9999999;  "> 详情 </div>
+    <div  data-dojo-attach-point="close"
+    style="  position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background: url(image/close.png) center center no-repeat;
+    cursor: pointer;
+    " ></div>
+
+    <!-- msg -->
+    <div>
+        <div style="width: auto;height: 30px;background: #276099;line-height: 30px;padding-left: 20px;color: white;font-weight: bold;">意见反馈</div>
+        <div style="width: auto;height: 25px;margin: 10px 0 0 20px;">
+            <div style="width: 72px; display: inline-block;">反馈时间：</div>
+            <div style="width: auto; display: inline-block;" data-dojo-attach-point="time">2021-8-31</div>
+        </div>
+        <div style="width: auto;height: auto;margin: 10px 0 0 20px;">
+            <div style="width: auto;height: 100px;float: left;overflow-wrap: break-word;">反馈内容：</div>
+            <div style="width: 88%;display: inline-block;height: 100px;margin: 0 auto;border: 1px solid #ccc;overflow-y: auto;background: #f9f9f9;overflow-wrap: break-word;padding: 5px;" data-dojo-attach-point="content">111111111111111111111111111111111</div>
+        </div>
+        <div style="margin: 10px 0 0 20px;width: auto;height: auto;">
+            <div style="width: auto;float: left;">反馈截图：</div>
+            <div data-dojo-attach-point="imgBox" style="padding: 5px;width: 88%;height: 250px;margin: 0 auto;overflow: auto;display: inline-block;overflow-y: auto;">
+                <!-- <img src="" alt="" style="width:  46%;height: 90%;vertical-align: middle; margin: 5px;"> -->
+            
+            
+            
+            </div>
+        </div>
+
+        <div style="width: auto;height: 30px;margin: 10px 0 0 20px;">
+            <div style="width: 72px; display: inline-block;">处理状态：</div>
+            <div style="width: auto; display: inline-block;" data-dojo-attach-point="status">未处理</div>
+        </div>
+    </div>
+
+    <div data-dojo-attach-point="feedback_re">
+        <div style="width: auto;height: 30px;background: #276099;line-height: 30px;padding-left: 20px;color: white;font-weight: bold;">处理详情</div>
+        <div style="width: auto;height: 24px;margin: 10px 0 0 20px;">
+            <div style="width: 72px; display: inline-block;">处理时间：</div>
+            <div style="width: auto; display: inline-block;" data-dojo-attach-point="replydate">2021-8-31</div>
+        </div>
+        <div style="width: auto;margin: 10px 0 0 20px;">
+            <div style="width: auto;float: left;">处理内容：</div>
+            <div style="width: 88%;height: 80px;overflow: auto;border: 1px solid #ccc;overflow-wrap: break-word;background: #f9f9f9;overflow-wrap: break-word;padding: 5px;" data-dojo-attach-point="replycontent">111111111111111111111111111111111</div>
+        </div>
+    </div>
+
+</div>
